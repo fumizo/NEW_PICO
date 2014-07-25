@@ -190,6 +190,7 @@
     }else{
         torf = 0;
     }
+    
 
     NSDictionary *dic = [NSDictionary dictionaryWithObject:sender.view forKey:@"view"];
     NSTimer *timer = [NSTimer scheduledTimerWithTimeInterval:0.01 target:self selector:@selector(moveMarbles:) userInfo:dic repeats:YES];
