@@ -37,15 +37,15 @@
     randomOctagon = arc4random_uniform(2);
     NSLog(@"randomOctagon is...%d",randomOctagon);
     if (randomOctagon == 0 ) {
-        octagon.image = [UIImage imageNamed:@"octagon().png"];
+        octagon.image = [UIImage imageNamed:@"Noctagon().png"];
     }else if (randomOctagon == 1){
-        octagon.image = [UIImage imageNamed:@"octagon()2.png"];
+        octagon.image = [UIImage imageNamed:@"Noctagon()2.png"];
     }
     
     
     /*--最初の画面--*/
     firstView =[[UIImageView alloc] initWithFrame:CGRectMake (0,0,320,568)];
-    firstView.image = [UIImage imageNamed:@"octagon_first.png"];
+    firstView.image = [UIImage imageNamed:@"Noctagon_first.png"];
     [self.view addSubview:firstView];
     
     [self addTapToReturn];  //タップで消す
@@ -87,19 +87,19 @@
     
     switch (randomNumber) {
         case 0:
-            return [UIImage imageNamed:@"marumaruBlue.png"];
+            return [UIImage imageNamed:@"NmarumaruBlue.png"];
             colorNum = 0;
             break;
         case 1:
-            return [UIImage imageNamed:@"marumaruGreen.png"];
+            return [UIImage imageNamed:@"NmarumaruGreen.png"];
             colorNum = 1;
             break;
         case 2:
-            return [UIImage imageNamed:@"marumaruPink.png"];
+            return [UIImage imageNamed:@"NmarumaruPink.png"];
             colorNum = 2;
             break;
         case 3:
-            return [UIImage imageNamed:@"marumaruYellow.png"];
+            return [UIImage imageNamed:@"NmarumaruYellow.png"];
             colorNum = 3;
             break;
         default:
