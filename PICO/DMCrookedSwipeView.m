@@ -80,7 +80,7 @@
     }else if (randomOctagon == 1){
         sumiColor = 0;
     }
-    
+
     if(sumiColor == colorNum){
         torf = 1;
     }else{
@@ -95,9 +95,9 @@
     
     sender.view.tag = 1;
  
-    NSNotificationCenter *nc =
-    [NSNotificationCenter defaultCenter];
     
+    // デフォルトの通知センターを取得する
+    NSNotificationCenter *nc = [NSNotificationCenter defaultCenter];
     // 通知の実行(通知名は"TestPost")
     // 通知先にデータを渡す場合はuserInfoにデータを指定
     [nc postNotificationName:@"TestPost"
@@ -127,8 +127,8 @@
     
     sender.view.tag = 2;
     
-    NSNotificationCenter *nc =
-    [NSNotificationCenter defaultCenter];
+    // デフォルトの通知センターを取得する
+    NSNotificationCenter *nc = [NSNotificationCenter defaultCenter];
     
     // 通知の実行(通知名は"TestPost")
     // 通知先にデータを渡す場合はuserInfoにデータを指定
@@ -164,8 +164,8 @@
 
     
     
-    NSNotificationCenter *nc =
-    [NSNotificationCenter defaultCenter];
+    // デフォルトの通知センターを取得する
+    NSNotificationCenter *nc = [NSNotificationCenter defaultCenter];
     
     // 通知の実行(通知名は"TestPost")
     // 通知先にデータを渡す場合はuserInfoにデータを指定
@@ -199,8 +199,9 @@
     sender.view.tag = 4;
     
     
-    NSNotificationCenter *nc =
-    [NSNotificationCenter defaultCenter];
+    
+    // デフォルトの通知センターを取得する
+    NSNotificationCenter *nc = [NSNotificationCenter defaultCenter];
     
     // 通知の実行(通知名は"TestPost")
     // 通知先にデータを渡す場合はuserInfoにデータを指定

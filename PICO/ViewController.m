@@ -50,6 +50,8 @@
     
     [self addTapToReturn];  //タップで消す
     
+    
+    
     NSNotificationCenter *nc =
     [NSNotificationCenter defaultCenter];
     
