@@ -34,13 +34,14 @@
     audio = [[AVAudioPlayer alloc] initWithContentsOfURL:url error:nil] ;
     
     /*--octagon--*/
-    randomOctagon = arc4random_uniform(2);
-    NSLog(@"randomOctagon is...%d",randomOctagon);
-    if (randomOctagon == 0 ) {
-        octagon.image = [UIImage imageNamed:@"Noctagon().png"];
-    }else if (randomOctagon == 1){
-        octagon.image = [UIImage imageNamed:@"Noctagon()2.png"];
-    }
+//    randomOctagon = arc4random_uniform(2);
+//    NSLog(@"randomOctagon is...%d",randomOctagon);
+//    if (randomOctagon == 0 ) {
+//        octagon.image = [UIImage imageNamed:@"Noctagon().png"];
+//    }else if (randomOctagon == 1){
+//        octagon.image = [UIImage imageNamed:@"Noctagon()2.png"];
+//    }
+    octagon.image = [UIImage imageNamed:@"Noctagon().png"];
     
     
     /*--最初の画面--*/
@@ -51,23 +52,22 @@
     [self addTapToReturn];  //タップで消す
     
     
-    
-    NSNotificationCenter *nc =
-    [NSNotificationCenter defaultCenter];
-    
     // 通知の受け取り登録("TestPost"という通知名の通知を受け取る)
     // 通知を受け取ったら自身のreceive:メソッドを呼び出す
-    [nc addObserver:self
-           selector:@selector(receive:)
-               name:@"TestPost"
-             object:nil];
+    NSNotificationCenter *nc = [NSNotificationCenter defaultCenter];
+    [nc addObserver:self selector:@selector(receive:) name:@"hoge" object:nil];
+
 }
 
-- (void)receive:(NSNotification *)center
+-(void)receive:(NSNotification *)center
 {
     // 通知を受け取ったときの処理...
+    position = [center.userInfo objectForKey:@"key"];
+    NSLog(@"position::%@", position);
+    
     [self add:self.view.frame];
 }
+
 
 //タップで消す
 - (void)addTapToReturn {
@@ -82,6 +82,7 @@
 }
 
 
+//丸に色をつける
 - (UIImage *)setColor
 {
     int randomNumber = arc4random_uniform(4);
@@ -112,38 +113,6 @@
     
 }
 
-
-#pragma mark - Gesture
-
-- (void)swipeUpward:(UISwipeGestureRecognizer *)sender
-{
-    NSLog(@"右上");
-    [audio play] ; //音をならす
-
-}
-
-- (void)swipeDownward:(UISwipeGestureRecognizer *)sender
-{
-    NSLog(@"左下");
-    [audio play] ; //音をならす
-
-}
-
-- (void)swipeLeft:(UISwipeGestureRecognizer *)sender
-{
-    NSLog(@"左上");
-    [audio play] ; //音をならす    
-    
-}
-
-
-- (void)swipeRight:(UISwipeGestureRecognizer *)sender
-{
-    NSLog(@"右下");
-    [audio play] ; //音をならす
-    
-}
-
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
@@ -153,27 +122,23 @@
 
 -(void)add:(CGRect)rect{
     
-    NSLog(@"動かされたmarbleの座標は%@です", NSStringFromCGRect(rect));
-    
     /*==丸つくる==*/
-    if (rect.origin.x < 100 && rect.origin.y <180) {
-        //左上
+    if (position == 0) {
         NSLog(@"左上");
         [self makeLeftUpwordMaru];
-    }else if(rect.origin.x > 145 && rect.origin.y <180){
-        //右上
+        
+    }else if(position == 1){
         NSLog(@"右上");
         [self makeRightUpwordMaru];
-    }else if(rect.origin.x > 145 && rect.origin.y >225){
-        //右下
+        
+    }else if(position == 2){
         NSLog(@"左下");
         [self makeRightDownwordMaru];
-    }else if(rect.origin.x < 100 && rect.origin.y >225) {
-        //左下
+        
+    }else if(position == 3) {
         NSLog(@"左下");
         [self makeLeftDownwordMaru];
     }
-    
 }
 
 /*----マーブル作る----*/

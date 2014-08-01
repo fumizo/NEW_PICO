@@ -95,14 +95,11 @@
     
     sender.view.tag = 1;
  
-    
-    // デフォルトの通知センターを取得する
-    NSNotificationCenter *nc = [NSNotificationCenter defaultCenter];
+
     // 通知の実行(通知名は"TestPost")
     // 通知先にデータを渡す場合はuserInfoにデータを指定
-    [nc postNotificationName:@"TestPost"
-                      object:self
-                    userInfo:nil];
+    NSNotification *n = [NSNotification notificationWithName:@"hoge" object:self userInfo:@{@"key": @1}];
+    [[NSNotificationCenter defaultCenter] postNotification:n];
 }
 
 - (void)swipeRight:(UISwipeGestureRecognizer *)sender
@@ -127,14 +124,11 @@
     
     sender.view.tag = 2;
     
-    // デフォルトの通知センターを取得する
-    NSNotificationCenter *nc = [NSNotificationCenter defaultCenter];
-    
     // 通知の実行(通知名は"TestPost")
     // 通知先にデータを渡す場合はuserInfoにデータを指定
-    [nc postNotificationName:@"TestPost"
-                      object:self
-                    userInfo:nil];
+    NSNotification *n = [NSNotification notificationWithName:@"hoge" object:self userInfo:@{@"key": @3}];
+    [[NSNotificationCenter defaultCenter] postNotification:n];
+
     
 }
 
@@ -161,18 +155,12 @@
     [timer fire];
     
     sender.view.tag = 3;
-
-    
-    
-    // デフォルトの通知センターを取得する
-    NSNotificationCenter *nc = [NSNotificationCenter defaultCenter];
     
     // 通知の実行(通知名は"TestPost")
     // 通知先にデータを渡す場合はuserInfoにデータを指定
-    [nc postNotificationName:@"TestPost"
-                      object:self
-                    userInfo:nil];
-    
+    NSNotification *n = [NSNotification notificationWithName:@"hoge" object:self userInfo:@{@"key": @2}];
+    [[NSNotificationCenter defaultCenter] postNotification:n];
+
 }
 
 
@@ -199,15 +187,11 @@
     sender.view.tag = 4;
     
     
-    
-    // デフォルトの通知センターを取得する
-    NSNotificationCenter *nc = [NSNotificationCenter defaultCenter];
-    
     // 通知の実行(通知名は"TestPost")
     // 通知先にデータを渡す場合はuserInfoにデータを指定
-    [nc postNotificationName:@"TestPost"
-                      object:self
-                    userInfo:nil];
+    NSNotification *n = [NSNotification notificationWithName:@"hoge" object:self userInfo:@{@"key": @0}];
+    [[NSNotificationCenter defaultCenter] postNotification:n];
+
 }
 
 

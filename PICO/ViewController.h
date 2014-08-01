@@ -39,7 +39,9 @@
     int perfectScore; //全部足したスコア
     
     UIImageView *firstView;  //最初の画面
-
+    
+    
+    NSNumber *position;
 }
 
 -(void)add:(CGRect)rect;
