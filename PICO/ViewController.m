@@ -122,21 +122,23 @@
 
 -(void)add:(CGRect)rect{
     
+    int i = [position intValue];
+    
     /*==丸つくる==*/
-    if (position == 0) {
-        NSLog(@"左上");
+    if (i == 0) {
+        NSLog(@"make左上");
         [self makeLeftUpwordMaru];
         
-    }else if(position == 1){
-        NSLog(@"右上");
+    }else if(i == 1){
+        NSLog(@"make右上");
         [self makeRightUpwordMaru];
         
-    }else if(position == 2){
-        NSLog(@"左下");
+    }else if(i == 2){
+        NSLog(@"make左下");
         [self makeRightDownwordMaru];
         
-    }else if(position == 3) {
-        NSLog(@"左下");
+    }else if(i == 3) {
+        NSLog(@"make左下");
         [self makeLeftDownwordMaru];
     }
 }
@@ -171,6 +173,7 @@
     DMCrookedSwipeView *marble = [[DMCrookedSwipeView alloc] initWithFrame:CGRectMake(160,240, MARBLE_WIDTH, MARBLE_HEIGHT)];
     marble.image= [self setColor];
     marble.userInteractionEnabled = YES; //タッチイベントを許可する
-    [self.view addSubview:marble];}
+    [self.view addSubview:marble];
+}
 
 @end

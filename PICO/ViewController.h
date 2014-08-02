@@ -42,6 +42,7 @@
     
     
     NSNumber *position;
+    int *intposition;
 }
 
 -(void)add:(CGRect)rect;
