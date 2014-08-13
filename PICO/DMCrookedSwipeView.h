@@ -7,9 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "ViewController.h"
+//#import "ViewController.h"
 
-
+@protocol DMCrookedSwipeViewDelegate; //何を助けてほしいか
 
 @interface DMCrookedSwipeView : UIImageView
 <UIGestureRecognizerDelegate>
@@ -19,28 +19,32 @@
     
     int torf;   //合ってたら１、間違ってたら２
     
-    int colorNum;  //色に番号つけといて、すみからーと合わせる
-    int randomOctagon;  //2パターンの八角形
-    int sumiColor;  //blue0,green1,pink2,yellow3    
-    
+    int colorNum;  //色に番号つけといて、すみからーと合わせる    
     
     /*---SCORE---*/
-    int score;        //基本的なスコア
-    int plusScore;    //連続で成功したとき足す数を計算する用
-    int pScore;       //連続で成功したときに足すスコア
-    int perfectScore; //全部足したスコア
+    int score;        //スコア
+    int plusScore;    //連続で成功したときプラスするスコア
+    
 }
 
-@property(nonatomic, assign) int torf;
-
-@property(nonatomic, assign) int randomOctagon;
-@property(nonatomic, assign) int colorNum;
-
-@property(nonatomic, assign) int score;
-@property(nonatomic, assign) int plusScore;
-@property(nonatomic, assign) int pScore;
-@property(nonatomic, assign) int perfectScore;
+@property (nonatomic, assign) id<DMCrookedSwipeViewDelegate> delegate;  //かわりにやってくれるマン
 
 
+@property(nonatomic) int torf;
 
+@property(nonatomic) int colorNum;
+
+@property(nonatomic) int score;
+@property(nonatomic) int plusScore;
+
+
+@property(nonatomic, copy) NSString *objectPosition;
+@property(nonatomic, copy) NSString *objestColor;
+
+
+@end
+
+
+@protocol DMCrookedSwipeViewDelegate<NSObject>  //何を助けてほしいか
+- (void) hanteiWithMarble:(UIImageView *)swipeView;
 @end

@@ -13,12 +13,9 @@
 @synthesize torf;
 
 @synthesize colorNum;
-@synthesize randomOctagon;
 
 @synthesize score;
-@synthesize pScore;
 @synthesize plusScore;
-@synthesize perfectScore;
 
  
 #pragma mark - init
@@ -72,17 +69,24 @@
 
 #pragma mark - Gesture
 
+/*----角の色----*/
+//右上　yellow (3)
+//右下　pink   (2)
+//左上　green  (1)
+//左下　blue   (0)
+
 - (void)swipeUpward:(UISwipeGestureRecognizer *)sender
 {
     NSLog(@"右上");
-    if (randomOctagon == 0) {
-        sumiColor = 3;
-    }else if (randomOctagon == 1){
-        sumiColor = 0;
-    }
-
-    if(sumiColor == colorNum){
+    if([_objestColor isEqual:@"yellow"]){
         torf = 1;
+        
+        //合ってたよっていう通知を送る
+        NSNotification *s = [NSNotification notificationWithName:@"hoge" object:self userInfo:@{@"score": @"1"}]; //@{@"score": @"a", @"key": @"aa"}
+        [[NSNotificationCenter defaultCenter] postNotification:s];
+        
+//        [sender. sendSubviewToBack:view_b];
+        
     }else{
         torf = 0;
     }
@@ -96,57 +100,84 @@
     sender.view.tag = 1;
  
 
-    // 通知の実行(通知名は"TestPost")
+    // 通知の実行(通知名は"Position")
     // 通知先にデータを渡す場合はuserInfoにデータを指定
-    NSNotification *n = [NSNotification notificationWithName:@"hoge" object:self userInfo:@{@"key": @1}];
-    [[NSNotificationCenter defaultCenter] postNotification:n];
+    //objectPositionはマーブルをつくるときにつけてる。あなたは左上さんですよ〜。
+    // _ は self と同じ意味
+    if([_objectPosition  isEqual: @"LeftUp"]){
+        NSNotification *n = [NSNotification notificationWithName:@"hoge" object:self userInfo:@{@"key": @0}];
+        [[NSNotificationCenter defaultCenter] postNotification:n];
+    }else if ([_objectPosition  isEqual: @"RightUp"]){
+        NSNotification *n = [NSNotification notificationWithName:@"hoge" object:self userInfo:@{@"key": @1}];
+        [[NSNotificationCenter defaultCenter] postNotification:n];
+    }else if ([_objectPosition  isEqual: @"LeftDown"]){
+        NSNotification *n = [NSNotification notificationWithName:@"hoge" object:self userInfo:@{@"key": @2}];
+        [[NSNotificationCenter defaultCenter] postNotification:n];
+    }else if ([_objectPosition  isEqual: @"RightDown"]){
+        NSNotification *n = [NSNotification notificationWithName:@"hoge" object:self userInfo:@{@"key": @3}];
+        [[NSNotificationCenter defaultCenter] postNotification:n];
+    }
 }
+
 
 - (void)swipeRight:(UISwipeGestureRecognizer *)sender
 {
-    NSLog(@"右下");
-    if (randomOctagon == 0) {
-        sumiColor = 2;
-    }else if (randomOctagon == 1){
-        sumiColor = 1;
-    }
     
-    if(sumiColor == colorNum){
+    NSLog(@"右下");
+    
+    if([_objestColor isEqual:@"pink"]){
         torf = 1;
+        
+        //合ってたよっていう通知を送る
+        NSNotification *s = [NSNotification notificationWithName:@"hoge" object:self userInfo:@{@"score": @"1"}];
+        [[NSNotificationCenter defaultCenter] postNotification:s];
+
     }else{
         torf = 0;
     }
-
+    
     NSDictionary *dic = [NSDictionary dictionaryWithObject:sender.view forKey:@"view"];
+    NSLog(@"%@",dic);
     
     NSTimer *timer = [NSTimer scheduledTimerWithTimeInterval:0.01 target:self selector:@selector(moveMarbles:) userInfo:dic repeats:YES];
     [timer fire];
     
     sender.view.tag = 2;
     
-    // 通知の実行(通知名は"TestPost")
+    // 通知の実行(通知名は"Position")
     // 通知先にデータを渡す場合はuserInfoにデータを指定
-    NSNotification *n = [NSNotification notificationWithName:@"hoge" object:self userInfo:@{@"key": @3}];
-    [[NSNotificationCenter defaultCenter] postNotification:n];
+    //objectPositionはマーブルをつくるときにつけてる。あなたは左上さんですよ〜。
+    // _ は self と同じ意味
+    if([_objectPosition  isEqual: @"LeftUp"]){
+        NSNotification *n = [NSNotification notificationWithName:@"hoge" object:self userInfo:@{@"key": @0}];
+        [[NSNotificationCenter defaultCenter] postNotification:n];
+    }else if ([_objectPosition  isEqual: @"RightUp"]){
+        NSNotification *n = [NSNotification notificationWithName:@"hoge" object:self userInfo:@{@"key": @1}];
+        [[NSNotificationCenter defaultCenter] postNotification:n];
+    }else if ([_objectPosition  isEqual: @"LeftDown"]){
+        NSNotification *n = [NSNotification notificationWithName:@"hoge" object:self userInfo:@{@"key": @2}];
+        [[NSNotificationCenter defaultCenter] postNotification:n];
+    }else if ([_objectPosition  isEqual: @"RightDown"]){
+        NSNotification *n = [NSNotification notificationWithName:@"hoge" object:self userInfo:@{@"key": @3}];
+        [[NSNotificationCenter defaultCenter] postNotification:n];
+    }
 
-    
 }
 
 - (void)swipeDownward:(UISwipeGestureRecognizer *)sender
 {
     NSLog(@"左下");
-    if (randomOctagon == 0) {
-        sumiColor = 0;
-    }else if (randomOctagon == 1){
-        sumiColor = 3;
-    }
-    
-    if(sumiColor == colorNum){
+
+    if([_objestColor isEqual:@"blue"]){
         torf = 1;
+        
+        //合ってたよっていう通知を送る
+        NSNotification *s = [NSNotification notificationWithName:@"hoge" object:self userInfo:@{@"score": @"1"}];
+        [[NSNotificationCenter defaultCenter] postNotification:s];
+
     }else{
         torf = 0;
     }
-
     NSDictionary *dic = [NSDictionary dictionaryWithObject:sender.view forKey:@"view"];
     
     NSTimer *timer = [NSTimer scheduledTimerWithTimeInterval:0.01 target:self selector:@selector(moveMarbles:)
@@ -156,30 +187,43 @@
     
     sender.view.tag = 3;
     
-    // 通知の実行(通知名は"TestPost")
+    
+    
+    // 通知の実行(通知名は"Position")
     // 通知先にデータを渡す場合はuserInfoにデータを指定
-    NSNotification *n = [NSNotification notificationWithName:@"hoge" object:self userInfo:@{@"key": @2}];
-    [[NSNotificationCenter defaultCenter] postNotification:n];
-
+    //objectPositionはマーブルをつくるときにつけてる。あなたは左上さんですよ〜。
+    // _ は self と同じ意味
+    if([_objectPosition  isEqual: @"LeftUp"]){
+    NSNotification *n = [NSNotification notificationWithName:@"hoge" object:self userInfo:@{@"key": @0}];
+        [[NSNotificationCenter defaultCenter] postNotification:n];
+    }else if ([_objectPosition  isEqual: @"RightUp"]){
+        NSNotification *n = [NSNotification notificationWithName:@"hoge" object:self userInfo:@{@"key": @1}];
+        [[NSNotificationCenter defaultCenter] postNotification:n];
+    }else if ([_objectPosition  isEqual: @"LeftDown"]){
+        NSNotification *n = [NSNotification notificationWithName:@"hoge" object:self userInfo:@{@"key": @2}];
+        [[NSNotificationCenter defaultCenter] postNotification:n];
+    }else if ([_objectPosition  isEqual: @"RightDown"]){
+        NSNotification *n = [NSNotification notificationWithName:@"hoge" object:self userInfo:@{@"key": @3}];
+        [[NSNotificationCenter defaultCenter] postNotification:n];
+    }
 }
-
 
 - (void)swipeLeft:(UISwipeGestureRecognizer *)sender
 {
     NSLog(@"左上");
-    if (randomOctagon == 0) {
-        sumiColor = 1;
-    }else if (randomOctagon == 1){
-        sumiColor = 2;
-    }
     
-    if(sumiColor == colorNum){
+    if([_objestColor isEqual:@"green"]){
         torf = 1;
+        
+        //合ってたよっていう通知を送る
+        NSNotification *s = [NSNotification notificationWithName:@"hoge" object:self userInfo:@{@"score": @"1"}];
+        [[NSNotificationCenter defaultCenter] postNotification:s];
+
+        
     }else{
         torf = 0;
     }
     
-
     NSDictionary *dic = [NSDictionary dictionaryWithObject:sender.view forKey:@"view"];
     NSTimer *timer = [NSTimer scheduledTimerWithTimeInterval:0.01 target:self selector:@selector(moveMarbles:) userInfo:dic repeats:YES];
     [timer fire];
@@ -187,11 +231,23 @@
     sender.view.tag = 4;
     
     
-    // 通知の実行(通知名は"TestPost")
+    // 通知の実行(通知名は"Position")
     // 通知先にデータを渡す場合はuserInfoにデータを指定
-    NSNotification *n = [NSNotification notificationWithName:@"hoge" object:self userInfo:@{@"key": @0}];
-    [[NSNotificationCenter defaultCenter] postNotification:n];
-
+    //objectPositionはマーブルをつくるときにつけてる。あなたは左上さんですよ〜。
+    // _ は self と同じ意味
+    if([_objectPosition  isEqual: @"LeftUp"]){
+        NSNotification *n = [NSNotification notificationWithName:@"hoge" object:self userInfo:@{@"key": @0}];
+        [[NSNotificationCenter defaultCenter] postNotification:n];
+    }else if ([_objectPosition  isEqual: @"RightUp"]){
+        NSNotification *n = [NSNotification notificationWithName:@"hoge" object:self userInfo:@{@"key": @1}];
+        [[NSNotificationCenter defaultCenter] postNotification:n];
+    }else if ([_objectPosition  isEqual: @"LeftDown"]){
+        NSNotification *n = [NSNotification notificationWithName:@"hoge" object:self userInfo:@{@"key": @2}];
+        [[NSNotificationCenter defaultCenter] postNotification:n];
+    }else if ([_objectPosition  isEqual: @"RightDown"]){
+        NSNotification *n = [NSNotification notificationWithName:@"hoge" object:self userInfo:@{@"key": @3}];
+        [[NSNotificationCenter defaultCenter] postNotification:n];
+    }
 }
 
 
@@ -211,8 +267,7 @@
     
     switch ( torf ) {
         case 0:
-            
-            pScore = 1;
+            self.userInteractionEnabled = NO;    //１回触ったものにはもうジェスチャーを許可しない
             
             if (swipedView.tag == 1) {
                 swipedView.center = CGPointMake(swipedView.center.x + moveX, swipedView.center.y - moveY);
@@ -221,8 +276,8 @@
                 if(swipedView.center.x + swipedView.bounds.size.width / 2 > 310) moveX = - moveX;
                 
                 //上下の壁との当たり判定
-                if(swipedView.center.y - swipedView.bounds.size.height / 2 < 134) moveY = - moveY;
-                if(swipedView.center.y + swipedView.bounds.size.height / 2 > 434) moveY = - moveY;
+                if(swipedView.center.y - swipedView.bounds.size.height / 2 < 167) moveY = - moveY;
+                if(swipedView.center.y + swipedView.bounds.size.height / 2 > 467) moveY = - moveY;
                 
             }else if (swipedView.tag == 2){
                 swipedView.center = CGPointMake(swipedView.center.x + moveX, swipedView.center.y + moveY);
@@ -231,7 +286,7 @@
                 if(swipedView.center.x + swipedView.bounds.size.width / 2 > 310) moveX = - moveX;
                 
                 //上下の壁との当たり判定
-                if(swipedView.center.y - swipedView.bounds.size.height / 2 < 134) moveY = - moveY;
+                if(swipedView.center.y - swipedView.bounds.size.height / 2 < 167) moveY = - moveY;
                 if(swipedView.center.y + swipedView.bounds.size.height / 2 > 310) moveY = - moveY;
                 
             }else if (swipedView.tag == 3){
@@ -241,8 +296,8 @@
                 if(swipedView.center.x + swipedView.bounds.size.width / 2 > 310) moveX = - moveX;
                 
                 //上下の壁との当たり判定
-                if(swipedView.center.y - swipedView.bounds.size.height / 2 < 134) moveY = - moveY;
-                if(swipedView.center.y + swipedView.bounds.size.height / 2 > 434) moveY = - moveY;
+                if(swipedView.center.y - swipedView.bounds.size.height / 2 < 167) moveY = - moveY;
+                if(swipedView.center.y + swipedView.bounds.size.height / 2 > 467) moveY = - moveY;
                 
             }else if (swipedView.tag == 4){
                 swipedView.center = CGPointMake(swipedView.center.x - moveX, swipedView.center.y - moveY);
@@ -251,38 +306,43 @@
                 if(swipedView.center.x + swipedView.bounds.size.width / 2 > 310) moveX = - moveX;
                 
                 //上下の壁との当たり判定
-                if(swipedView.center.y - swipedView.bounds.size.height / 2 < 134) moveY = - moveY;
-                if(swipedView.center.y + swipedView.bounds.size.height / 2 > 434) moveY = - moveY;
+                if(swipedView.center.y - swipedView.bounds.size.height / 2 < 167) moveY = - moveY;
+                if(swipedView.center.y + swipedView.bounds.size.height / 2 > 467) moveY = - moveY;
             }
-            break;
-        case 1:
-            score = score+25;
-            plusScore =  plusScore * 3;
-            if (plusScore % 27 == 0){
-                pScore = 25 * plusScore/27/10;
-            }
-            perfectScore = score + pScore;
-            //scoreLabel.text = [NSString stringWithFormat:@"%d",perfectScore];
+            
 
+            
+            break;
+        
+        case 1:
+            self.userInteractionEnabled = NO;    //１回触ったものにはもうジェスチャーを許可しない
+            
             if (swipedView.tag == 1) {
+               
                 [UIView animateWithDuration:0.8f animations:^{
                     //animateWithDurationがアニメーションの速度
                     // アニメーションをする処理
+                    swipedView.alpha = 0;
+
                     swipedView.center = CGPointMake(310, 134);
                                  }
                                  completion:^(BOOL finished){
                                      // アニメーションが終わった後実行する処理
+                                    //  NSLog(@"hoge1");
                                      //[swipedView removeFromSuperview];
                                  }];
                 
             }else if (swipedView.tag == 2){
                 [UIView animateWithDuration:0.8f animations:^{
                     //animateWithDurationがアニメーションの速度
+                    swipedView.alpha = 0;
+
                     // アニメーションをする処理
-                    swipedView.center = CGPointMake(310, 434);
+                    swipedView.center = CGPointMake(310, 467);
                 }
                                  completion:^(BOOL finished){
                                      // アニメーションが終わった後実行する処理
+                                     // NSLog(@"hoge2");
                                      //[swipedView removeFromSuperview];
                                  }];
                 
@@ -290,10 +350,13 @@
                 [UIView animateWithDuration:0.8f animations:^{
                     //animateWithDurationがアニメーションの速度
                     // アニメーションをする処理
-                    swipedView.center = CGPointMake(10, 434);
+                    swipedView.alpha = 0;
+
+                    swipedView.center = CGPointMake(10, 467);
                 }
                                  completion:^(BOOL finished){
                                      // アニメーションが終わった後実行する処理
+                                   //   NSLog(@"hoge3");
                                      //[swipedView removeFromSuperview];
                                  }];
                 
@@ -301,18 +364,29 @@
                 [UIView animateWithDuration:0.8f animations:^{
                     //animateWithDurationがアニメーションの速度
                     // アニメーションをする処理
-                    swipedView.center = CGPointMake(10, 134);
+                    swipedView.alpha = 0;
+                    //[self.delegate hanteiWithMarble:swipedView];   //代わりにできるマンはデリゲートのなかにいるよ
+
+                    swipedView.center = CGPointMake(10, 167);
                 }
                                  completion:^(BOOL finished){
                                      // アニメーションが終わった後実行する処理
+                                     // NSLog(@"hoge4");
                                      //[swipedView removeFromSuperview];
                                  }];
             
             }
+            
+            
+            // [self hantei];  //sumiviewと重なったら消えるメソッド
+
+            
+            
+            
         default:
             break;
     }
     
-    }
+}
 
 @end
