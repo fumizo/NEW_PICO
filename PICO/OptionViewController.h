@@ -10,4 +10,7 @@
 
 @interface OptionViewController : UIViewController
 
+
+
+- (IBAction)back ;
 @end

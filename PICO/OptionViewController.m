@@ -7,6 +7,7 @@
 //
 
 #import "OptionViewController.h"
+#import "ViewController.h"
 
 @interface OptionViewController ()
 
@@ -28,6 +29,22 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
 }
+
+- (IBAction)back{
+    [self dismissViewControllerAnimated:YES completion:nil];
+}
+//http://kesin.hatenablog.com/entry/20120908/1347079921
+//画面遷移の直前に呼ばれる
+-(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    //Segueの特定
+    if ( [[segue identifier] isEqualToString:@"option"] ) {
+
+        ViewController *nextViewController = [segue destinationViewController];
+        //ここで遷移先ビューのクラスの変数receiveStringに値を渡している
+    }
+}
+
 
 - (void)didReceiveMemoryWarning
 {

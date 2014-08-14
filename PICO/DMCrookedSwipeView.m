@@ -84,8 +84,7 @@
         //合ってたよっていう通知を送る
         NSNotification *s = [NSNotification notificationWithName:@"hoge" object:self userInfo:@{@"score": @"1"}]; //@{@"score": @"a", @"key": @"aa"}
         [[NSNotificationCenter defaultCenter] postNotification:s];
-        
-//        [sender. sendSubviewToBack:view_b];
+        //[self atteruyo];
         
     }else{
         torf = 0;
@@ -208,11 +207,13 @@
     }
 }
 
+
 - (void)swipeLeft:(UISwipeGestureRecognizer *)sender
 {
     NSLog(@"左上");
     
     if([_objestColor isEqual:@"green"]){
+        
         torf = 1;
         
         //合ってたよっていう通知を送る
@@ -263,7 +264,7 @@
 {
     NSDictionary *dic = [timer userInfo];
     
-    UIImageView *swipedView = [dic objectForKey:@"view"];
+    swipedView = [dic objectForKey:@"view"];
     
     switch ( torf ) {
         case 0:
@@ -287,7 +288,7 @@
                 
                 //上下の壁との当たり判定
                 if(swipedView.center.y - swipedView.bounds.size.height / 2 < 167) moveY = - moveY;
-                if(swipedView.center.y + swipedView.bounds.size.height / 2 > 310) moveY = - moveY;
+                if(swipedView.center.y + swipedView.bounds.size.height / 2 > 467) moveY = - moveY;
                 
             }else if (swipedView.tag == 3){
                 swipedView.center = CGPointMake(swipedView.center.x - moveX, swipedView.center.y + moveY);
@@ -309,8 +310,6 @@
                 if(swipedView.center.y - swipedView.bounds.size.height / 2 < 167) moveY = - moveY;
                 if(swipedView.center.y + swipedView.bounds.size.height / 2 > 467) moveY = - moveY;
             }
-            
-
             
             break;
         
@@ -365,7 +364,6 @@
                     //animateWithDurationがアニメーションの速度
                     // アニメーションをする処理
                     swipedView.alpha = 0;
-                    //[self.delegate hanteiWithMarble:swipedView];   //代わりにできるマンはデリゲートのなかにいるよ
 
                     swipedView.center = CGPointMake(10, 167);
                 }
@@ -376,17 +374,75 @@
                                  }];
             
             }
-            
-            
-            // [self hantei];  //sumiviewと重なったら消えるメソッド
-
-            
-            
+            break;
             
         default:
             break;
     }
-    
 }
+
+/*
+- (void) atteruyo{
+    
+    if (swipedView.tag == 1) {
+        
+        [UIView animateWithDuration:0.8f animations:^{
+            //animateWithDurationがアニメーションの速度
+            // アニメーションをする処理
+            swipedView.alpha = 0;
+            
+            swipedView.center = CGPointMake(310, 134);
+        }
+                         completion:^(BOOL finished){
+                             // アニメーションが終わった後実行する処理
+                             //  NSLog(@"hoge1");
+                             //[swipedView removeFromSuperview];
+                         }];
+        
+    }else if (swipedView.tag == 2){
+        [UIView animateWithDuration:0.8f animations:^{
+            //animateWithDurationがアニメーションの速度
+            swipedView.alpha = 0;
+            
+            // アニメーションをする処理
+            swipedView.center = CGPointMake(310, 467);
+        }
+                         completion:^(BOOL finished){
+                             // アニメーションが終わった後実行する処理
+                             // NSLog(@"hoge2");
+                             //[swipedView removeFromSuperview];
+                         }];
+        
+    }else if (swipedView.tag == 3){
+        [UIView animateWithDuration:0.8f animations:^{
+            //animateWithDurationがアニメーションの速度
+            // アニメーションをする処理
+            swipedView.alpha = 0;
+            
+            swipedView.center = CGPointMake(10, 467);
+        }
+                         completion:^(BOOL finished){
+                             // アニメーションが終わった後実行する処理
+                             //   NSLog(@"hoge3");
+                             //[swipedView removeFromSuperview];
+                         }];
+        
+    }else if (swipedView.tag == 4){
+        [UIView animateWithDuration:0.8f animations:^{
+            //animateWithDurationがアニメーションの速度
+            // アニメーションをする処理
+            swipedView.alpha = 0;
+            //[self.delegate hanteiWithMarble:swipedView];   //代わりにできるマンはデリゲートのなかにいるよ
+            
+            swipedView.center = CGPointMake(10, 167);
+        }
+                         completion:^(BOOL finished){
+                             // アニメーションが終わった後実行する処理
+                             // NSLog(@"hoge4");
+                             //[swipedView removeFromSuperview];
+                         }];
+        
+    }
+}  */
 
 @end

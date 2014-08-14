@@ -25,6 +25,7 @@
     int score;        //スコア
     int plusScore;    //連続で成功したときプラスするスコア
     
+    UIImageView *swipedView ;
 }
 
 @property (nonatomic, assign) id<DMCrookedSwipeViewDelegate> delegate;  //かわりにやってくれるマン

@@ -28,7 +28,7 @@
     
     /*---SCORE---*/
     IBOutlet UILabel *scoreLabel;
-    int score;        //基本的なスコア
+    int score;        //スコア
     int plusScore;    //連続で成功したときプラスするスコア
     
     
@@ -46,6 +46,7 @@
     UIImageView *gameoverView;
     
 }
+- (IBAction)option;
 
 -(void)add:(CGRect)rect;
 
