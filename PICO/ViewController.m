@@ -9,6 +9,7 @@
 #import "ViewController.h"
 //#import "DMCrookedSwipeView.h"
 #import "GameOverViewController.h"
+#import "OptionViewController.h"
 
 @interface ViewController ()<UIGestureRecognizerDelegate>
 
@@ -16,44 +17,48 @@
 
 @implementation ViewController
 
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-
     
     plusScore = 1;
     score = 0;
     scoreLabel.text = @"0";
     
-    /*==丸つくる==*/
-    [self makeLeftUpwordMaru];
-    [self makeLeftDownwordMaru];
-    [self makeRightUpwordMaru];
-    [self makeRightDownwordMaru];
-
+    
+    
     /*--音--*/
+    //ちりーん
     NSString *path = [[NSBundle mainBundle] pathForResource:@"bell01" ofType:@"mp3"] ;
     NSURL *url = [NSURL fileURLWithPath:path] ;
-    audio = [[AVAudioPlayer alloc] initWithContentsOfURL:url error:nil] ;
+    tirin = [[AVAudioPlayer alloc] initWithContentsOfURL:url error:nil] ;
+    //っどん
+    NSString *donPath = [[NSBundle mainBundle] pathForResource:@"don01" ofType:@"mp3"] ;
+    NSURL *donUrl = [NSURL fileURLWithPath:donPath] ;
+    don = [[AVAudioPlayer alloc] initWithContentsOfURL:donUrl error:nil] ;
+    //どどん
+    NSString *dodonPath = [[NSBundle mainBundle] pathForResource:@"dodon02" ofType:@"mp3"] ;
+    NSURL *dodonUrl = [NSURL fileURLWithPath:dodonPath] ;
+    dodon = [[AVAudioPlayer alloc] initWithContentsOfURL:dodonUrl error:nil] ;
+    //ぽん！
+    NSString *ponPath = [[NSBundle mainBundle] pathForResource:@"pon01" ofType:@"mp3"] ;
+    NSURL *ponUrl = [NSURL fileURLWithPath:ponPath] ;
+    pon = [[AVAudioPlayer alloc] initWithContentsOfURL:ponUrl error:nil] ;
+    //かん
+    NSString *kanPath = [[NSBundle mainBundle] pathForResource:@"kannn" ofType:@"mp3"] ;
+    NSURL *kanUrl = [NSURL fileURLWithPath:kanPath] ;
+    kan = [[AVAudioPlayer alloc] initWithContentsOfURL:kanUrl error:nil] ;
     
     /*--octagon--*/
-//    randomOctagon = arc4random_uniform(2);
-//    NSLog(@"randomOctagon is...%d",randomOctagon);
-//    if (randomOctagon == 0 ) {
-//        octagon.image = [UIImage imageNamed:@"Noctagon().png"];
-//    }else if (randomOctagon == 1){
-//        octagon.image = [UIImage imageNamed:@"Noctagon()2.png"];
-//    }
+    //    randomOctagon = arc4random_uniform(2);
+    //    NSLog(@"randomOctagon is...%d",randomOctagon);
+    //    if (randomOctagon == 0 ) {
+    //        octagon.image = [UIImage imageNamed:@"Noctagon().png"];
+    //    }else if (randomOctagon == 1){
+    //        octagon.image = [UIImage imageNamed:@"Noctagon()2.png"];
+    //    }
     octagon.image = [UIImage imageNamed:@"Noctagon().png"];
-    
-    
-    /*--最初の画面--*/
-    firstView =[[UIImageView alloc] initWithFrame:CGRectMake (0,0,320,568)];
-    firstView.image = [UIImage imageNamed:@"Noctagon_first.png"];
-    [self.view addSubview:firstView];
-    
-    [self addTapToReturn];  //タップで消す
-    
     
     // 通知の受け取り登録("TestPost"という通知名の通知を受け取る)
     // 通知を受け取ったら自身のreceive:メソッドを呼び出す
@@ -65,36 +70,73 @@
     time = 0;
     firstTapFlag = YES;
     
+    [tirin play];
 }
+
 
 -(void)viewWillAppear:(BOOL)animated{
     
+    time = 0;
+    firstTapFlag = YES;
     score = 0;
     scoreLabel.text = [NSString stringWithFormat:@"%dしゅ",score];
+    isGameOver = NO;
     
     //画面を初期化する
     for (UIView *view in [self.view subviews]) {
         if(view.tag == 1){
             [view removeFromSuperview];
         }
+        if ([view isKindOfClass:[DMCrookedSwipeView class]]) {
+            [view removeFromSuperview];
+        }
     }
+    /*==丸つくる==*/
+    [self makeLeftUpwordMaru];
+    [self makeLeftDownwordMaru];
+    [self makeRightUpwordMaru];
+    [self makeRightDownwordMaru];
     /*--gameover--*/
     gameoverView =[[UIImageView alloc] initWithFrame:CGRectMake (110,267,100,100)];
     gameoverView.image = [UIImage imageNamed:@"gameover.png"];
     gameoverView.tag = 1;
     
-    time = 0;
-    firstTapFlag = YES;
+    /*--最初の画面--*/
+    firstView =[[UIImageView alloc] initWithFrame:CGRectMake (0,0,320,568)];
+    firstView.image = [UIImage imageNamed:@"Noctagon_first.png"];
+    [self.view addSubview:firstView];
+    
+    [self addTapToReturn];  //タップで消す
+    
+    /*--歯車のボタン--*/
+    //生成
+    optionButton = [UIButton buttonWithType:UIButtonTypeCustom];
+    
+    UIImage *img = [UIImage imageNamed:@"pico_settei.png"];  // ボタンにする画像を生成する
+    optionButton.frame = CGRectMake(230, 485, 62, 62);
+    [optionButton setBackgroundImage:img forState:UIControlStateNormal];  // 画像をセットする
+    // ボタンが押された時にhogeメソッドを呼び出す
+    [optionButton addTarget:self
+                     action:@selector(hoge:) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:optionButton];
 }
 
 
 -(void)up{
-    time +=0.01;
-    //NSLog(@"time ======> %f", time);
+    time +=0.01f;
+    NSLog(@"time ======> %f", time);
+    countDown = 1.5f - time;
+    if (countDown >= 0 ) {
+        gameTimerLabel.text = [NSString stringWithFormat:@"%f",countDown];
+    }else{
+        gameTimerLabel.text = @"0";
+    }
+    
     if (time >= 1.5) {
         // game over
-        
+        isGameOver = YES;
         NSLog(@"gameover");
+        [dodon play];
         [gameoverTimer invalidate];  //１回しか呼ばないように
 
         [self.view addSubview:gameoverView]; //gameoverを表示
@@ -111,7 +153,6 @@
         }];
         
     }
-
 }
 
 //http://kesin.hatenablog.com/entry/20120908/1347079921
@@ -130,13 +171,15 @@
 
 -(void)receive:(NSNotification *)center
 {
+//    [don play];
     time = 0;
+    [self swipeSounds];
     
     if (firstTapFlag) {
         gameoverTimer = [NSTimer scheduledTimerWithTimeInterval:0.01 target:self selector:@selector(up) userInfo:nil repeats:YES];
         firstTapFlag = NO;
         //１回だけ呼ばれるように
-    }
+        }
     
     
     // 通知を受け取ったときの処理...
@@ -144,19 +187,26 @@
     //場所の通知
     if ([center.userInfo objectForKey:@"key"]) {
         //score
-        
         NSLog(@"key");
         position = [center.userInfo objectForKey:@"key"];
         NSLog(@"position::%@", position);
         [self add:self.view.frame];
-}
+        }
     
     //合ってるっていう通知
     NSNumber * y = [center.userInfo objectForKey:@"score"];
     int p = [y intValue];
     score = score + p;
     NSLog(@"score is...%d",score);
-    
+    isOk = YES;
+}
+
+-(void) swipeSounds{
+    if (isOk == YES) {
+        [don play];
+    }else {
+        [kan play];
+    }
 }
 
 
@@ -170,8 +220,8 @@
 - (void)doReturn:(UITapGestureRecognizer *)tap {
     
     [firstView removeFromSuperview];
+    [optionButton removeFromSuperview];
     [[self presentingViewController] dismissViewControllerAnimated:YES completion:nil];
-//    [audio play];
 }
 
 
@@ -301,7 +351,7 @@ swipeView.alpha = 0.0;
         marble.userInteractionEnabled = YES; //タッチイベントを許可する
         marble.objectPosition = @"LeftUp";
         
-        [self.view addSubview:marble];
+        if(isGameOver == NO) [self.view addSubview:marble];  //gameoverしたら丸はもう足さない
     
     } completion:^(BOOL finished){
         //完了時のコールバック
@@ -335,8 +385,8 @@ swipeView.alpha = 0.0;
 
         marble.userInteractionEnabled = YES; //タッチイベントを許可する
         marble.objectPosition = @"RightUp";
-        //marbleDictionary
-        [self.view addSubview:marble];
+
+        if(isGameOver == NO) [self.view addSubview:marble];  //gameoverしたら丸はもう足さない
         
     } completion:^(BOOL finished){
         //完了時のコールバック
@@ -370,7 +420,7 @@ swipeView.alpha = 0.0;
         marble.userInteractionEnabled = YES; //タッチイベントを許可する
         marble.objectPosition = @"LeftDown";
         
-        [self.view addSubview:marble];
+        if(isGameOver == NO) [self.view addSubview:marble];  //gameoverしたら丸はもう足さない
         
     } completion:^(BOOL finished){
         //完了時のコールバック
@@ -404,7 +454,7 @@ swipeView.alpha = 0.0;
     
         marble.userInteractionEnabled = YES; //タッチイベントを許可する
         marble.objectPosition = @"RightDown";
-        [self.view addSubview:marble];
+        if(isGameOver == NO) [self.view addSubview:marble];  //gameoverしたら丸はもう足さない
         
     } completion:^(BOOL finished){
         //完了時のコールバック
@@ -415,12 +465,17 @@ swipeView.alpha = 0.0;
 
 }
 
-
--(IBAction)option{
+-(void)hoge:(UIButton*)button{
+    // ここに何かの処理を記述する
+    // （引数の button には呼び出し元のUIButtonオブジェクトが引き渡されてきます）
     [self invalidate];  //timerをとめる
-    [self performSegueWithIdentifier:@"option" sender:nil];
     
+    OptionViewController *optionViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"Option"];
+    [self presentViewController:optionViewController animated:YES completion:nil];
+    //オプションのビューにIDをつけて、移動する。オプションさんって言う人がいますよ。この人がオプションさんですよ。オプションさんにtびますよ。
 }
+
+
 //timerをとめる
 -(void)invalidate{[gameoverTimer invalidate];}
 

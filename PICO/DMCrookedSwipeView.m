@@ -82,14 +82,14 @@
         torf = 1;
         
         //合ってたよっていう通知を送る
-        NSNotification *s = [NSNotification notificationWithName:@"hoge" object:self userInfo:@{@"score": @"1"}]; //@{@"score": @"a", @"key": @"aa"}
+        NSNotification *s = [NSNotification notificationWithName:@"hoge" object:self userInfo:@{@"score": @"1"}];
+        //@{@"score": @"a", @"key": @"aa"}
         [[NSNotificationCenter defaultCenter] postNotification:s];
         //[self atteruyo];
         
     }else{
         torf = 0;
     }
-    
 
     NSDictionary *dic = [NSDictionary dictionaryWithObject:sender.view forKey:@"view"];
     
@@ -185,7 +185,6 @@
     [timer fire];
     
     sender.view.tag = 3;
-    
     
     
     // 通知の実行(通知名は"Position")
@@ -380,69 +379,5 @@
             break;
     }
 }
-
-/*
-- (void) atteruyo{
-    
-    if (swipedView.tag == 1) {
-        
-        [UIView animateWithDuration:0.8f animations:^{
-            //animateWithDurationがアニメーションの速度
-            // アニメーションをする処理
-            swipedView.alpha = 0;
-            
-            swipedView.center = CGPointMake(310, 134);
-        }
-                         completion:^(BOOL finished){
-                             // アニメーションが終わった後実行する処理
-                             //  NSLog(@"hoge1");
-                             //[swipedView removeFromSuperview];
-                         }];
-        
-    }else if (swipedView.tag == 2){
-        [UIView animateWithDuration:0.8f animations:^{
-            //animateWithDurationがアニメーションの速度
-            swipedView.alpha = 0;
-            
-            // アニメーションをする処理
-            swipedView.center = CGPointMake(310, 467);
-        }
-                         completion:^(BOOL finished){
-                             // アニメーションが終わった後実行する処理
-                             // NSLog(@"hoge2");
-                             //[swipedView removeFromSuperview];
-                         }];
-        
-    }else if (swipedView.tag == 3){
-        [UIView animateWithDuration:0.8f animations:^{
-            //animateWithDurationがアニメーションの速度
-            // アニメーションをする処理
-            swipedView.alpha = 0;
-            
-            swipedView.center = CGPointMake(10, 467);
-        }
-                         completion:^(BOOL finished){
-                             // アニメーションが終わった後実行する処理
-                             //   NSLog(@"hoge3");
-                             //[swipedView removeFromSuperview];
-                         }];
-        
-    }else if (swipedView.tag == 4){
-        [UIView animateWithDuration:0.8f animations:^{
-            //animateWithDurationがアニメーションの速度
-            // アニメーションをする処理
-            swipedView.alpha = 0;
-            //[self.delegate hanteiWithMarble:swipedView];   //代わりにできるマンはデリゲートのなかにいるよ
-            
-            swipedView.center = CGPointMake(10, 167);
-        }
-                         completion:^(BOOL finished){
-                             // アニメーションが終わった後実行する処理
-                             // NSLog(@"hoge4");
-                             //[swipedView removeFromSuperview];
-                         }];
-        
-    }
-}  */
 
 @end

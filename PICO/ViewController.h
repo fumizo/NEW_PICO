@@ -5,7 +5,6 @@
 //  Created by 山本文子 on 2014/06/27.
 //  Copyright (c) 2014年 山本文子. All rights reserved.
 //
-
 #import <UIKit/UIKit.h>
 #import <AVFoundation/AVFoundation.h>
 #import "DMCrookedSwipeView.h"
@@ -24,7 +23,11 @@
     
     int torf; //すみと丸が合ってたら１、間違ってたら０
     
-    AVAudioPlayer *audio;
+    AVAudioPlayer *tirin;
+    AVAudioPlayer *don;
+    AVAudioPlayer *dodon;
+    AVAudioPlayer *pon;
+    AVAudioPlayer *kan;
     
     /*---SCORE---*/
     IBOutlet UILabel *scoreLabel;
@@ -40,13 +43,19 @@
     
     float time;
     NSTimer *gameoverTimer;
+    float countDown;
     
     BOOL firstTapFlag;
     
     UIImageView *gameoverView;
     
+    BOOL isGameOver;  //gameoverしたら丸をたさないようにする
+    BOOL isOk;  //あってたらYES
+    UIButton *optionButton;
+    
+    IBOutlet UILabel *gameTimerLabel;
 }
-- (IBAction)option;
+//- (IBAction)option;
 
 -(void)add:(CGRect)rect;
 

@@ -37,12 +37,7 @@
 //画面遷移の直前に呼ばれる
 -(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
-    //Segueの特定
-    if ( [[segue identifier] isEqualToString:@"option"] ) {
-
-        ViewController *nextViewController = [segue destinationViewController];
-        //ここで遷移先ビューのクラスの変数receiveStringに値を渡している
-    }
+    
 }
 
 

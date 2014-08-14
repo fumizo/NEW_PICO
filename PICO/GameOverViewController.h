@@ -8,10 +8,15 @@
 
 #import <UIKit/UIKit.h>
 #import <Social/Social.h>
+#import <AVFoundation/AVFoundation.h>
+
 
 @interface GameOverViewController : UIViewController{
     IBOutlet UILabel *gameScoreLabel;
     int score;
+    
+    AVAudioPlayer *pon;
+
 }
 
 -(IBAction)backToStart ;
