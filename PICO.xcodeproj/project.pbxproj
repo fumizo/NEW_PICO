@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		4F3C8583198622CB00E843AC /* Noctagon()2.png in Resources */ = {isa = PBXBuildFile; fileRef = 4F3C8581198622CB00E843AC /* Noctagon()2.png */; };
-		4F3C8585198623CD00E843AC /* pico_settei.png in Resources */ = {isa = PBXBuildFile; fileRef = 4F3C8584198623CD00E843AC /* pico_settei.png */; };
 		4F3C85871986242200E843AC /* Noctagon_first.png in Resources */ = {isa = PBXBuildFile; fileRef = 4F3C85861986242200E843AC /* Noctagon_first.png */; };
 		4F3C858C198A726F00E843AC /* NmarumaruBlue.png in Resources */ = {isa = PBXBuildFile; fileRef = 4F3C8588198A726F00E843AC /* NmarumaruBlue.png */; };
 		4F3C858D198A726F00E843AC /* NmarumaruGreen.png in Resources */ = {isa = PBXBuildFile; fileRef = 4F3C8589198A726F00E843AC /* NmarumaruGreen.png */; };
@@ -18,15 +17,41 @@
 		4F3EE49D199BAFA600008B6A /* GameOverViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F3EE49C199BAFA600008B6A /* GameOverViewController.m */; };
 		4F3EE49F199BCA4F00008B6A /* octagonScoreBoy.png in Resources */ = {isa = PBXBuildFile; fileRef = 4F3EE49E199BCA4F00008B6A /* octagonScoreBoy.png */; };
 		4F3EE4AC199C43E700008B6A /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F3EE4AB199C43E700008B6A /* Social.framework */; };
-		4F4E3574196EEE7B00EE4F99 /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 4F4E3573196EEE7B00EE4F99 /* icon.png */; };
 		4F4E357719719B0D00EE4F99 /* DMCrookedSwipeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F4E357619719B0D00EE4F99 /* DMCrookedSwipeView.m */; };
-		4F8C4C6F199C5C5B00C375F4 /* 20 物音-逃げる.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4F8C4C69199C5C5B00C375F4 /* 20 物音-逃げる.mp3 */; };
-		4F8C4C70199C5C5B00C375F4 /* bell01.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4F8C4C6A199C5C5B00C375F4 /* bell01.mp3 */; };
-		4F8C4C71199C5C5B00C375F4 /* dodon02.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4F8C4C6B199C5C5B00C375F4 /* dodon02.mp3 */; };
-		4F8C4C72199C5C5B00C375F4 /* don01.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4F8C4C6C199C5C5B00C375F4 /* don01.mp3 */; };
-		4F8C4C73199C5C5B00C375F4 /* pon01.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4F8C4C6D199C5C5B00C375F4 /* pon01.mp3 */; };
-		4F8C4C74199C5C5B00C375F4 /* se_maoudamashii_retro08.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4F8C4C6E199C5C5B00C375F4 /* se_maoudamashii_retro08.mp3 */; };
-		4F8C4C76199C5FCA00C375F4 /* kannn.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4F8C4C75199C5FCA00C375F4 /* kannn.mp3 */; };
+		4F8C4C78199C958E00C375F4 /* pico_settei.png in Resources */ = {isa = PBXBuildFile; fileRef = 4F8C4C77199C958E00C375F4 /* pico_settei.png */; };
+		4F8C4C92199C9B8800C375F4 /* lgp01a201304151300 のコピー.png in Resources */ = {isa = PBXBuildFile; fileRef = 4F8C4C7A199C9B8800C375F4 /* lgp01a201304151300 のコピー.png */; };
+		4F8C4C93199C9B8800C375F4 /* lgp01a201304151300.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4F8C4C7B199C9B8800C375F4 /* lgp01a201304151300.jpg */; };
+		4F8C4C94199C9B8800C375F4 /* lgp01a201304151400 のコピー.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4F8C4C7C199C9B8800C375F4 /* lgp01a201304151400 のコピー.jpg */; };
+		4F8C4C95199C9B8800C375F4 /* lgp01a201304151400.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4F8C4C7D199C9B8800C375F4 /* lgp01a201304151400.jpg */; };
+		4F8C4C96199C9B8800C375F4 /* lgp01a201304151900 のコピー.png in Resources */ = {isa = PBXBuildFile; fileRef = 4F8C4C7E199C9B8800C375F4 /* lgp01a201304151900 のコピー.png */; };
+		4F8C4C97199C9B8800C375F4 /* lgp01a201304151900.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4F8C4C7F199C9B8800C375F4 /* lgp01a201304151900.jpg */; };
+		4F8C4C98199C9B8800C375F4 /* lgp01a201304160100 のコピー.png in Resources */ = {isa = PBXBuildFile; fileRef = 4F8C4C80199C9B8800C375F4 /* lgp01a201304160100 のコピー.png */; };
+		4F8C4C99199C9B8800C375F4 /* lgp01a201304160100.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4F8C4C81199C9B8800C375F4 /* lgp01a201304160100.jpg */; };
+		4F8C4C9A199C9B8800C375F4 /* lgp01a201401150000 のコピー.png in Resources */ = {isa = PBXBuildFile; fileRef = 4F8C4C82199C9B8800C375F4 /* lgp01a201401150000 のコピー.png */; };
+		4F8C4C9B199C9B8800C375F4 /* lgp01a201401150000.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4F8C4C83199C9B8800C375F4 /* lgp01a201401150000.jpg */; };
+		4F8C4C9C199C9B8800C375F4 /* lgp01a201403010300 のコピー.png in Resources */ = {isa = PBXBuildFile; fileRef = 4F8C4C84199C9B8800C375F4 /* lgp01a201403010300 のコピー.png */; };
+		4F8C4C9D199C9B8800C375F4 /* lgp01a201403010300.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4F8C4C85199C9B8800C375F4 /* lgp01a201403010300.jpg */; };
+		4F8C4C9E199C9B8800C375F4 /* lgp01a201403020000 のコピー.png in Resources */ = {isa = PBXBuildFile; fileRef = 4F8C4C86199C9B8800C375F4 /* lgp01a201403020000 のコピー.png */; };
+		4F8C4C9F199C9B8800C375F4 /* lgp01a201403020000.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4F8C4C87199C9B8800C375F4 /* lgp01a201403020000.jpg */; };
+		4F8C4CA0199C9B8800C375F4 /* octagon_haguruma.png in Resources */ = {isa = PBXBuildFile; fileRef = 4F8C4C88199C9B8800C375F4 /* octagon_haguruma.png */; };
+		4F8C4CA1199C9B8800C375F4 /* res_1337468576 のコピー.png in Resources */ = {isa = PBXBuildFile; fileRef = 4F8C4C89199C9B8800C375F4 /* res_1337468576 のコピー.png */; };
+		4F8C4CA2199C9B8800C375F4 /* kumo.png in Resources */ = {isa = PBXBuildFile; fileRef = 4F8C4C8A199C9B8800C375F4 /* kumo.png */; };
+		4F8C4CA3199C9B8800C375F4 /* res_1732741526 のコピー.png in Resources */ = {isa = PBXBuildFile; fileRef = 4F8C4C8B199C9B8800C375F4 /* res_1732741526 のコピー.png */; };
+		4F8C4CA4199C9B8800C375F4 /* res_1732741526.png in Resources */ = {isa = PBXBuildFile; fileRef = 4F8C4C8C199C9B8800C375F4 /* res_1732741526.png */; };
+		4F8C4CA5199C9B8800C375F4 /* YellowAndPink.png in Resources */ = {isa = PBXBuildFile; fileRef = 4F8C4C8D199C9B8800C375F4 /* YellowAndPink.png */; };
+		4F8C4CA6199C9B8800C375F4 /* res_90131049.png in Resources */ = {isa = PBXBuildFile; fileRef = 4F8C4C8E199C9B8800C375F4 /* res_90131049.png */; };
+		4F8C4CA7199C9B8800C375F4 /* tori のコピー 2.png in Resources */ = {isa = PBXBuildFile; fileRef = 4F8C4C8F199C9B8800C375F4 /* tori のコピー 2.png */; };
+		4F8C4CA8199C9B8800C375F4 /* tori のコピー.png in Resources */ = {isa = PBXBuildFile; fileRef = 4F8C4C90199C9B8800C375F4 /* tori のコピー.png */; };
+		4F8C4CA9199C9B8800C375F4 /* tori.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4F8C4C91199C9B8800C375F4 /* tori.jpg */; };
+		4F8C4CAF199D981400C375F4 /* octagonHaikei.png in Resources */ = {isa = PBXBuildFile; fileRef = 4F8C4CAE199D981400C375F4 /* octagonHaikei.png */; };
+		4F8C4CB3199D9DE900C375F4 /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 4F8C4CB2199D9DE900C375F4 /* icon.png */; };
+		4F8C4CC5199DA39500C375F4 /* bell01.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4F8C4CC0199DA39500C375F4 /* bell01.mp3 */; };
+		4F8C4CC6199DA39500C375F4 /* dodon02.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4F8C4CC1199DA39500C375F4 /* dodon02.mp3 */; };
+		4F8C4CC7199DA39500C375F4 /* don01.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4F8C4CC2199DA39500C375F4 /* don01.mp3 */; };
+		4F8C4CC8199DA39500C375F4 /* kannn.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4F8C4CC3199DA39500C375F4 /* kannn.mp3 */; };
+		4F8C4CC9199DA39500C375F4 /* pon01.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4F8C4CC4199DA39500C375F4 /* pon01.mp3 */; };
+		4F8C4CCB199DB7A400C375F4 /* gooon.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4F8C4CCA199DB7A400C375F4 /* gooon.mp3 */; };
+		4F8C4CCD199DBDE400C375F4 /* flee1.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4F8C4CCC199DBDE400C375F4 /* flee1.mp3 */; };
 		4F9F732D195D73290082669D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F9F732C195D73290082669D /* Foundation.framework */; };
 		4F9F732F195D73290082669D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F9F732E195D73290082669D /* CoreGraphics.framework */; };
 		4F9F7331195D73290082669D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F9F7330195D73290082669D /* UIKit.framework */; };
@@ -58,7 +83,6 @@
 
 /* Begin PBXFileReference section */
 		4F3C8581198622CB00E843AC /* Noctagon()2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Noctagon()2.png"; sourceTree = "<group>"; };
-		4F3C8584198623CD00E843AC /* pico_settei.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pico_settei.png; sourceTree = "<group>"; };
 		4F3C85861986242200E843AC /* Noctagon_first.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Noctagon_first.png; sourceTree = "<group>"; };
 		4F3C8588198A726F00E843AC /* NmarumaruBlue.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = NmarumaruBlue.png; sourceTree = "<group>"; };
 		4F3C8589198A726F00E843AC /* NmarumaruGreen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = NmarumaruGreen.png; sourceTree = "<group>"; };
@@ -69,16 +93,42 @@
 		4F3EE49C199BAFA600008B6A /* GameOverViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameOverViewController.m; sourceTree = "<group>"; };
 		4F3EE49E199BCA4F00008B6A /* octagonScoreBoy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = octagonScoreBoy.png; sourceTree = "<group>"; };
 		4F3EE4AB199C43E700008B6A /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
-		4F4E3573196EEE7B00EE4F99 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
 		4F4E357519719B0D00EE4F99 /* DMCrookedSwipeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DMCrookedSwipeView.h; sourceTree = "<group>"; };
 		4F4E357619719B0D00EE4F99 /* DMCrookedSwipeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DMCrookedSwipeView.m; sourceTree = "<group>"; };
-		4F8C4C69199C5C5B00C375F4 /* 20 物音-逃げる.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "20 物音-逃げる.mp3"; sourceTree = "<group>"; };
-		4F8C4C6A199C5C5B00C375F4 /* bell01.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = bell01.mp3; sourceTree = "<group>"; };
-		4F8C4C6B199C5C5B00C375F4 /* dodon02.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = dodon02.mp3; sourceTree = "<group>"; };
-		4F8C4C6C199C5C5B00C375F4 /* don01.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = don01.mp3; sourceTree = "<group>"; };
-		4F8C4C6D199C5C5B00C375F4 /* pon01.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = pon01.mp3; sourceTree = "<group>"; };
-		4F8C4C6E199C5C5B00C375F4 /* se_maoudamashii_retro08.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = se_maoudamashii_retro08.mp3; sourceTree = "<group>"; };
-		4F8C4C75199C5FCA00C375F4 /* kannn.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = kannn.mp3; path = ../kannn.mp3; sourceTree = "<group>"; };
+		4F8C4C77199C958E00C375F4 /* pico_settei.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pico_settei.png; sourceTree = "<group>"; };
+		4F8C4C7A199C9B8800C375F4 /* lgp01a201304151300 のコピー.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "lgp01a201304151300 のコピー.png"; sourceTree = "<group>"; };
+		4F8C4C7B199C9B8800C375F4 /* lgp01a201304151300.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = lgp01a201304151300.jpg; sourceTree = "<group>"; };
+		4F8C4C7C199C9B8800C375F4 /* lgp01a201304151400 のコピー.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "lgp01a201304151400 のコピー.jpg"; sourceTree = "<group>"; };
+		4F8C4C7D199C9B8800C375F4 /* lgp01a201304151400.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = lgp01a201304151400.jpg; sourceTree = "<group>"; };
+		4F8C4C7E199C9B8800C375F4 /* lgp01a201304151900 のコピー.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "lgp01a201304151900 のコピー.png"; sourceTree = "<group>"; };
+		4F8C4C7F199C9B8800C375F4 /* lgp01a201304151900.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = lgp01a201304151900.jpg; sourceTree = "<group>"; };
+		4F8C4C80199C9B8800C375F4 /* lgp01a201304160100 のコピー.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "lgp01a201304160100 のコピー.png"; sourceTree = "<group>"; };
+		4F8C4C81199C9B8800C375F4 /* lgp01a201304160100.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = lgp01a201304160100.jpg; sourceTree = "<group>"; };
+		4F8C4C82199C9B8800C375F4 /* lgp01a201401150000 のコピー.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "lgp01a201401150000 のコピー.png"; sourceTree = "<group>"; };
+		4F8C4C83199C9B8800C375F4 /* lgp01a201401150000.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = lgp01a201401150000.jpg; sourceTree = "<group>"; };
+		4F8C4C84199C9B8800C375F4 /* lgp01a201403010300 のコピー.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "lgp01a201403010300 のコピー.png"; sourceTree = "<group>"; };
+		4F8C4C85199C9B8800C375F4 /* lgp01a201403010300.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = lgp01a201403010300.jpg; sourceTree = "<group>"; };
+		4F8C4C86199C9B8800C375F4 /* lgp01a201403020000 のコピー.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "lgp01a201403020000 のコピー.png"; sourceTree = "<group>"; };
+		4F8C4C87199C9B8800C375F4 /* lgp01a201403020000.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = lgp01a201403020000.jpg; sourceTree = "<group>"; };
+		4F8C4C88199C9B8800C375F4 /* octagon_haguruma.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = octagon_haguruma.png; sourceTree = "<group>"; };
+		4F8C4C89199C9B8800C375F4 /* res_1337468576 のコピー.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "res_1337468576 のコピー.png"; sourceTree = "<group>"; };
+		4F8C4C8A199C9B8800C375F4 /* kumo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = kumo.png; sourceTree = "<group>"; };
+		4F8C4C8B199C9B8800C375F4 /* res_1732741526 のコピー.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "res_1732741526 のコピー.png"; sourceTree = "<group>"; };
+		4F8C4C8C199C9B8800C375F4 /* res_1732741526.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = res_1732741526.png; sourceTree = "<group>"; };
+		4F8C4C8D199C9B8800C375F4 /* YellowAndPink.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = YellowAndPink.png; sourceTree = "<group>"; };
+		4F8C4C8E199C9B8800C375F4 /* res_90131049.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = res_90131049.png; sourceTree = "<group>"; };
+		4F8C4C8F199C9B8800C375F4 /* tori のコピー 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tori のコピー 2.png"; sourceTree = "<group>"; };
+		4F8C4C90199C9B8800C375F4 /* tori のコピー.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tori のコピー.png"; sourceTree = "<group>"; };
+		4F8C4C91199C9B8800C375F4 /* tori.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = tori.jpg; sourceTree = "<group>"; };
+		4F8C4CAE199D981400C375F4 /* octagonHaikei.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = octagonHaikei.png; sourceTree = "<group>"; };
+		4F8C4CB2199D9DE900C375F4 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
+		4F8C4CC0199DA39500C375F4 /* bell01.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = bell01.mp3; sourceTree = "<group>"; };
+		4F8C4CC1199DA39500C375F4 /* dodon02.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = dodon02.mp3; sourceTree = "<group>"; };
+		4F8C4CC2199DA39500C375F4 /* don01.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = don01.mp3; sourceTree = "<group>"; };
+		4F8C4CC3199DA39500C375F4 /* kannn.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = kannn.mp3; sourceTree = "<group>"; };
+		4F8C4CC4199DA39500C375F4 /* pon01.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = pon01.mp3; sourceTree = "<group>"; };
+		4F8C4CCA199DB7A400C375F4 /* gooon.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = gooon.mp3; sourceTree = "<group>"; };
+		4F8C4CCC199DBDE400C375F4 /* flee1.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = flee1.mp3; sourceTree = "<group>"; };
 		4F9F7329195D73290082669D /* PICO.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PICO.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4F9F732C195D73290082669D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		4F9F732E195D73290082669D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -130,16 +180,47 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		4F8C4C68199C5C5B00C375F4 /* octagonSounds */ = {
+		4F8C4C79199C9B8700C375F4 /* pic4pico */ = {
 			isa = PBXGroup;
 			children = (
-				4F8C4C69199C5C5B00C375F4 /* 20 物音-逃げる.mp3 */,
-				4F8C4C6A199C5C5B00C375F4 /* bell01.mp3 */,
-				4F8C4C6B199C5C5B00C375F4 /* dodon02.mp3 */,
-				4F8C4C6C199C5C5B00C375F4 /* don01.mp3 */,
-				4F8C4C6D199C5C5B00C375F4 /* pon01.mp3 */,
-				4F8C4C6E199C5C5B00C375F4 /* se_maoudamashii_retro08.mp3 */,
-				4F8C4C75199C5FCA00C375F4 /* kannn.mp3 */,
+				4F8C4C7A199C9B8800C375F4 /* lgp01a201304151300 のコピー.png */,
+				4F8C4C7B199C9B8800C375F4 /* lgp01a201304151300.jpg */,
+				4F8C4C7C199C9B8800C375F4 /* lgp01a201304151400 のコピー.jpg */,
+				4F8C4C7D199C9B8800C375F4 /* lgp01a201304151400.jpg */,
+				4F8C4C7E199C9B8800C375F4 /* lgp01a201304151900 のコピー.png */,
+				4F8C4C7F199C9B8800C375F4 /* lgp01a201304151900.jpg */,
+				4F8C4C80199C9B8800C375F4 /* lgp01a201304160100 のコピー.png */,
+				4F8C4C81199C9B8800C375F4 /* lgp01a201304160100.jpg */,
+				4F8C4C82199C9B8800C375F4 /* lgp01a201401150000 のコピー.png */,
+				4F8C4C83199C9B8800C375F4 /* lgp01a201401150000.jpg */,
+				4F8C4C84199C9B8800C375F4 /* lgp01a201403010300 のコピー.png */,
+				4F8C4C85199C9B8800C375F4 /* lgp01a201403010300.jpg */,
+				4F8C4C86199C9B8800C375F4 /* lgp01a201403020000 のコピー.png */,
+				4F8C4C87199C9B8800C375F4 /* lgp01a201403020000.jpg */,
+				4F8C4C88199C9B8800C375F4 /* octagon_haguruma.png */,
+				4F8C4C89199C9B8800C375F4 /* res_1337468576 のコピー.png */,
+				4F8C4C8A199C9B8800C375F4 /* kumo.png */,
+				4F8C4C8B199C9B8800C375F4 /* res_1732741526 のコピー.png */,
+				4F8C4C8C199C9B8800C375F4 /* res_1732741526.png */,
+				4F8C4C8D199C9B8800C375F4 /* YellowAndPink.png */,
+				4F8C4C8E199C9B8800C375F4 /* res_90131049.png */,
+				4F8C4C8F199C9B8800C375F4 /* tori のコピー 2.png */,
+				4F8C4C90199C9B8800C375F4 /* tori のコピー.png */,
+				4F8C4C91199C9B8800C375F4 /* tori.jpg */,
+			);
+			path = pic4pico;
+			sourceTree = "<group>";
+		};
+		4F8C4CBF199DA39500C375F4 /* octagonSounds */ = {
+			isa = PBXGroup;
+			children = (
+				4F8C4CCC199DBDE400C375F4 /* flee1.mp3 */,
+				4F8C4CCA199DB7A400C375F4 /* gooon.mp3 */,
+				4F8C4CC0199DA39500C375F4 /* bell01.mp3 */,
+				4F8C4CC1199DA39500C375F4 /* dodon02.mp3 */,
+				4F8C4CC2199DA39500C375F4 /* don01.mp3 */,
+				4F8C4CC3199DA39500C375F4 /* kannn.mp3 */,
+				4F8C4CC4199DA39500C375F4 /* pon01.mp3 */,
 			);
 			path = octagonSounds;
 			sourceTree = "<group>";
@@ -147,6 +228,8 @@
 		4F9F7320195D73290082669D = {
 			isa = PBXGroup;
 			children = (
+				4F8C4CBF199DA39500C375F4 /* octagonSounds */,
+				4F8C4CB2199D9DE900C375F4 /* icon.png */,
 				4F9F7332195D73290082669D /* PICO */,
 				4F9F7351195D73290082669D /* PICOTests */,
 				4F9F732B195D73290082669D /* Frameworks */,
@@ -179,7 +262,8 @@
 		4F9F7332195D73290082669D /* PICO */ = {
 			isa = PBXGroup;
 			children = (
-				4F8C4C68199C5C5B00C375F4 /* octagonSounds */,
+				4F8C4CAE199D981400C375F4 /* octagonHaikei.png */,
+				4F8C4C79199C9B8700C375F4 /* pic4pico */,
 				4F3EE49E199BCA4F00008B6A /* octagonScoreBoy.png */,
 				4F3EE499199B831700008B6A /* Gameover.png */,
 				4F3C8588198A726F00E843AC /* NmarumaruBlue.png */,
@@ -187,10 +271,9 @@
 				4F3C858A198A726F00E843AC /* NmarumaruPink.png */,
 				4F3C858B198A726F00E843AC /* NmarumaruYellow.png */,
 				4F3C85861986242200E843AC /* Noctagon_first.png */,
-				4F3C8584198623CD00E843AC /* pico_settei.png */,
+				4F8C4C77199C958E00C375F4 /* pico_settei.png */,
 				4FB97DFE199B3ADD00BF12EF /* Noctagon().png */,
 				4F3C8581198622CB00E843AC /* Noctagon()2.png */,
-				4F4E3573196EEE7B00EE4F99 /* icon.png */,
 				4F9F733B195D73290082669D /* AppDelegate.h */,
 				4F9F733C195D73290082669D /* AppDelegate.m */,
 				4F9F733E195D73290082669D /* Main.storyboard */,
@@ -284,6 +367,9 @@
 				LastUpgradeCheck = 0500;
 				ORGANIZATIONNAME = "山本文子";
 				TargetAttributes = {
+					4F9F7328195D73290082669D = {
+						DevelopmentTeam = 29KDR34G88;
+					};
 					4F9F7349195D73290082669D = {
 						TestTargetID = 4F9F7328195D73290082669D;
 					};
@@ -314,26 +400,51 @@
 			buildActionMask = 2147483647;
 			files = (
 				4F3C858F198A726F00E843AC /* NmarumaruYellow.png in Resources */,
-				4F8C4C74199C5C5B00C375F4 /* se_maoudamashii_retro08.mp3 in Resources */,
+				4F8C4C95199C9B8800C375F4 /* lgp01a201304151400.jpg in Resources */,
+				4F8C4C98199C9B8800C375F4 /* lgp01a201304160100 のコピー.png in Resources */,
 				4F9F7345195D73290082669D /* Images.xcassets in Resources */,
-				4F4E3574196EEE7B00EE4F99 /* icon.png in Resources */,
+				4F8C4C97199C9B8800C375F4 /* lgp01a201304151900.jpg in Resources */,
 				4F3C85871986242200E843AC /* Noctagon_first.png in Resources */,
 				4F3EE49A199B831700008B6A /* Gameover.png in Resources */,
+				4F8C4CA6199C9B8800C375F4 /* res_90131049.png in Resources */,
+				4F8C4CC5199DA39500C375F4 /* bell01.mp3 in Resources */,
+				4F8C4CAF199D981400C375F4 /* octagonHaikei.png in Resources */,
 				4F3EE49F199BCA4F00008B6A /* octagonScoreBoy.png in Resources */,
+				4F8C4C78199C958E00C375F4 /* pico_settei.png in Resources */,
+				4F8C4CCB199DB7A400C375F4 /* gooon.mp3 in Resources */,
+				4F8C4C9C199C9B8800C375F4 /* lgp01a201403010300 のコピー.png in Resources */,
+				4F8C4CC9199DA39500C375F4 /* pon01.mp3 in Resources */,
+				4F8C4CA5199C9B8800C375F4 /* YellowAndPink.png in Resources */,
+				4F8C4CA4199C9B8800C375F4 /* res_1732741526.png in Resources */,
+				4F8C4CA3199C9B8800C375F4 /* res_1732741526 のコピー.png in Resources */,
 				4F9F7337195D73290082669D /* InfoPlist.strings in Resources */,
-				4F8C4C72199C5C5B00C375F4 /* don01.mp3 in Resources */,
+				4F8C4CA7199C9B8800C375F4 /* tori のコピー 2.png in Resources */,
 				4F3C858D198A726F00E843AC /* NmarumaruGreen.png in Resources */,
-				4F8C4C70199C5C5B00C375F4 /* bell01.mp3 in Resources */,
-				4F8C4C6F199C5C5B00C375F4 /* 20 物音-逃げる.mp3 in Resources */,
-				4F8C4C71199C5C5B00C375F4 /* dodon02.mp3 in Resources */,
-				4F8C4C76199C5FCA00C375F4 /* kannn.mp3 in Resources */,
+				4F8C4CC8199DA39500C375F4 /* kannn.mp3 in Resources */,
+				4F8C4C9E199C9B8800C375F4 /* lgp01a201403020000 のコピー.png in Resources */,
+				4F8C4C9D199C9B8800C375F4 /* lgp01a201403010300.jpg in Resources */,
+				4F8C4C9A199C9B8800C375F4 /* lgp01a201401150000 のコピー.png in Resources */,
+				4F8C4CA1199C9B8800C375F4 /* res_1337468576 のコピー.png in Resources */,
+				4F8C4C99199C9B8800C375F4 /* lgp01a201304160100.jpg in Resources */,
 				4F3C858C198A726F00E843AC /* NmarumaruBlue.png in Resources */,
-				4F8C4C73199C5C5B00C375F4 /* pon01.mp3 in Resources */,
+				4F8C4CA9199C9B8800C375F4 /* tori.jpg in Resources */,
+				4F8C4C93199C9B8800C375F4 /* lgp01a201304151300.jpg in Resources */,
+				4F8C4CB3199D9DE900C375F4 /* icon.png in Resources */,
+				4F8C4CA8199C9B8800C375F4 /* tori のコピー.png in Resources */,
+				4F8C4C92199C9B8800C375F4 /* lgp01a201304151300 のコピー.png in Resources */,
 				4F9F7340195D73290082669D /* Main.storyboard in Resources */,
+				4F8C4CC7199DA39500C375F4 /* don01.mp3 in Resources */,
+				4F8C4C9F199C9B8800C375F4 /* lgp01a201403020000.jpg in Resources */,
+				4F8C4CA2199C9B8800C375F4 /* kumo.png in Resources */,
+				4F8C4C9B199C9B8800C375F4 /* lgp01a201401150000.jpg in Resources */,
+				4F8C4C96199C9B8800C375F4 /* lgp01a201304151900 のコピー.png in Resources */,
 				4F3C8583198622CB00E843AC /* Noctagon()2.png in Resources */,
-				4F3C8585198623CD00E843AC /* pico_settei.png in Resources */,
+				4F8C4CCD199DBDE400C375F4 /* flee1.mp3 in Resources */,
 				4FB97DFF199B3ADD00BF12EF /* Noctagon().png in Resources */,
+				4F8C4C94199C9B8800C375F4 /* lgp01a201304151400 のコピー.jpg in Resources */,
 				4F3C858E198A726F00E843AC /* NmarumaruPink.png in Resources */,
+				4F8C4CC6199DA39500C375F4 /* dodon02.mp3 in Resources */,
+				4F8C4CA0199C9B8800C375F4 /* octagon_haguruma.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -484,10 +595,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "PICO/PICO-Prefix.pch";
 				INFOPLIST_FILE = "PICO/PICO-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -497,10 +611,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "PICO/PICO-Prefix.pch";
 				INFOPLIST_FILE = "PICO/PICO-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

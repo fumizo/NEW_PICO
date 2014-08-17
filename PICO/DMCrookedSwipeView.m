@@ -132,6 +132,10 @@
         [[NSNotificationCenter defaultCenter] postNotification:s];
 
     }else{
+        //間違えたっていう通知を送る
+        NSNotification *dame = [NSNotification notificationWithName:@"hoge" object:self userInfo:@{@"dame": @"1"}];
+        [[NSNotificationCenter defaultCenter] postNotification:dame];
+
         torf = 0;
     }
     

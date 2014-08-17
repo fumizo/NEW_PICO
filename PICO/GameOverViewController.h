@@ -16,13 +16,16 @@
     int score;
     
     AVAudioPlayer *pon;
+    AVAudioPlayer *flee;
+    AVAudioPlayer *gooon;
 
 }
+
 
 -(IBAction)backToStart ;
 
 - (IBAction)twitter ;
 
-@property(nonatomic ) int score;
+@property(nonatomic) int score;
 
 @end

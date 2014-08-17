@@ -7,7 +7,7 @@
 //
 
 #import "OptionViewController.h"
-#import "ViewController.h"
+//#import "ViewController.h"
 
 @interface OptionViewController ()
 
@@ -28,7 +28,25 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    // AVAudioPlayerオブジェクトのボリュームは0.0〜1.0の間で指定する
+    volume = 1.0;
+    isSound = YES;    
 }
+
+-(IBAction)soundButton{
+    //音がONになってたら押したときボリュームを０に。YESだったら逆。
+    if (isSound == YES) {
+        volume = 0;
+        [self.delegate volumeDown:volume];
+        isSound = NO;
+    }else if (isSound == NO){
+        volume = 1;
+        [self.delegate volumeDown:volume];
+        isSound = YES;
+    }
+    NSLog(@"オプションの画面で音量は...%d",volume);
+}
+
 
 - (IBAction)back{
     [self dismissViewControllerAnimated:YES completion:nil];

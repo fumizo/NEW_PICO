@@ -8,9 +8,23 @@
 
 #import <UIKit/UIKit.h>
 
-@interface OptionViewController : UIViewController
+@protocol  OptionViewControllerDelegate
 
+-(void)volumeDown:(int)volume2;  //
 
+@end
+
+@interface OptionViewController : UIViewController{
+    
+    int volume ;
+    BOOL isSound;
+    
+}
+
+@property (nonatomic,assign) id<OptionViewControllerDelegate> delegate;  //ここにかわりにやってくれる人をいれてね
 
 - (IBAction)back ;
+
+-(IBAction)soundButton;
+
 @end

@@ -29,20 +29,23 @@
  ==OK!== オプションから戻るとスコアが０になる
  ==OK!== やっぱり初期化できてなかった
  ゲームセンターつけたいよ！
- --半分OK--効果音を沢山つけたいよ！
+ ==OK!== 効果音を沢山つけたいよ！
  それを調節するよ（optionのビュー
- このゲーム面白くないよ
- （考えられる変えられること...スピード感、スコアのしくみ、Twitter)
  （広告つけたい）
  
+ 間違ってるときと合ってるときで音を変えたいのに変わらない
+ 
  バグ
- スワイプして丸がでなくなる
+ ＝＝＝＝＝オプションから戻ると丸が上にある＝＝＝＝＝＝
 
 
  ====デザイン面====
  部品{　ゲームオーバーででてくる８角形
  　　　　スコア画面{Twitterでシェアボタン、はじめからボタン、スコアのラベル}
  }
+ 
+ 合ってるときと間違ってるときで音
+ 遊び方、音量、フィードバック
 
 */
 
@@ -60,12 +63,22 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     NSLog(@"受け渡されたscoreは%d",score);
-    gameScoreLabel.text = [NSString stringWithFormat:@"%d",score];
+    gameScoreLabel.text = [NSString stringWithFormat:@"%d しゅ",score];
     
     //ぽん！
     NSString *ponPath = [[NSBundle mainBundle] pathForResource:@"pon01" ofType:@"mp3"] ;
     NSURL *ponUrl = [NSURL fileURLWithPath:ponPath] ;
     pon = [[AVAudioPlayer alloc] initWithContentsOfURL:ponUrl error:nil] ;
+    //ふりーーー
+    NSString *fleePath = [[NSBundle mainBundle] pathForResource:@"flee1" ofType:@"mp3"] ;
+    NSURL *fleeUrl = [NSURL fileURLWithPath:fleePath] ;
+    flee = [[AVAudioPlayer alloc] initWithContentsOfURL:fleeUrl error:nil] ;
+    //ごおおおん
+    NSString *gooonPath = [[NSBundle mainBundle] pathForResource:@"gooon" ofType:@"mp3"] ;
+    NSURL *gooonUrl = [NSURL fileURLWithPath:gooonPath] ;
+    gooon = [[AVAudioPlayer alloc] initWithContentsOfURL:gooonUrl error:nil] ;
+
+    [gooon play];
 
 }
 
@@ -75,6 +88,7 @@
 }
 
 - (IBAction)twitter{
+    [flee play];
     SLComposeViewController *twitterPostVC = [ SLComposeViewController composeViewControllerForServiceType:SLServiceTypeTwitter];
     //投稿する文章
     [twitterPostVC setInitialText:[NSString stringWithFormat:@"I WAS %dしゅ! #OCTAGON",score]];
@@ -84,10 +98,10 @@
 //    [alert show ];
     [twitterPostVC setCompletionHandler:^ (SLComposeViewControllerResult result) {
         if(result == SLComposeViewControllerResultDone ){
-            UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"" message:@"投稿を完了しました" delegate:nil cancelButtonTitle:@"ok" otherButtonTitles: nil];
+            UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"" message:@"投稿を完了しました！" delegate:nil cancelButtonTitle:@"OK" otherButtonTitles: nil];
             [alert show];
         }else{
-            UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"" message:@"投稿に失敗しました" delegate:nil cancelButtonTitle:@"ok" otherButtonTitles: nil];
+            UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"" message:@"投稿に失敗しました。" delegate:nil cancelButtonTitle:@"OK" otherButtonTitles: nil];
             [alert show];
 
         }

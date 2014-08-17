@@ -8,10 +8,11 @@
 #import <UIKit/UIKit.h>
 #import <AVFoundation/AVFoundation.h>
 #import "DMCrookedSwipeView.h"
+#import "OptionViewController.h"
 #define MARBLE_WIDTH 50
 #define MARBLE_HEIGHT 50
 
-@interface ViewController : UIViewController <DMCrookedSwipeViewDelegate> {
+@interface ViewController : UIViewController <DMCrookedSwipeViewDelegate,OptionViewControllerDelegate> {
     //代わりにできるマンだよ
     UIImage *maruView; //丸につける画像
     
@@ -34,7 +35,6 @@
     int score;        //スコア
     int plusScore;    //連続で成功したときプラスするスコア
     
-    
     UIImageView *firstView;  //最初の画面
     
     
@@ -46,6 +46,7 @@
     float countDown;
     
     BOOL firstTapFlag;
+    int gameStatusFlag;
     
     UIImageView *gameoverView;
     
@@ -54,12 +55,23 @@
     UIButton *optionButton;
     
     IBOutlet UILabel *gameTimerLabel;
+    
+    int level;
+    IBOutlet UILabel *lebelLabel;
+    
+    int volume;
+    
+    BOOL isStart; //アプリを起動して１回目のゲームなのか、二回以降なのか
 }
 //- (IBAction)option;
 
 -(void)add:(CGRect)rect;
 
 - (void) hanteiWithMarble:(DMCrookedSwipeView *)marbleForhantei; //わしこれできるよ
+
+-(void)volumeDown:(int)volume2; //わしこれできるよ
+
+@property(nonatomic) int volume;
 
 
 @end
