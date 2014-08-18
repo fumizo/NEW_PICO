@@ -83,6 +83,10 @@
 }
 
 -(IBAction)backToStart{
+    //gameoverになったことを通知
+    NSNotification *s = [NSNotification notificationWithName:@"gameOver" object:self userInfo:nil];
+    [[NSNotificationCenter defaultCenter] postNotification:s];
+    
     [self dismissViewControllerAnimated:YES completion:nil];
     [pon play];
 }

@@ -62,6 +62,7 @@
     int volume;
     
     BOOL isStart; //アプリを起動して１回目のゲームなのか、二回以降なのか
+    BOOL isGameOverFlag ;
 }
 //- (IBAction)option;
 

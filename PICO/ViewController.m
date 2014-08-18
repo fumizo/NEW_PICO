@@ -26,7 +26,6 @@
     plusScore = 1;
     score = 0;
     scoreLabel.text = @"0";
-//    gameStatusFlag = 0;
     
     /*--音--*/
     //ちりーん
@@ -70,6 +69,9 @@
     NSNotificationCenter *nc = [NSNotificationCenter defaultCenter];
     [nc addObserver:self selector:@selector(receive:) name:@"hoge" object:nil];
     
+    NSNotificationCenter *nc2 = [NSNotificationCenter defaultCenter];
+    [nc2 addObserver:self selector:@selector(receive:) name:@"gameOver" object:nil];
+    
     /*---timer---*/
     // timer = [NSTimer scheduledTimerW:；bcithTimeInterval:0.01 target:self selector:@selector(up) userInfo:nil repeats:YES];
     time = 0;
@@ -77,7 +79,7 @@
     
     [tirin play];
     
-    isStart = NO;
+    isStart = YES;
 }
 
 
@@ -91,7 +93,18 @@
     score = 0;
     scoreLabel.text = [NSString stringWithFormat:@"%dしゅ",score];
     
+    if(isStart){
+        [self settingView];
+        [self settingFirstView];
+    }
+    if(isGameOverFlag){
+        [self settingView];
+        isGameOverFlag = NO;
+    }
 
+}
+
+-(void)settingView{
     
     //画面を初期化する
     if(isGameOver == YES){
@@ -106,22 +119,25 @@
     }
     
     isGameOver = NO;
-
+    
     /*==丸つくる==*/
     //if(gameStatusFlag == 1){
-        [self makeLeftUpwordMaru];
-        [self makeLeftDownwordMaru];
-        [self makeRightUpwordMaru];
-        [self makeRightDownwordMaru];
+    [self makeLeftUpwordMaru];
+    [self makeLeftDownwordMaru];
+    [self makeRightUpwordMaru];
+    [self makeRightDownwordMaru];
     //}
     
     /*--gameover--*/
     gameoverView =[[UIImageView alloc] initWithFrame:CGRectMake (110,267,100,100)];
     gameoverView.image = [UIImage imageNamed:@"gameover.png"];
     gameoverView.tag = 1;
-    
 
-    if (isStart == NO) {
+}
+
+-(void)settingFirstView{
+    
+    if (isStart == YES) {
         /*--最初の画面--*/
         firstView =[[UIImageView alloc] initWithFrame:CGRectMake (0,0,320,568)];
         firstView.image = [UIImage imageNamed:@"Noctagon_first.png"];
@@ -139,9 +155,7 @@
         [optionButton addTarget:self
                          action:@selector(hoge:) forControlEvents:UIControlEventTouchUpInside];
         [self.view addSubview:optionButton];
-        
-//        isStart = YES;
-        }
+    }
 }
 
 
@@ -280,6 +294,9 @@
     }
 }
 
+-(void)gameOver:(NSNotification *)center{
+    isGameOverFlag = YES;
+}
 
 -(void)receive:(NSNotification *)center
 {
@@ -346,7 +363,7 @@
     [[self presentingViewController] dismissViewControllerAnimated:YES completion:nil];
     [firstView removeFromSuperview];
     [optionButton removeFromSuperview];
-    isStart = YES;
+    isStart = NO;
 }
 
 
