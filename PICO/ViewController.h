@@ -14,16 +14,12 @@
 
 @interface ViewController : UIViewController <DMCrookedSwipeViewDelegate,OptionViewControllerDelegate> {
     //代わりにできるマンだよ
-    UIImage *maruView; //丸につける画像
     
     IBOutlet UIImageView *octagon;
     
-    
     int colorNum;  //色に番号つけといて、すみからーと合わせる
-
-    
     int torf; //すみと丸が合ってたら１、間違ってたら０
-    
+    /*--音--*/
     AVAudioPlayer *tirin;
     AVAudioPlayer *don;
     AVAudioPlayer *dodon;
@@ -35,36 +31,43 @@
     int score;        //スコア
     int plusScore;    //連続で成功したときプラスするスコア
     
-    UIImageView *firstView;  //最初の画面
-    
-    
-    NSNumber *position;  //position
-    int *intposition;
-    
-    float time;
+    /*--time--*/
+    IBOutlet UILabel *gameTimerLabel;
     NSTimer *gameoverTimer;
     float countDown;
-    
-    BOOL firstTapFlag;
-    int gameStatusFlag;
-    
-    UIImageView *gameoverView;
-    
-    BOOL isGameOver;  //gameoverしたら丸をたさないようにする
-    BOOL isOk;  //あってたらYES
+    float time;
+    //制限時間からtimeを引いたのがcountDown
+    BOOL firstTapFlag;       //最初にタップした瞬間からゲームをはじめる(gameoverのためのtimerを動かす)
+
+    /*--最初のタップで消える画面--*/
+    UIImageView *firstView;  //最初の画面
     UIButton *optionButton;
+
+    /*--gameOver--*/
+    UIImageView *gameoverView;  //gameoverでういーーんってでてくるやつ
+    BOOL isGameOver;  //gameoverしたら丸をたさないようにする
+
     
-    IBOutlet UILabel *gameTimerLabel;
+    NSNumber *position;      //position
+    int *intposition;        //nsnunberをintに変換
+    
+    BOOL isOk;        //あってたらYESにする
     
     int level;
     IBOutlet UILabel *lebelLabel;
     
     int volume;
     
-    BOOL isStart; //アプリを起動して１回目のゲームなのか、二回以降なのか
+    /*
+    ゲームオーバーになったよっていうのをback to startで通知してゲームオーバーになったらisgameoverフラグをyesにして、１回丸をつくったらまたnoにして、
+    view didload でisStartをyesにして、１回タップで消したらnoにして、
+    isStartか、isGameoverか分けてる。
+     isStartだったら、全部つくって、isgameoverflagだったら、最初のビューと歯車はつくらない
+     */
+    BOOL isStart;          //アプリを起動して１回目のゲームなのか、二回以降なのか
     BOOL isGameOverFlag ;
+    
 }
-//- (IBAction)option;
 
 -(void)add:(CGRect)rect;
 

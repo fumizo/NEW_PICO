@@ -131,12 +131,12 @@
         NSNotification *s = [NSNotification notificationWithName:@"hoge" object:self userInfo:@{@"score": @"1"}];
         [[NSNotificationCenter defaultCenter] postNotification:s];
 
-    }else{
-        //間違えたっていう通知を送る
-        NSNotification *dame = [NSNotification notificationWithName:@"hoge" object:self userInfo:@{@"dame": @"1"}];
-        [[NSNotificationCenter defaultCenter] postNotification:dame];
-
-        torf = 0;
+//    }else{
+//        //間違えたっていう通知を送る
+//        NSNotification *dame = [NSNotification notificationWithName:@"hoge" object:self userInfo:@{@"dame": @"1"}];
+//        [[NSNotificationCenter defaultCenter] postNotification:dame];
+//
+//        torf = 0;
     }
     
     NSDictionary *dic = [NSDictionary dictionaryWithObject:sender.view forKey:@"view"];

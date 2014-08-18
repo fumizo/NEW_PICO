@@ -53,15 +53,7 @@
     NSURL *kanUrl = [NSURL fileURLWithPath:kanPath] ;
     kan = [[AVAudioPlayer alloc] initWithContentsOfURL:kanUrl error:nil] ;
 
-    
-    /*--octagon--*/
-    //    randomOctagon = arc4random_uniform(2);
-    //    NSLog(@"randomOctagon is...%d",randomOctagon);
-    //    if (randomOctagon == 0 ) {
-    //        octagon.image = [UIImage imageNamed:@"Noctagon().png"];
-    //    }else if (randomOctagon == 1){
-    //        octagon.image = [UIImage imageNamed:@"Noctagon()2.png"];
-    //    }
+    //ゲーム画面の８角形の画像
     octagon.image = [UIImage imageNamed:@"Noctagon().png"];
     
     // 通知の受け取り登録("TestPost"という通知名の通知を受け取る)
@@ -70,7 +62,7 @@
     [nc addObserver:self selector:@selector(receive:) name:@"hoge" object:nil];
     
     NSNotificationCenter *nc2 = [NSNotificationCenter defaultCenter];
-    [nc2 addObserver:self selector:@selector(receive:) name:@"gameOver" object:nil];
+    [nc2 addObserver:self selector:@selector(gameOver:) name:@"gameOver" object:nil];
     
     /*---timer---*/
     // timer = [NSTimer scheduledTimerW:；bcithTimeInterval:0.01 target:self selector:@selector(up) userInfo:nil repeats:YES];
@@ -80,6 +72,7 @@
     [tirin play];
     
     isStart = YES;
+
 }
 
 
@@ -93,15 +86,16 @@
     score = 0;
     scoreLabel.text = [NSString stringWithFormat:@"%dしゅ",score];
     
-    if(isStart){
+    if(isStart == YES){
         [self settingView];
         [self settingFirstView];
     }
-    if(isGameOverFlag){
+    if(isGameOverFlag == YES){
         [self settingView];
         isGameOverFlag = NO;
     }
-
+    
+    
 }
 
 -(void)settingView{
@@ -121,12 +115,10 @@
     isGameOver = NO;
     
     /*==丸つくる==*/
-    //if(gameStatusFlag == 1){
     [self makeLeftUpwordMaru];
     [self makeLeftDownwordMaru];
     [self makeRightUpwordMaru];
     [self makeRightDownwordMaru];
-    //}
     
     /*--gameover--*/
     gameoverView =[[UIImageView alloc] initWithFrame:CGRectMake (110,267,100,100)];
@@ -328,27 +320,20 @@
         score = score + p;
         NSLog(@"score is...%d",score);
         isOk = YES;
-    }else if ([center.userInfo objectForKey:@"dame"]){
-        isOk = NO;
-    }
-    
-    [self swipeSounds];
+        [self swipeSounds];
 
+//    }else if ([center.userInfo objectForKey:@"dame"]){
+//        isOk = NO;
+    }
 }
 
 -(void) swipeSounds{
     if (isOk == YES) {
-        //[UIView animateWithDuration:0.6f delay:0.0f options:UIViewAnimationOptionCurveEaseIn animations:^ {
-
-        //[UIView animateWithDuration:0.3F animations:^{
-            [don play];
-        //}];
-        
+        [don play];
     }else if (isOk == NO){
         [kan play];
     }
 }
-
 
 
 //タップで消す
