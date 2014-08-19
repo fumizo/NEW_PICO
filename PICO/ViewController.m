@@ -7,7 +7,6 @@
 //
 
 #import "ViewController.h"
-//#import "DMCrookedSwipeView.h"
 #import "GameOverViewController.h"
 #import "OptionViewController.h"
 
@@ -81,6 +80,7 @@
     [gameoverView removeFromSuperview];
     
     level = 1;
+    lebelLabel.text = [NSString stringWithFormat:@"%d幕",level];
     time = 0;
     firstTapFlag = YES;
     score = 0;
@@ -152,6 +152,7 @@
 
 
 -(void)up{
+    
     time +=0.01f;
 //    NSLog(@"time ======> %f", time);
     
@@ -162,23 +163,44 @@
                 gameTimerLabel.text = [NSString stringWithFormat:@"%0.2f",countDown];
             }else{
                 gameTimerLabel.text = @"0.00";
+                [self gameOverAnimetion];
             }
 
             break;
         case 2:
-            countDown = 1.0f - time;
+            countDown = 1.2f - time;
             if (countDown >= 0 ) {
                 gameTimerLabel.text = [NSString stringWithFormat:@"%0.2f",countDown];
             }else{
                 gameTimerLabel.text = @"0.00";
+                [self gameOverAnimetion];
             }
             break;
         case 3:
+            countDown = 0.7f - time;
+            if (countDown >= 0 ) {
+                gameTimerLabel.text = [NSString stringWithFormat:@"%0.2f",countDown];
+            }else{
+                gameTimerLabel.text = @"0.00";
+                [self gameOverAnimetion];
+            }
+            break;
+        case 4:
             countDown = 0.5f - time;
             if (countDown >= 0 ) {
                 gameTimerLabel.text = [NSString stringWithFormat:@"%0.2f",countDown];
             }else{
                 gameTimerLabel.text = @"0.00";
+                [self gameOverAnimetion];
+            }
+            break;
+        case 5:
+            countDown = 0.3f - time;
+            if (countDown >= 0 ) {
+                gameTimerLabel.text = [NSString stringWithFormat:@"%0.2f",countDown];
+            }else{
+                gameTimerLabel.text = @"0.00";
+                [self gameOverAnimetion];
             }
             break;
             
@@ -186,90 +208,32 @@
             break;
     }
     
-    [self makeLebel]; //レベルがあげる
-    lebelLabel.text = [NSString stringWithFormat:@"%d幕",level];
+    [self makeLevel]; //レベルがあげる
+}
 
-    switch (level) {
-        case 1:
-            if (time >= 1.5) {
-                // game over
-                isGameOver = YES;
-                NSLog(@"gameover");
-                [dodon play];
-                [gameoverTimer invalidate];  //１回しか呼ばないように
-                
-                //[self.view addSubview:gameoverView]; //gameoverを表示
-                
-                [UIView animateWithDuration:2.5f animations:^{
-                    //animateWithDurationがアニメーションの速度
-                    // アニメーションをする処理
-                   gameoverView =[[UIImageView alloc] initWithFrame:CGRectMake (110,267,100,100)];
-                    gameoverView.image = [UIImage imageNamed:@"Gameover.png"];
-                    [self.view addSubview:gameoverView];
-                    gameoverView.transform = CGAffineTransformMakeScale(8.5,8.5);
-                }completion:^(BOOL finished){
-                                     // アニメーションが終わった後実行する処理
-                                     //画面遷移する
-                                     [self performSegueWithIdentifier:@"gameOver" sender:nil];
-                                     
-                                 }];
-                }
-            
-            
-            break;
-        case 2:
-            if (time >= 1.0) {
-                // game over
-                isGameOver = YES;
-                NSLog(@"gameover");
-                [dodon play];
-                [gameoverTimer invalidate];  //１回しか呼ばないように
-                
-                gameoverView =[[UIImageView alloc] initWithFrame:CGRectMake (110,267,100,100)];
-                gameoverView.image = [UIImage imageNamed:@"Gameover.png"];
-                [self.view addSubview:gameoverView]; //gameoverを表示
-                [UIView animateWithDuration:2.5f animations:^{
-                    //animateWithDurationがアニメーションの速度
-                    // アニメーションをする処理
-                    gameoverView.transform = CGAffineTransformMakeScale(8.5,8.5);
-                }
-                                 completion:^(BOOL finished){
-                                     // アニメーションが終わった後実行する処理
-                                     //画面遷移する
-                                     [self performSegueWithIdentifier:@"gameOver" sender:nil];
-                                     
-                                 }];
-            }
-            break;
-        case 3:
-            if (time >= 0.5) {
-                // game over
-                isGameOver = YES;
-                NSLog(@"gameover");
-                [dodon play];
-                [gameoverTimer invalidate];  //１回しか呼ばないように
-                
-                gameoverView =[[UIImageView alloc] initWithFrame:CGRectMake (110,267,100,100)];
-                gameoverView.image = [UIImage imageNamed:@"Gameover.png"];
-                [self.view addSubview:gameoverView]; //gameoverを表示
-                [UIView animateWithDuration:2.5 animations:^{
-                    //animateWithDurationがアニメーションの速度
-                    // アニメーションをする処理
-                    gameoverView.transform = CGAffineTransformMakeScale(8.5,8.5);
-                }
-                                 completion:^(BOOL finished){
-                                     // アニメーションが終わった後実行する
-                                     //画面遷移する
-                                     [self performSegueWithIdentifier:@"gameOver" sender:nil];
-                                     
-                                 }];
-            }
-            break;
-            
-        default:
-            break;
-    }
-//    NSLog(@"lebel is ...%d",level);
+-(void)gameOverAnimetion{
+    
+    // game over
+    isGameOver = YES;
+    NSLog(@"gameover");
+    [dodon play];
+    [gameoverTimer invalidate];  //１回しか呼ばないように
+    
+    //[self.view addSubview:gameoverView]; //gameoverを表示
+    
+    [UIView animateWithDuration:2.5f animations:^{
+        //animateWithDurationがアニメーションの速度
+        // アニメーションをする処理
+        gameoverView =[[UIImageView alloc] initWithFrame:CGRectMake (110,267,100,100)];
+        gameoverView.image = [UIImage imageNamed:@"Gameover.png"];
+        [self.view addSubview:gameoverView];
+        gameoverView.transform = CGAffineTransformMakeScale(8.5,8.5);
+    }completion:^(BOOL finished){
+        // アニメーションが終わった後実行する処理
+        //画面遷移する
+        [self performSegueWithIdentifier:@"gameOver" sender:nil];
+        
+    }];
 
 }
 
@@ -453,19 +417,25 @@ swipeView.alpha = 0.0;
 }
 
 //scoreが増えるとレベルがあがる
--(void)makeLebel{
+-(void)makeLevel{
     if (score >= 10 && score <=20) {
         level = 2;
     }else if (score >= 20 && score <= 30){
         level = 3;
+    }else if (score >= 30 && score <= 45){
+        level = 4;
+    }else if (score >= 45 && score <= 100){
+        level = 5;
     }
+    lebelLabel.text = [NSString stringWithFormat:@"%d幕",level];
+
 }
 
 
 /*----マーブル作る----*/
 - (void)makeLeftUpwordMaru{
     
-    [UIView animateWithDuration:0.6f delay:0.5f options:UIViewAnimationOptionCurveEaseIn animations:^ {
+    [UIView animateWithDuration:0.54f delay:0.4f options:UIViewAnimationOptionCurveEaseIn animations:^ {
         //１秒かけてアニメーション。0.5秒後からアニメーション
         //^と^の間はブロック構文！ブロック構文は、１回流れとは別に動かす構文！コールバックとセットのことが多いよ。流れからブロック！
         //アニメーションで変化させたい値を設定する（最終的に変更したい値）
@@ -501,7 +471,7 @@ swipeView.alpha = 0.0;
 
 - (void)makeRightUpwordMaru
 {
-    [UIView animateWithDuration:0.6f delay:0.5f options:UIViewAnimationOptionCurveEaseIn animations:^ {
+    [UIView animateWithDuration:0.54f delay:0.4f options:UIViewAnimationOptionCurveEaseIn animations:^ {
         //１秒かけてアニメーション。0.5秒後からアニメーション
         //^と^の間はブロック構文！ブロック構文は、１回流れとは別に動かす構文！コールバックとセットのことが多いよ。流れからブロック！
         //アニメーションで変化させたい値を設定する（最終的に変更したい値）
@@ -534,7 +504,7 @@ swipeView.alpha = 0.0;
 }
 
 - (void)makeLeftDownwordMaru{
-    [UIView animateWithDuration:0.6f delay:0.5f options:UIViewAnimationOptionCurveEaseIn animations:^ {
+    [UIView animateWithDuration:0.54f delay:0.4f options:UIViewAnimationOptionCurveEaseIn animations:^ {
         //１秒かけてアニメーション。0.5秒後からアニメーション
         //^と^の間はブロック構文！ブロック構文は、１回流れとは別に動かす構文！コールバックとセットのことが多いよ。流れからブロック！
         //アニメーションで変化させたい値を設定する（最終的に変更したい値）
@@ -569,7 +539,7 @@ swipeView.alpha = 0.0;
 
 - (void)makeRightDownwordMaru
 {
-    [UIView animateWithDuration:0.6f delay:0.5f options:UIViewAnimationOptionCurveEaseIn animations:^ {
+    [UIView animateWithDuration:0.54f delay:0.4f options:UIViewAnimationOptionCurveEaseIn animations:^ {
         //１秒かけてアニメーション。0.5秒後からアニメーション
         //^と^の間はブロック構文！ブロック構文は、１回流れとは別に動かす構文！コールバックとセットのことが多いよ。流れからブロック！
         //アニメーションで変化させたい値を設定する（最終的に変更したい値）

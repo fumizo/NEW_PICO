@@ -14,6 +14,7 @@
 
 @implementation GameOverViewController
 @synthesize score;
+@synthesize level;
 
 /*--------ふみこ4日目のやること--------*/
 /*
@@ -63,6 +64,8 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     NSLog(@"受け渡されたscoreは%d",score);
+    NSLog(@"level is %d幕",level);
+
     gameScoreLabel.text = [NSString stringWithFormat:@"%d しゅ",score];
     
     //ぽん！

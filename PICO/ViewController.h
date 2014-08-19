@@ -9,6 +9,7 @@
 #import <AVFoundation/AVFoundation.h>
 #import "DMCrookedSwipeView.h"
 #import "OptionViewController.h"
+#import "GameOverViewController.h"
 #define MARBLE_WIDTH 50
 #define MARBLE_HEIGHT 50
 

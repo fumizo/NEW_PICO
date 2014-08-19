@@ -9,11 +9,13 @@
 #import <UIKit/UIKit.h>
 #import <Social/Social.h>
 #import <AVFoundation/AVFoundation.h>
+#import "ViewController.h"
 
 
 @interface GameOverViewController : UIViewController{
     IBOutlet UILabel *gameScoreLabel;
     int score;
+    int level;
     
     AVAudioPlayer *pon;
     AVAudioPlayer *flee;
@@ -27,5 +29,6 @@
 - (IBAction)twitter ;
 
 @property(nonatomic) int score;
+@property(nonatomic) int level;
 
 @end
