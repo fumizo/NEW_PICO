@@ -21,6 +21,7 @@
     AVAudioPlayer *flee;
     AVAudioPlayer *gooon;
 
+    BOOL isSound;
 }
 
 

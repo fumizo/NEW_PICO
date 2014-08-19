@@ -590,6 +590,12 @@ swipeView.alpha = 0.0;
     dodon.volume *= volume2;
     pon.volume *= volume2;
     kan.volume *= volume2;
+    
+    if(volume2 == 0){
+    //gameoverのviewに音はなしになったよの通知を送る
+    NSNotification *sound = [NSNotification notificationWithName:@"sound" object:self userInfo:nil];
+    [[NSNotificationCenter defaultCenter] postNotification:sound];
+    }
 }
 
 

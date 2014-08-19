@@ -80,9 +80,17 @@
     NSString *gooonPath = [[NSBundle mainBundle] pathForResource:@"gooon" ofType:@"mp3"] ;
     NSURL *gooonUrl = [NSURL fileURLWithPath:gooonPath] ;
     gooon = [[AVAudioPlayer alloc] initWithContentsOfURL:gooonUrl error:nil] ;
+    
+    //音についての通知
+    NSNotificationCenter *sound = [NSNotificationCenter defaultCenter];
+    [sound addObserver:self selector:@selector(sound:) name:@"sound" object:nil];
+    
+    if(isSound != NO)  [gooon play];
 
-    [gooon play];
+}
 
+-(void)sound:(NSNotification *)center{
+    isSound = NO;
 }
 
 -(IBAction)backToStart{
@@ -91,11 +99,11 @@
     [[NSNotificationCenter defaultCenter] postNotification:s];
     
     [self dismissViewControllerAnimated:YES completion:nil];
-    [pon play];
+    if(isSound != NO)  [pon play];
 }
 
 - (IBAction)twitter{
-    [flee play];
+    if(isSound != NO ) [flee play];
     SLComposeViewController *twitterPostVC = [ SLComposeViewController composeViewControllerForServiceType:SLServiceTypeTwitter];
     //投稿する文章
     [twitterPostVC setInitialText:[NSString stringWithFormat:@"I WAS %dしゅ! #OCTAGON",score]];
