@@ -256,7 +256,6 @@
 
 -(void)receive:(NSNotification *)center
 {
-//    [don play];
     time = 0;
     
     if (firstTapFlag) {
@@ -340,6 +339,7 @@
     }
     return nil;
 }
+
 /*----角の色----*/
 //右上　yellow (3)
 //右下　pink   (2)
@@ -584,6 +584,7 @@ swipeView.alpha = 0.0;
 
 
 -(void)volumeDown:(int)volume2{
+    /*
     NSLog(@"受け取ったvolume is...%d",volume2);
     tirin.volume *= volume2;
     don.volume *= volume2;
@@ -591,11 +592,13 @@ swipeView.alpha = 0.0;
     pon.volume *= volume2;
     kan.volume *= volume2;
     
+    NSLog(@"ゲーム画面でのvolume is...%d",volume2);
     if(volume2 == 0){
     //gameoverのviewに音はなしになったよの通知を送る
     NSNotification *sound = [NSNotification notificationWithName:@"sound" object:self userInfo:nil];
     [[NSNotificationCenter defaultCenter] postNotification:sound];
     }
+     */
 }
 
 
