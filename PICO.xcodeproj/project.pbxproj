@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4F1892CC19A78014009B15D0 /* res_177918524.png in Resources */ = {isa = PBXBuildFile; fileRef = 4F1892CB19A78014009B15D0 /* res_177918524.png */; };
 		4F3C8583198622CB00E843AC /* Noctagon()2.png in Resources */ = {isa = PBXBuildFile; fileRef = 4F3C8581198622CB00E843AC /* Noctagon()2.png */; };
 		4F3C85871986242200E843AC /* Noctagon_first.png in Resources */ = {isa = PBXBuildFile; fileRef = 4F3C85861986242200E843AC /* Noctagon_first.png */; };
 		4F3C858C198A726F00E843AC /* NmarumaruBlue.png in Resources */ = {isa = PBXBuildFile; fileRef = 4F3C8588198A726F00E843AC /* NmarumaruBlue.png */; };
@@ -82,6 +83,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4F1892CB19A78014009B15D0 /* res_177918524.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = res_177918524.png; path = ../../res_177918524.png; sourceTree = "<group>"; };
 		4F3C8581198622CB00E843AC /* Noctagon()2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Noctagon()2.png"; sourceTree = "<group>"; };
 		4F3C85861986242200E843AC /* Noctagon_first.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Noctagon_first.png; sourceTree = "<group>"; };
 		4F3C8588198A726F00E843AC /* NmarumaruBlue.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = NmarumaruBlue.png; sourceTree = "<group>"; };
@@ -183,6 +185,7 @@
 		4F8C4C79199C9B8700C375F4 /* pic4pico */ = {
 			isa = PBXGroup;
 			children = (
+				4F1892CB19A78014009B15D0 /* res_177918524.png */,
 				4F8C4C7A199C9B8800C375F4 /* lgp01a201304151300 のコピー.png */,
 				4F8C4C7B199C9B8800C375F4 /* lgp01a201304151300.jpg */,
 				4F8C4C7C199C9B8800C375F4 /* lgp01a201304151400 のコピー.jpg */,
@@ -446,6 +449,7 @@
 				4F8C4CA2199C9B8800C375F4 /* kumo.png in Resources */,
 				4F8C4C9B199C9B8800C375F4 /* lgp01a201401150000.jpg in Resources */,
 				4F8C4C96199C9B8800C375F4 /* lgp01a201304151900 のコピー.png in Resources */,
+				4F1892CC19A78014009B15D0 /* res_177918524.png in Resources */,
 				4F3C8583198622CB00E843AC /* Noctagon()2.png in Resources */,
 				4F8C4CCD199DBDE400C375F4 /* flee1.mp3 in Resources */,
 				4FB97DFF199B3ADD00BF12EF /* Noctagon().png in Resources */,
