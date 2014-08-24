@@ -19,12 +19,12 @@
     int volume ;
     BOOL isSound;
     
+    UIButton *soundButtonOFF;
+    UIImage *buttonImg;
 }
 
 @property (nonatomic,assign) id<OptionViewControllerDelegate> delegate;  //ここにかわりにやってくれる人をいれてね
 
 - (IBAction)back ;
-
--(IBAction)soundButton;
 
 @end

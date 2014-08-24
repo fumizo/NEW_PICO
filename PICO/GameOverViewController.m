@@ -94,16 +94,21 @@
 }
 
 -(IBAction)backToStart{
+    [pon play];
+    if(isSound == NO ) pon.volume = 0;
+
     //gameoverになったことを通知
     NSNotification *s = [NSNotification notificationWithName:@"gameOver" object:self userInfo:nil];
     [[NSNotificationCenter defaultCenter] postNotification:s];
     
     [self dismissViewControllerAnimated:YES completion:nil];
-    if(isSound != NO)  [pon play];
+    if(isSound != NO) pon.volume =0;
 }
 
 - (IBAction)twitter{
-    if(isSound != NO ) [flee play];
+    [flee play];
+
+    if(isSound == NO ) flee.volume = 0;
     SLComposeViewController *twitterPostVC = [ SLComposeViewController composeViewControllerForServiceType:SLServiceTypeTwitter];
     //投稿する文章
     [twitterPostVC setInitialText:[NSString stringWithFormat:@"I WAS %dしゅ! #OCTAGON",score]];

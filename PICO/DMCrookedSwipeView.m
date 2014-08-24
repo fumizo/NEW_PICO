@@ -321,7 +321,7 @@
             
             if (swipedView.tag == 1) {
                
-                [UIView animateWithDuration:0.8f animations:^{
+                [UIView animateWithDuration:0.7f animations:^{
                     //animateWithDurationがアニメーションの速度
                     // アニメーションをする処理
                     swipedView.alpha = 0;
@@ -335,7 +335,7 @@
                                  }];
                 
             }else if (swipedView.tag == 2){
-                [UIView animateWithDuration:0.8f animations:^{
+                [UIView animateWithDuration:0.7f animations:^{
                     //animateWithDurationがアニメーションの速度
                     swipedView.alpha = 0;
 
@@ -349,7 +349,7 @@
                                  }];
                 
             }else if (swipedView.tag == 3){
-                [UIView animateWithDuration:0.8f animations:^{
+                [UIView animateWithDuration:0.7f animations:^{
                     //animateWithDurationがアニメーションの速度
                     // アニメーションをする処理
                     swipedView.alpha = 0;
@@ -363,7 +363,7 @@
                                  }];
                 
             }else if (swipedView.tag == 4){
-                [UIView animateWithDuration:0.8f animations:^{
+                [UIView animateWithDuration:0.7f animations:^{
                     //animateWithDurationがアニメーションの速度
                     // アニメーションをする処理
                     swipedView.alpha = 0;

@@ -33,7 +33,7 @@
     tirin = [[AVAudioPlayer alloc] initWithContentsOfURL:url error:nil] ;
 
     //っどん
-    NSString *donPath = [[NSBundle mainBundle] pathForResource:@"don01" ofType:@"mp3"] ;
+    NSString *donPath = [[NSBundle mainBundle] pathForResource:@"N_don01" ofType:@"mp3"] ;
     NSURL *donUrl = [NSURL fileURLWithPath:donPath] ;
     don = [[AVAudioPlayer alloc] initWithContentsOfURL:donUrl error:nil] ;
 
@@ -48,7 +48,7 @@
     pon = [[AVAudioPlayer alloc] initWithContentsOfURL:ponUrl error:nil] ;
 
     //かん
-    NSString *kanPath = [[NSBundle mainBundle] pathForResource:@"kannn" ofType:@"mp3"] ;
+    NSString *kanPath = [[NSBundle mainBundle] pathForResource:@"N_kannn" ofType:@"mp3"] ;
     NSURL *kanUrl = [NSURL fileURLWithPath:kanPath] ;
     kan = [[AVAudioPlayer alloc] initWithContentsOfURL:kanUrl error:nil] ;
 
@@ -221,13 +221,13 @@
     
     //[self.view addSubview:gameoverView]; //gameoverを表示
     
-    [UIView animateWithDuration:2.5f animations:^{
+    [UIView animateWithDuration:2.3f animations:^{
         //animateWithDurationがアニメーションの速度
         // アニメーションをする処理
         gameoverView =[[UIImageView alloc] initWithFrame:CGRectMake (110,267,100,100)];
         gameoverView.image = [UIImage imageNamed:@"Gameover.png"];
         [self.view addSubview:gameoverView];
-        gameoverView.transform = CGAffineTransformMakeScale(8.5,8.5);
+        gameoverView.transform = CGAffineTransformMakeScale(8.05,8.05);
     }completion:^(BOOL finished){
         // アニメーションが終わった後実行する処理
         //画面遷移する
@@ -584,7 +584,7 @@ swipeView.alpha = 0.0;
 
 
 -(void)volumeDown:(int)volume2{
-    /*
+    
     NSLog(@"受け取ったvolume is...%d",volume2);
     tirin.volume *= volume2;
     don.volume *= volume2;
@@ -598,7 +598,6 @@ swipeView.alpha = 0.0;
     NSNotification *sound = [NSNotification notificationWithName:@"sound" object:self userInfo:nil];
     [[NSNotificationCenter defaultCenter] postNotification:sound];
     }
-     */
 }
 
 
