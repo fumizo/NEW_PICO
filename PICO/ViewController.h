@@ -20,6 +20,7 @@
     
     int colorNum;  //色に番号つけといて、すみからーと合わせる
     int torf; //すみと丸が合ってたら１、間違ってたら０
+    
     /*--音--*/
     AVAudioPlayer *tirin;
     AVAudioPlayer *don;

@@ -26,6 +26,9 @@
     score = 0;
     scoreLabel.text = @"0";
     
+    NSError *error = nil;
+    [[AVAudioSession sharedInstance] setCategory:AVAudioSessionCategoryPlayback error:&error];
+    
     /*--音--*/
     //ちりーん
     NSString *path = [[NSBundle mainBundle] pathForResource:@"bell01" ofType:@"mp3"] ;

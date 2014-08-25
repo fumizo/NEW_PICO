@@ -68,6 +68,9 @@
 
     gameScoreLabel.text = [NSString stringWithFormat:@"     %d",score];
     
+    NSError *error = nil;
+    [[AVAudioSession sharedInstance] setCategory:AVAudioSessionCategoryPlayback error:&error];
+    
     //ぽん！
     NSString *ponPath = [[NSBundle mainBundle] pathForResource:@"pon01" ofType:@"mp3"] ;
     NSURL *ponUrl = [NSURL fileURLWithPath:ponPath] ;
