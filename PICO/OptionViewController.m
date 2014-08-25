@@ -48,6 +48,11 @@
                      action:@selector(sound:) forControlEvents:UIControlEventTouchUpInside];
         soundButtonOFF.frame = CGRectMake(200, 61, 100, 100);   //位置、大きさ
     [self.view addSubview:soundButtonOFF];
+    
+    NSString *donPath = [[NSBundle mainBundle] pathForResource:@"N_don01" ofType:@"mp3"] ;
+    NSURL *donUrl = [NSURL fileURLWithPath:donPath] ;
+    don = [[AVAudioPlayer alloc] initWithContentsOfURL:donUrl error:nil] ;
+
 }
 
 -(void)sound:(UIButton *)button{
@@ -71,6 +76,8 @@
         [soundButtonOFF setBackgroundImage:buttonImg forState:UIControlStateNormal];  // 画像をセットする
         [self.delegate volumeDown:volume];
         isSound = YES;
+        [don play];
+
     }
 }
 

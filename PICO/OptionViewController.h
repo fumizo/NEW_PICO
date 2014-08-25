@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <AVFoundation/AVFoundation.h>
 
 @protocol  OptionViewControllerDelegate
 
@@ -21,6 +22,8 @@
     
     UIButton *soundButtonOFF;
     UIImage *buttonImg;
+    
+    AVAudioPlayer *don;
 }
 
 @property (nonatomic,assign) id<OptionViewControllerDelegate> delegate;  //ここにかわりにやってくれる人をいれてね

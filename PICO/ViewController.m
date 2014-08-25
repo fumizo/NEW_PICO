@@ -161,9 +161,13 @@
             countDown = 1.5f - time;
             if (countDown >= 0 ) {
                 gameTimerLabel.text = [NSString stringWithFormat:@"%0.2f",countDown];
+                if(countDown <= 0.2){
+                    gameTimerLabel.textColor = [UIColor redColor];
+                }
             }else{
                 gameTimerLabel.text = @"0.00";
                 [self gameOverAnimetion];
+                gameTimerLabel.textColor = [UIColor redColor];
             }
 
             break;
@@ -171,26 +175,38 @@
             countDown = 1.2f - time;
             if (countDown >= 0 ) {
                 gameTimerLabel.text = [NSString stringWithFormat:@"%0.2f",countDown];
+                if(countDown <= 0.2){
+                    gameTimerLabel.textColor = [UIColor redColor];
+                }
             }else{
                 gameTimerLabel.text = @"0.00";
                 [self gameOverAnimetion];
+                gameTimerLabel.textColor = [UIColor redColor];
             }
             break;
         case 3:
             countDown = 0.7f - time;
             if (countDown >= 0 ) {
                 gameTimerLabel.text = [NSString stringWithFormat:@"%0.2f",countDown];
+                if(countDown <= 0.2){
+                    gameTimerLabel.textColor = [UIColor redColor];
+                }
             }else{
                 gameTimerLabel.text = @"0.00";
                 [self gameOverAnimetion];
+                gameTimerLabel.textColor = [UIColor redColor];
             }
             break;
         case 4:
             countDown = 0.5f - time;
             if (countDown >= 0 ) {
                 gameTimerLabel.text = [NSString stringWithFormat:@"%0.2f",countDown];
+                if(countDown <= 0.2){
+                    gameTimerLabel.textColor = [UIColor redColor];
+                }
             }else{
                 gameTimerLabel.text = @"0.00";
+                gameTimerLabel.textColor = [UIColor redColor];
                 [self gameOverAnimetion];
             }
             break;
@@ -198,8 +214,12 @@
             countDown = 0.3f - time;
             if (countDown >= 0 ) {
                 gameTimerLabel.text = [NSString stringWithFormat:@"%0.2f",countDown];
+                if(countDown <= 0.2){
+                    gameTimerLabel.textColor = [UIColor redColor];
+                }
             }else{
                 gameTimerLabel.text = @"0.00";
+                gameTimerLabel.textColor = [UIColor redColor];
                 [self gameOverAnimetion];
             }
             break;

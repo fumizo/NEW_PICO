@@ -86,29 +86,32 @@
     [sound addObserver:self selector:@selector(sound:) name:@"sound" object:nil];
     
     if(isSound != NO)  [gooon play];
-
+    
 }
+
 
 -(void)sound:(NSNotification *)center{
     isSound = NO;
 }
 
 -(IBAction)backToStart{
-    [pon play];
     if(isSound == NO ) pon.volume = 0;
+    
+    [pon play];
 
     //gameoverになったことを通知
     NSNotification *s = [NSNotification notificationWithName:@"gameOver" object:self userInfo:nil];
     [[NSNotificationCenter defaultCenter] postNotification:s];
     
     [self dismissViewControllerAnimated:YES completion:nil];
-    if(isSound != NO) pon.volume =0;
 }
 
 - (IBAction)twitter{
-    [flee play];
-
     if(isSound == NO ) flee.volume = 0;
+
+    
+    [flee play];
+    
     SLComposeViewController *twitterPostVC = [ SLComposeViewController composeViewControllerForServiceType:SLServiceTypeTwitter];
     //投稿する文章
     [twitterPostVC setInitialText:[NSString stringWithFormat:@"I WAS %dしゅ! #OCTAGON",score]];

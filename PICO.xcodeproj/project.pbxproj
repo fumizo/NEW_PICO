@@ -19,6 +19,7 @@
 		4F1892EB19AA6539009B15D0 /* N_don01.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4F1892E319AA6539009B15D0 /* N_don01.mp3 */; };
 		4F1892EC19AA6539009B15D0 /* N_kannn.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4F1892E419AA6539009B15D0 /* N_kannn.mp3 */; };
 		4F1892ED19AA6539009B15D0 /* pon01.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4F1892E519AA6539009B15D0 /* pon01.mp3 */; };
+		4F1892EF19AAD0EF009B15D0 /* GameKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F1892EE19AAD0EF009B15D0 /* GameKit.framework */; };
 		4F3C8583198622CB00E843AC /* Noctagon()2.png in Resources */ = {isa = PBXBuildFile; fileRef = 4F3C8581198622CB00E843AC /* Noctagon()2.png */; };
 		4F3C85871986242200E843AC /* Noctagon_first.png in Resources */ = {isa = PBXBuildFile; fileRef = 4F3C85861986242200E843AC /* Noctagon_first.png */; };
 		4F3C858C198A726F00E843AC /* NmarumaruBlue.png in Resources */ = {isa = PBXBuildFile; fileRef = 4F3C8588198A726F00E843AC /* NmarumaruBlue.png */; };
@@ -27,7 +28,6 @@
 		4F3C858F198A726F00E843AC /* NmarumaruYellow.png in Resources */ = {isa = PBXBuildFile; fileRef = 4F3C858B198A726F00E843AC /* NmarumaruYellow.png */; };
 		4F3EE49A199B831700008B6A /* Gameover.png in Resources */ = {isa = PBXBuildFile; fileRef = 4F3EE499199B831700008B6A /* Gameover.png */; };
 		4F3EE49D199BAFA600008B6A /* GameOverViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F3EE49C199BAFA600008B6A /* GameOverViewController.m */; };
-		4F3EE49F199BCA4F00008B6A /* octagonScoreBoy.png in Resources */ = {isa = PBXBuildFile; fileRef = 4F3EE49E199BCA4F00008B6A /* octagonScoreBoy.png */; };
 		4F3EE4AC199C43E700008B6A /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F3EE4AB199C43E700008B6A /* Social.framework */; };
 		4F4E357719719B0D00EE4F99 /* DMCrookedSwipeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F4E357619719B0D00EE4F99 /* DMCrookedSwipeView.m */; };
 		4F8C4C78199C958E00C375F4 /* pico_settei.png in Resources */ = {isa = PBXBuildFile; fileRef = 4F8C4C77199C958E00C375F4 /* pico_settei.png */; };
@@ -99,6 +99,7 @@
 		4F1892E319AA6539009B15D0 /* N_don01.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = N_don01.mp3; sourceTree = "<group>"; };
 		4F1892E419AA6539009B15D0 /* N_kannn.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = N_kannn.mp3; sourceTree = "<group>"; };
 		4F1892E519AA6539009B15D0 /* pon01.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = pon01.mp3; sourceTree = "<group>"; };
+		4F1892EE19AAD0EF009B15D0 /* GameKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GameKit.framework; path = System/Library/Frameworks/GameKit.framework; sourceTree = SDKROOT; };
 		4F3C8581198622CB00E843AC /* Noctagon()2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Noctagon()2.png"; sourceTree = "<group>"; };
 		4F3C85861986242200E843AC /* Noctagon_first.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Noctagon_first.png; sourceTree = "<group>"; };
 		4F3C8588198A726F00E843AC /* NmarumaruBlue.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = NmarumaruBlue.png; sourceTree = "<group>"; };
@@ -108,7 +109,6 @@
 		4F3EE499199B831700008B6A /* Gameover.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Gameover.png; sourceTree = "<group>"; };
 		4F3EE49B199BAFA600008B6A /* GameOverViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameOverViewController.h; sourceTree = "<group>"; };
 		4F3EE49C199BAFA600008B6A /* GameOverViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameOverViewController.m; sourceTree = "<group>"; };
-		4F3EE49E199BCA4F00008B6A /* octagonScoreBoy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = octagonScoreBoy.png; sourceTree = "<group>"; };
 		4F3EE4AB199C43E700008B6A /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
 		4F4E357519719B0D00EE4F99 /* DMCrookedSwipeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DMCrookedSwipeView.h; sourceTree = "<group>"; };
 		4F4E357619719B0D00EE4F99 /* DMCrookedSwipeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DMCrookedSwipeView.m; sourceTree = "<group>"; };
@@ -169,6 +169,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4F1892EF19AAD0EF009B15D0 /* GameKit.framework in Frameworks */,
 				4F3EE4AC199C43E700008B6A /* Social.framework in Frameworks */,
 				4FC7E85119659E2E0069A919 /* AVFoundation.framework in Frameworks */,
 				4F9F732F195D73290082669D /* CoreGraphics.framework in Frameworks */,
@@ -281,6 +282,7 @@
 		4F9F732B195D73290082669D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				4F1892EE19AAD0EF009B15D0 /* GameKit.framework */,
 				4F3EE4AB199C43E700008B6A /* Social.framework */,
 				4FC7E85019659E2E0069A919 /* AVFoundation.framework */,
 				4F9F732C195D73290082669D /* Foundation.framework */,
@@ -297,7 +299,6 @@
 				4F1892DC19AA6539009B15D0 /* octagonSounds */,
 				4F1892D319AA55C2009B15D0 /* icons */,
 				4F8C4C79199C9B8700C375F4 /* pic4pico */,
-				4F3EE49E199BCA4F00008B6A /* octagonScoreBoy.png */,
 				4F3EE499199B831700008B6A /* Gameover.png */,
 				4F3C8588198A726F00E843AC /* NmarumaruBlue.png */,
 				4F3C8589198A726F00E843AC /* NmarumaruGreen.png */,
@@ -442,7 +443,6 @@
 				4F8C4CA6199C9B8800C375F4 /* res_90131049.png in Resources */,
 				4F1892E619AA6539009B15D0 /* bell01.mp3 in Resources */,
 				4F8C4CAF199D981400C375F4 /* octagonHaikei.png in Resources */,
-				4F3EE49F199BCA4F00008B6A /* octagonScoreBoy.png in Resources */,
 				4F8C4C78199C958E00C375F4 /* pico_settei.png in Resources */,
 				4F8C4C9C199C9B8800C375F4 /* lgp01a201403010300 のコピー.png in Resources */,
 				4F1892EA19AA6539009B15D0 /* kannn.mp3 in Resources */,

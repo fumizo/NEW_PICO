@@ -11,6 +11,11 @@
 #import <AVFoundation/AVFoundation.h>
 #import "ViewController.h"
 
+/*game center*/
+#import <GameKit/GameKit.h>   
+@interface HogeViewController : UIViewController<GKGameCenterControllerDelegate>
+@end
+
 
 @interface GameOverViewController : UIViewController{
     IBOutlet UILabel *gameScoreLabel;
