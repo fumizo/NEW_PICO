@@ -66,7 +66,7 @@
     NSLog(@"受け渡されたscoreは%d",score);
     NSLog(@"level is %d幕",level);
 
-    gameScoreLabel.text = [NSString stringWithFormat:@"%d しゅ",score];
+    gameScoreLabel.text = [NSString stringWithFormat:@"     %d",score];
     
     //ぽん！
     NSString *ponPath = [[NSBundle mainBundle] pathForResource:@"pon01" ofType:@"mp3"] ;
@@ -98,7 +98,7 @@
     if(isSound == NO ) pon.volume = 0;
     
     [pon play];
-
+    
     //gameoverになったことを通知
     NSNotification *s = [NSNotification notificationWithName:@"gameOver" object:self userInfo:nil];
     [[NSNotificationCenter defaultCenter] postNotification:s];

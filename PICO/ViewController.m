@@ -81,10 +81,11 @@
     
     level = 1;
     lebelLabel.text = [NSString stringWithFormat:@"%d幕",level];
+    gameTimerLabel.textColor = [UIColor whiteColor];
     time = 0;
     firstTapFlag = YES;
     score = 0;
-    scoreLabel.text = [NSString stringWithFormat:@"%dしゅ",score];
+    scoreLabel.text = [NSString stringWithFormat:@"%d",score];
     
     if(isStart == YES){
         [self settingView];
@@ -163,6 +164,8 @@
                 gameTimerLabel.text = [NSString stringWithFormat:@"%0.2f",countDown];
                 if(countDown <= 0.2){
                     gameTimerLabel.textColor = [UIColor redColor];
+                }else{
+                    gameTimerLabel.textColor = [UIColor whiteColor];
                 }
             }else{
                 gameTimerLabel.text = @"0.00";
@@ -177,6 +180,8 @@
                 gameTimerLabel.text = [NSString stringWithFormat:@"%0.2f",countDown];
                 if(countDown <= 0.2){
                     gameTimerLabel.textColor = [UIColor redColor];
+                }else{
+                    gameTimerLabel.textColor = [UIColor whiteColor];
                 }
             }else{
                 gameTimerLabel.text = @"0.00";
@@ -190,6 +195,8 @@
                 gameTimerLabel.text = [NSString stringWithFormat:@"%0.2f",countDown];
                 if(countDown <= 0.2){
                     gameTimerLabel.textColor = [UIColor redColor];
+                }else{
+                    gameTimerLabel.textColor = [UIColor whiteColor];
                 }
             }else{
                 gameTimerLabel.text = @"0.00";
@@ -203,6 +210,8 @@
                 gameTimerLabel.text = [NSString stringWithFormat:@"%0.2f",countDown];
                 if(countDown <= 0.2){
                     gameTimerLabel.textColor = [UIColor redColor];
+                }else{
+                    gameTimerLabel.textColor = [UIColor whiteColor];
                 }
             }else{
                 gameTimerLabel.text = @"0.00";
@@ -216,6 +225,8 @@
                 gameTimerLabel.text = [NSString stringWithFormat:@"%0.2f",countDown];
                 if(countDown <= 0.2){
                     gameTimerLabel.textColor = [UIColor redColor];
+                }else{
+                    gameTimerLabel.textColor = [UIColor whiteColor];
                 }
             }else{
                 gameTimerLabel.text = @"0.00";
@@ -483,7 +494,7 @@ swipeView.alpha = 0.0;
         //完了時のコールバック
     }];
     
-    scoreLabel.text = [NSString stringWithFormat:@"%dしゅ",score];
+    scoreLabel.text = [NSString stringWithFormat:@"%d",score];
     NSLog(@"%dしゅ",score);
     
     //NSDictionary *dic = [NSDictionary dictionaryWithObject:marble forKey:@"key"];
@@ -518,7 +529,7 @@ swipeView.alpha = 0.0;
         //完了時のコールバック
     }];
     
-    scoreLabel.text = [NSString stringWithFormat:@"%dしゅ",score];
+    scoreLabel.text = [NSString stringWithFormat:@"%d",score];
     NSLog(@"%dしゅ",score);
 
 }
@@ -552,7 +563,7 @@ swipeView.alpha = 0.0;
         //完了時のコールバック
     }];
     
-    scoreLabel.text = [NSString stringWithFormat:@"%dしゅ",score];
+    scoreLabel.text = [NSString stringWithFormat:@"%d",score];
     NSLog(@"%dしゅ",score);
 
 }
@@ -586,7 +597,7 @@ swipeView.alpha = 0.0;
         //完了時のコールバック
     }];
     
-    scoreLabel.text = [NSString stringWithFormat:@"%dしゅ",score];
+    scoreLabel.text = [NSString stringWithFormat:@"%d",score];
     NSLog(@"%dしゅ",score);
 }
 

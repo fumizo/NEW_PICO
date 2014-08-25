@@ -77,10 +77,8 @@
         [self.delegate volumeDown:volume];
         isSound = YES;
         [don play];
-
     }
 }
-
 
 - (IBAction)back{
     [self dismissViewControllerAnimated:YES completion:nil];

@@ -20,6 +20,8 @@
 		4F1892EC19AA6539009B15D0 /* N_kannn.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4F1892E419AA6539009B15D0 /* N_kannn.mp3 */; };
 		4F1892ED19AA6539009B15D0 /* pon01.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4F1892E519AA6539009B15D0 /* pon01.mp3 */; };
 		4F1892EF19AAD0EF009B15D0 /* GameKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F1892EE19AAD0EF009B15D0 /* GameKit.framework */; };
+		4F1892F319AB041D009B15D0 /* wood_white-texture.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4F1892F219AB041D009B15D0 /* wood_white-texture.jpg */; };
+		4F1892F519AB05EA009B15D0 /* octagon_wood_label.png in Resources */ = {isa = PBXBuildFile; fileRef = 4F1892F419AB05EA009B15D0 /* octagon_wood_label.png */; };
 		4F3C8583198622CB00E843AC /* Noctagon()2.png in Resources */ = {isa = PBXBuildFile; fileRef = 4F3C8581198622CB00E843AC /* Noctagon()2.png */; };
 		4F3C85871986242200E843AC /* Noctagon_first.png in Resources */ = {isa = PBXBuildFile; fileRef = 4F3C85861986242200E843AC /* Noctagon_first.png */; };
 		4F3C858C198A726F00E843AC /* NmarumaruBlue.png in Resources */ = {isa = PBXBuildFile; fileRef = 4F3C8588198A726F00E843AC /* NmarumaruBlue.png */; };
@@ -100,6 +102,8 @@
 		4F1892E419AA6539009B15D0 /* N_kannn.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = N_kannn.mp3; sourceTree = "<group>"; };
 		4F1892E519AA6539009B15D0 /* pon01.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = pon01.mp3; sourceTree = "<group>"; };
 		4F1892EE19AAD0EF009B15D0 /* GameKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GameKit.framework; path = System/Library/Frameworks/GameKit.framework; sourceTree = SDKROOT; };
+		4F1892F219AB041D009B15D0 /* wood_white-texture.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "wood_white-texture.jpg"; path = "../../../../wood_white-texture.jpg"; sourceTree = "<group>"; };
+		4F1892F419AB05EA009B15D0 /* octagon_wood_label.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = octagon_wood_label.png; path = ../../../../../Documents/icons/octagon_wood_label.png; sourceTree = "<group>"; };
 		4F3C8581198622CB00E843AC /* Noctagon()2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Noctagon()2.png"; sourceTree = "<group>"; };
 		4F3C85861986242200E843AC /* Noctagon_first.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Noctagon_first.png; sourceTree = "<group>"; };
 		4F3C8588198A726F00E843AC /* NmarumaruBlue.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = NmarumaruBlue.png; sourceTree = "<group>"; };
@@ -263,6 +267,8 @@
 		4F9F7320195D73290082669D = {
 			isa = PBXGroup;
 			children = (
+				4F1892F419AB05EA009B15D0 /* octagon_wood_label.png */,
+				4F1892F219AB041D009B15D0 /* wood_white-texture.jpg */,
 				4F9F7332195D73290082669D /* PICO */,
 				4F9F7351195D73290082669D /* PICOTests */,
 				4F9F732B195D73290082669D /* Frameworks */,
@@ -444,6 +450,7 @@
 				4F1892E619AA6539009B15D0 /* bell01.mp3 in Resources */,
 				4F8C4CAF199D981400C375F4 /* octagonHaikei.png in Resources */,
 				4F8C4C78199C958E00C375F4 /* pico_settei.png in Resources */,
+				4F1892F319AB041D009B15D0 /* wood_white-texture.jpg in Resources */,
 				4F8C4C9C199C9B8800C375F4 /* lgp01a201403010300 のコピー.png in Resources */,
 				4F1892EA19AA6539009B15D0 /* kannn.mp3 in Resources */,
 				4F8C4CA5199C9B8800C375F4 /* YellowAndPink.png in Resources */,
@@ -451,6 +458,7 @@
 				4F8C4CA3199C9B8800C375F4 /* res_1732741526 のコピー.png in Resources */,
 				4F9F7337195D73290082669D /* InfoPlist.strings in Resources */,
 				4F8C4CA7199C9B8800C375F4 /* tori のコピー 2.png in Resources */,
+				4F1892F519AB05EA009B15D0 /* octagon_wood_label.png in Resources */,
 				4F3C858D198A726F00E843AC /* NmarumaruGreen.png in Resources */,
 				4F1892E919AA6539009B15D0 /* gooon.mp3 in Resources */,
 				4F8C4C9E199C9B8800C375F4 /* lgp01a201403020000 のコピー.png in Resources */,
