@@ -72,7 +72,7 @@
     [[AVAudioSession sharedInstance] setCategory:AVAudioSessionCategoryPlayback error:&error];
     
     //ぽん！
-    NSString *ponPath = [[NSBundle mainBundle] pathForResource:@"pon01" ofType:@"mp3"] ;
+    NSString *ponPath = [[NSBundle mainBundle] pathForResource:@"pon_octagon" ofType:@"mp3"] ;
     NSURL *ponUrl = [NSURL fileURLWithPath:ponPath] ;
     pon = [[AVAudioPlayer alloc] initWithContentsOfURL:ponUrl error:nil] ;
     //ふりーーー
@@ -88,7 +88,7 @@
     NSNotificationCenter *sound = [NSNotificationCenter defaultCenter];
     [sound addObserver:self selector:@selector(sound:) name:@"sound" object:nil];
     
-    if(isSound != NO)  [gooon play];
+   [gooon play];
     
 }
 
@@ -98,7 +98,7 @@
 }
 
 -(IBAction)backToStart{
-    if(isSound == NO ) pon.volume = 0;
+//    if(isSound == NO ) pon.volume = 0;
     
     [pon play];
     
@@ -110,8 +110,7 @@
 }
 
 - (IBAction)twitter{
-    if(isSound == NO ) flee.volume = 0;
-
+//    if(isSound == NO ) flee.volume = 0;
     
     [flee play];
     

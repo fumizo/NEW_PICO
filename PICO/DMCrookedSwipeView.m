@@ -89,6 +89,10 @@
         
     }else{
         torf = 0;
+        
+        //まちがってたよっていう通知を送る
+        NSNotification *s = [NSNotification notificationWithName:@"hoge" object:self userInfo:@{@"score": @"0"}];
+        [[NSNotificationCenter defaultCenter] postNotification:s];
     }
 
     NSDictionary *dic = [NSDictionary dictionaryWithObject:sender.view forKey:@"view"];
@@ -180,6 +184,9 @@
 
     }else{
         torf = 0;
+        //まちがってたよっていう通知を送る
+        NSNotification *s = [NSNotification notificationWithName:@"hoge" object:self userInfo:@{@"score": @"0"}];
+        [[NSNotificationCenter defaultCenter] postNotification:s];
     }
     NSDictionary *dic = [NSDictionary dictionaryWithObject:sender.view forKey:@"view"];
     
@@ -219,13 +226,17 @@
         
         torf = 1;
         
+        
+        //間違ってたら０、合ってたら１を通知する
         //合ってたよっていう通知を送る
         NSNotification *s = [NSNotification notificationWithName:@"hoge" object:self userInfo:@{@"score": @"1"}];
         [[NSNotificationCenter defaultCenter] postNotification:s];
-
         
     }else{
         torf = 0;
+        //まちがってたよっていう通知を送る
+        NSNotification *s = [NSNotification notificationWithName:@"hoge" object:self userInfo:@{@"score": @"0"}];
+        [[NSNotificationCenter defaultCenter] postNotification:s];
     }
     
     NSDictionary *dic = [NSDictionary dictionaryWithObject:sender.view forKey:@"view"];

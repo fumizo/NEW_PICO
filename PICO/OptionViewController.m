@@ -46,7 +46,7 @@
     [soundButtonOFF setBackgroundImage:buttonImg forState:UIControlStateNormal];  // 画像をセットする
     [soundButtonOFF addTarget:self
                      action:@selector(sound:) forControlEvents:UIControlEventTouchUpInside];
-        soundButtonOFF.frame = CGRectMake(200, 61, 100, 100);   //位置、大きさ
+        soundButtonOFF.frame = CGRectMake(200, 71, 84, 84);   //位置、大きさ
     [self.view addSubview:soundButtonOFF];
     
     NSString *donPath = [[NSBundle mainBundle] pathForResource:@"N_don01" ofType:@"mp3"] ;

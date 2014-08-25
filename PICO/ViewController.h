@@ -66,6 +66,7 @@
     isStartか、isGameoverか分けてる。
      isStartだったら、全部つくって、isgameoverflagだったら、最初のビューと歯車はつくらない
      */
+    
     BOOL isStart;          //アプリを起動して１回目のゲームなのか、二回以降なのか
     BOOL isGameOverFlag ;
     

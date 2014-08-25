@@ -23,6 +23,15 @@
 		4F1892F619AB1032009B15D0 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4FC7E85019659E2E0069A919 /* AVFoundation.framework */; };
 		4F1892FA19AB13C2009B15D0 /* octagon_wood_label.png in Resources */ = {isa = PBXBuildFile; fileRef = 4F1892F919AB13C2009B15D0 /* octagon_wood_label.png */; };
 		4F1892FC19AB13ED009B15D0 /* wood-white_texture.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4F1892FB19AB13ED009B15D0 /* wood-white_texture.jpg */; };
+		4F18930019AB1F9C009B15D0 /* kan_octagon.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4F1892FD19AB1F9C009B15D0 /* kan_octagon.mp3 */; };
+		4F18930119AB1F9C009B15D0 /* don_octagon.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4F1892FE19AB1F9C009B15D0 /* don_octagon.mp3 */; };
+		4F18930219AB1F9C009B15D0 /* pon_octagon.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4F1892FF19AB1F9C009B15D0 /* pon_octagon.mp3 */; };
+		4F18930419AB25B3009B15D0 /* shu.png in Resources */ = {isa = PBXBuildFile; fileRef = 4F18930319AB25B3009B15D0 /* shu.png */; };
+		4F18930619AB25FE009B15D0 /* shu_white.png in Resources */ = {isa = PBXBuildFile; fileRef = 4F18930519AB25FE009B15D0 /* shu_white.png */; };
+		4F18930819AB2A4E009B15D0 /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 4F18930719AB2A4E009B15D0 /* icon.png */; };
+		4F18930A19AB2BFE009B15D0 /* octagon_option_wood.png in Resources */ = {isa = PBXBuildFile; fileRef = 4F18930919AB2BFE009B15D0 /* octagon_option_wood.png */; };
+		4F18930C19AB2E8A009B15D0 /* octagon_option_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 4F18930B19AB2E8A009B15D0 /* octagon_option_icon.png */; };
+		4F18930E19AB30A4009B15D0 /* octagon_hantoumei.png in Resources */ = {isa = PBXBuildFile; fileRef = 4F18930D19AB30A4009B15D0 /* octagon_hantoumei.png */; };
 		4F3C8583198622CB00E843AC /* Noctagon()2.png in Resources */ = {isa = PBXBuildFile; fileRef = 4F3C8581198622CB00E843AC /* Noctagon()2.png */; };
 		4F3C85871986242200E843AC /* Noctagon_first.png in Resources */ = {isa = PBXBuildFile; fileRef = 4F3C85861986242200E843AC /* Noctagon_first.png */; };
 		4F3C858C198A726F00E843AC /* NmarumaruBlue.png in Resources */ = {isa = PBXBuildFile; fileRef = 4F3C8588198A726F00E843AC /* NmarumaruBlue.png */; };
@@ -59,7 +68,7 @@
 		4F8C4CA8199C9B8800C375F4 /* tori のコピー.png in Resources */ = {isa = PBXBuildFile; fileRef = 4F8C4C90199C9B8800C375F4 /* tori のコピー.png */; };
 		4F8C4CA9199C9B8800C375F4 /* tori.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4F8C4C91199C9B8800C375F4 /* tori.jpg */; };
 		4F8C4CAF199D981400C375F4 /* octagonHaikei.png in Resources */ = {isa = PBXBuildFile; fileRef = 4F8C4CAE199D981400C375F4 /* octagonHaikei.png */; };
-		4F8C4CB3199D9DE900C375F4 /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 4F8C4CB2199D9DE900C375F4 /* icon.png */; };
+		4F8C4CB3199D9DE900C375F4 /* 旧icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 4F8C4CB2199D9DE900C375F4 /* 旧icon.png */; };
 		4F9F732D195D73290082669D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F9F732C195D73290082669D /* Foundation.framework */; };
 		4F9F732F195D73290082669D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F9F732E195D73290082669D /* CoreGraphics.framework */; };
 		4F9F7331195D73290082669D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F9F7330195D73290082669D /* UIKit.framework */; };
@@ -104,6 +113,15 @@
 		4F1892EE19AAD0EF009B15D0 /* GameKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GameKit.framework; path = System/Library/Frameworks/GameKit.framework; sourceTree = SDKROOT; };
 		4F1892F919AB13C2009B15D0 /* octagon_wood_label.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = octagon_wood_label.png; sourceTree = "<group>"; };
 		4F1892FB19AB13ED009B15D0 /* wood-white_texture.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "wood-white_texture.jpg"; sourceTree = "<group>"; };
+		4F1892FD19AB1F9C009B15D0 /* kan_octagon.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = kan_octagon.mp3; sourceTree = "<group>"; };
+		4F1892FE19AB1F9C009B15D0 /* don_octagon.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = don_octagon.mp3; sourceTree = "<group>"; };
+		4F1892FF19AB1F9C009B15D0 /* pon_octagon.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = pon_octagon.mp3; sourceTree = "<group>"; };
+		4F18930319AB25B3009B15D0 /* shu.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = shu.png; sourceTree = "<group>"; };
+		4F18930519AB25FE009B15D0 /* shu_white.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = shu_white.png; sourceTree = "<group>"; };
+		4F18930719AB2A4E009B15D0 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
+		4F18930919AB2BFE009B15D0 /* octagon_option_wood.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = octagon_option_wood.png; sourceTree = "<group>"; };
+		4F18930B19AB2E8A009B15D0 /* octagon_option_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = octagon_option_icon.png; sourceTree = "<group>"; };
+		4F18930D19AB30A4009B15D0 /* octagon_hantoumei.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = octagon_hantoumei.png; sourceTree = "<group>"; };
 		4F3C8581198622CB00E843AC /* Noctagon()2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Noctagon()2.png"; sourceTree = "<group>"; };
 		4F3C85861986242200E843AC /* Noctagon_first.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Noctagon_first.png; sourceTree = "<group>"; };
 		4F3C8588198A726F00E843AC /* NmarumaruBlue.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = NmarumaruBlue.png; sourceTree = "<group>"; };
@@ -142,7 +160,7 @@
 		4F8C4C90199C9B8800C375F4 /* tori のコピー.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tori のコピー.png"; sourceTree = "<group>"; };
 		4F8C4C91199C9B8800C375F4 /* tori.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = tori.jpg; sourceTree = "<group>"; };
 		4F8C4CAE199D981400C375F4 /* octagonHaikei.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = octagonHaikei.png; path = ../PICO/octagonHaikei.png; sourceTree = "<group>"; };
-		4F8C4CB2199D9DE900C375F4 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = icon.png; path = ../icon.png; sourceTree = "<group>"; };
+		4F8C4CB2199D9DE900C375F4 /* 旧icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "旧icon.png"; path = "../旧icon.png"; sourceTree = "<group>"; };
 		4F9F7329195D73290082669D /* PICO.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PICO.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4F9F732C195D73290082669D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		4F9F732E195D73290082669D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -202,7 +220,7 @@
 				4F1892D519AA55C2009B15D0 /* octagon_sound_on.png */,
 				4F8C4CAE199D981400C375F4 /* octagonHaikei.png */,
 				4F1892CD19AA4277009B15D0 /* octagon_button_Shadow.png */,
-				4F8C4CB2199D9DE900C375F4 /* icon.png */,
+				4F8C4CB2199D9DE900C375F4 /* 旧icon.png */,
 			);
 			name = icons;
 			path = ../icons;
@@ -267,6 +285,15 @@
 		4F9F7320195D73290082669D = {
 			isa = PBXGroup;
 			children = (
+				4F18930D19AB30A4009B15D0 /* octagon_hantoumei.png */,
+				4F18930B19AB2E8A009B15D0 /* octagon_option_icon.png */,
+				4F18930919AB2BFE009B15D0 /* octagon_option_wood.png */,
+				4F18930719AB2A4E009B15D0 /* icon.png */,
+				4F18930519AB25FE009B15D0 /* shu_white.png */,
+				4F18930319AB25B3009B15D0 /* shu.png */,
+				4F1892FD19AB1F9C009B15D0 /* kan_octagon.mp3 */,
+				4F1892FE19AB1F9C009B15D0 /* don_octagon.mp3 */,
+				4F1892FF19AB1F9C009B15D0 /* pon_octagon.mp3 */,
 				4F1892FB19AB13ED009B15D0 /* wood-white_texture.jpg */,
 				4F1892F919AB13C2009B15D0 /* octagon_wood_label.png */,
 				4F9F7332195D73290082669D /* PICO */,
@@ -449,9 +476,11 @@
 				4F8C4CA6199C9B8800C375F4 /* res_90131049.png in Resources */,
 				4F1892E619AA6539009B15D0 /* bell01.mp3 in Resources */,
 				4F8C4CAF199D981400C375F4 /* octagonHaikei.png in Resources */,
+				4F18930419AB25B3009B15D0 /* shu.png in Resources */,
 				4F8C4C78199C958E00C375F4 /* pico_settei.png in Resources */,
 				4F8C4C9C199C9B8800C375F4 /* lgp01a201403010300 のコピー.png in Resources */,
 				4F1892EA19AA6539009B15D0 /* kannn.mp3 in Resources */,
+				4F18930A19AB2BFE009B15D0 /* octagon_option_wood.png in Resources */,
 				4F8C4CA5199C9B8800C375F4 /* YellowAndPink.png in Resources */,
 				4F8C4CA4199C9B8800C375F4 /* res_1732741526.png in Resources */,
 				4F8C4CA3199C9B8800C375F4 /* res_1732741526 のコピー.png in Resources */,
@@ -468,20 +497,26 @@
 				4F8C4C99199C9B8800C375F4 /* lgp01a201304160100.jpg in Resources */,
 				4F3C858C198A726F00E843AC /* NmarumaruBlue.png in Resources */,
 				4F8C4CA9199C9B8800C375F4 /* tori.jpg in Resources */,
+				4F18930619AB25FE009B15D0 /* shu_white.png in Resources */,
 				4F8C4C93199C9B8800C375F4 /* lgp01a201304151300.jpg in Resources */,
 				4F1892D719AA55C2009B15D0 /* octagon_sound_on.png in Resources */,
-				4F8C4CB3199D9DE900C375F4 /* icon.png in Resources */,
+				4F8C4CB3199D9DE900C375F4 /* 旧icon.png in Resources */,
 				4F8C4CA8199C9B8800C375F4 /* tori のコピー.png in Resources */,
+				4F18930819AB2A4E009B15D0 /* icon.png in Resources */,
 				4F8C4C92199C9B8800C375F4 /* lgp01a201304151300 のコピー.png in Resources */,
 				4F9F7340195D73290082669D /* Main.storyboard in Resources */,
 				4F1892ED19AA6539009B15D0 /* pon01.mp3 in Resources */,
 				4F8C4C9F199C9B8800C375F4 /* lgp01a201403020000.jpg in Resources */,
 				4F8C4CA2199C9B8800C375F4 /* kumo.png in Resources */,
 				4F8C4C9B199C9B8800C375F4 /* lgp01a201401150000.jpg in Resources */,
+				4F18930019AB1F9C009B15D0 /* kan_octagon.mp3 in Resources */,
 				4F8C4C96199C9B8800C375F4 /* lgp01a201304151900 のコピー.png in Resources */,
 				4F1892E719AA6539009B15D0 /* dodon02.mp3 in Resources */,
 				4F1892CC19A78014009B15D0 /* res_177918524.png in Resources */,
+				4F18930E19AB30A4009B15D0 /* octagon_hantoumei.png in Resources */,
 				4F3C8583198622CB00E843AC /* Noctagon()2.png in Resources */,
+				4F18930119AB1F9C009B15D0 /* don_octagon.mp3 in Resources */,
+				4F18930C19AB2E8A009B15D0 /* octagon_option_icon.png in Resources */,
 				4F1892E819AA6539009B15D0 /* flee1.mp3 in Resources */,
 				4F1892EB19AA6539009B15D0 /* N_don01.mp3 in Resources */,
 				4FB97DFF199B3ADD00BF12EF /* Noctagon().png in Resources */,
@@ -491,6 +526,7 @@
 				4F8C4CA0199C9B8800C375F4 /* octagon_haguruma.png in Resources */,
 				4F1892EC19AA6539009B15D0 /* N_kannn.mp3 in Resources */,
 				4F1892DB19AA5BC9009B15D0 /* octagon_sound_off.png in Resources */,
+				4F18930219AB1F9C009B15D0 /* pon_octagon.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

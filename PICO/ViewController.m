@@ -36,7 +36,8 @@
     tirin = [[AVAudioPlayer alloc] initWithContentsOfURL:url error:nil] ;
 
     //っどん
-    NSString *donPath = [[NSBundle mainBundle] pathForResource:@"N_don01" ofType:@"mp3"] ;
+//    NSString *donPath = [[NSBundle mainBundle] pathForResource:@"N_don01" ofType:@"mp3"] ;
+    NSString *donPath = [[NSBundle mainBundle] pathForResource:@"don_octagon" ofType:@"mp3"] ;
     NSURL *donUrl = [NSURL fileURLWithPath:donPath] ;
     don = [[AVAudioPlayer alloc] initWithContentsOfURL:donUrl error:nil] ;
 
@@ -51,7 +52,8 @@
     pon = [[AVAudioPlayer alloc] initWithContentsOfURL:ponUrl error:nil] ;
 
     //かん
-    NSString *kanPath = [[NSBundle mainBundle] pathForResource:@"N_kannn" ofType:@"mp3"] ;
+//    NSString *kanPath = [[NSBundle mainBundle] pathForResource:@"N_kannn" ofType:@"mp3"] ;
+    NSString *kanPath = [[NSBundle mainBundle] pathForResource:@"kan_octagon" ofType:@"mp3"] ;
     NSURL *kanUrl = [NSURL fileURLWithPath:kanPath] ;
     kan = [[AVAudioPlayer alloc] initWithContentsOfURL:kanUrl error:nil] ;
 
@@ -83,7 +85,7 @@
     [gameoverView removeFromSuperview];
     
     level = 1;
-    lebelLabel.text = [NSString stringWithFormat:@"%d幕",level];
+    lebelLabel.text = [NSString stringWithFormat:@"%d",level];
     gameTimerLabel.textColor = [UIColor whiteColor];
     time = 0;
     firstTapFlag = YES;
@@ -144,8 +146,8 @@
         /*--歯車のボタン--*/
         //生成
         optionButton = [UIButton buttonWithType:UIButtonTypeCustom];
-        UIImage *img = [UIImage imageNamed:@"pico_settei.png"];  // ボタンにする画像を生成する
-        optionButton.frame = CGRectMake(15, 20, 60, 60);
+        UIImage *img = [UIImage imageNamed:@"octagon_option_icon.png"];  // ボタンにする画像を生成する
+        optionButton.frame = CGRectMake(252, 420, 50, 50);
         [optionButton setBackgroundImage:img forState:UIControlStateNormal];  // 画像をセットする
         // ボタンが押された時にhogeメソッドを呼び出す
         [optionButton addTarget:self
@@ -314,22 +316,29 @@
     if ([center.userInfo objectForKey:@"score"]) {
         NSNumber * y = [center.userInfo objectForKey:@"score"];
         int p = [y intValue];
+        NSLog(@"p is...%d",p);
         score = score + p;
         NSLog(@"score is...%d",score);
-        isOk = YES;
-        [self swipeSounds];
-
-//    }else if ([center.userInfo objectForKey:@"dame"]){
-//        isOk = NO;
+        
+        if(p == 1){
+            isOk = YES;
+            //[self swipeSounds];
+            [don play];
+        }else if (p == 0){
+            isOk = NO;
+            //[self swipeSounds];
+            [kan play];
+        }
     }
 }
 
 -(void) swipeSounds{
-    if (isOk == YES) {
-        [don play];
-    }else if (isOk == NO){
-        [kan play];
-    }
+    [don play];
+//    if (isOk == YES) {
+//        [don play];
+//    }else if (isOk == NO){
+//        [kan play];
+//    }
 }
 
 
@@ -461,7 +470,7 @@ swipeView.alpha = 0.0;
     }else if (score >= 45 && score <= 100){
         level = 5;
     }
-    lebelLabel.text = [NSString stringWithFormat:@"%d幕",level];
+    lebelLabel.text = [NSString stringWithFormat:@"%d",level];
 
 }
 
