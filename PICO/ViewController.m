@@ -167,15 +167,18 @@
             countDown = 1.5f - time;
             if (countDown >= 0 ) {
                 gameTimerLabel.text = [NSString stringWithFormat:@"%0.2f",countDown];
-                if(countDown <= 0.2){
-                    gameTimerLabel.textColor = [UIColor redColor];
+                if(countDown <= 0.25){
+                    //gameTimerLabel.textColor = [[UIColor redColor];
+                    gameTimerLabel.textColor = [ChangeRGB changeRGB:@"#e2041b" alpha:1.0];
                 }else{
                     gameTimerLabel.textColor = [UIColor whiteColor];
                 }
             }else{
                 gameTimerLabel.text = @"0.00";
                 [self gameOverAnimetion];
-                gameTimerLabel.textColor = [UIColor redColor];
+//                gameTimerLabel.textColor = [UIColor redColor];
+                gameTimerLabel.textColor = [ChangeRGB changeRGB:@"#e2041b" alpha:1.0];
+
             }
 
             break;
@@ -183,7 +186,7 @@
             countDown = 1.2f - time;
             if (countDown >= 0 ) {
                 gameTimerLabel.text = [NSString stringWithFormat:@"%0.2f",countDown];
-                if(countDown <= 0.2){
+                if(countDown <= 0.25){
                     gameTimerLabel.textColor = [UIColor redColor];
                 }else{
                     gameTimerLabel.textColor = [UIColor whiteColor];
@@ -198,7 +201,7 @@
             countDown = 0.7f - time;
             if (countDown >= 0 ) {
                 gameTimerLabel.text = [NSString stringWithFormat:@"%0.2f",countDown];
-                if(countDown <= 0.2){
+                if(countDown <= 0.25){
                     gameTimerLabel.textColor = [UIColor redColor];
                 }else{
                     gameTimerLabel.textColor = [UIColor whiteColor];
@@ -213,7 +216,7 @@
             countDown = 0.5f - time;
             if (countDown >= 0 ) {
                 gameTimerLabel.text = [NSString stringWithFormat:@"%0.2f",countDown];
-                if(countDown <= 0.2){
+                if(countDown <= 0.25){
                     gameTimerLabel.textColor = [UIColor redColor];
                 }else{
                     gameTimerLabel.textColor = [UIColor whiteColor];
@@ -225,10 +228,10 @@
             }
             break;
         case 5:
-            countDown = 0.3f - time;
+            countDown = 0.4f - time;
             if (countDown >= 0 ) {
                 gameTimerLabel.text = [NSString stringWithFormat:@"%0.2f",countDown];
-                if(countDown <= 0.2){
+                if(countDown <= 0.25){
                     gameTimerLabel.textColor = [UIColor redColor];
                 }else{
                     gameTimerLabel.textColor = [UIColor whiteColor];
@@ -239,6 +242,38 @@
                 [self gameOverAnimetion];
             }
             break;
+        case 6:
+            countDown = 0.29f - time;
+            if (countDown >= 0 ) {
+                gameTimerLabel.text = [NSString stringWithFormat:@"%0.2f",countDown];
+                if(countDown <= 0.25){
+                    gameTimerLabel.textColor = [UIColor redColor];
+                }else{
+                    gameTimerLabel.textColor = [UIColor whiteColor];
+                }
+            }else{
+                gameTimerLabel.text = @"0.00";
+                gameTimerLabel.textColor = [UIColor redColor];
+                [self gameOverAnimetion];
+            }
+            break;
+        case 7:
+            countDown = 0.1f - time;
+            if (countDown >= 0 ) {
+                gameTimerLabel.text = [NSString stringWithFormat:@"%0.2f",countDown];
+                if(countDown <= 0.25){
+                    gameTimerLabel.textColor = [UIColor redColor];
+                }else{
+                    gameTimerLabel.textColor = [UIColor whiteColor];
+                }
+            }else{
+                gameTimerLabel.text = @"0.00";
+                gameTimerLabel.textColor = [UIColor redColor];
+                [self gameOverAnimetion];
+            }
+            break;
+
+
             
         default:
             break;
@@ -257,13 +292,15 @@
     
     //[self.view addSubview:gameoverView]; //gameoverを表示
     
-    [UIView animateWithDuration:2.3f animations:^{
+    [UIView animateWithDuration:2.2f animations:^{
         //animateWithDurationがアニメーションの速度
         // アニメーションをする処理
         gameoverView =[[UIImageView alloc] initWithFrame:CGRectMake (110,267,100,100)];
-        gameoverView.image = [UIImage imageNamed:@"Gameover.png"];
+//        gameoverView.image = [UIImage imageNamed:@"Gameover.png"];
+        gameoverView.image = [UIImage imageNamed:@"octagon_gameover_purple.png"];
+        
         [self.view addSubview:gameoverView];
-        gameoverView.transform = CGAffineTransformMakeScale(8.05,8.05);
+        gameoverView.transform = CGAffineTransformMakeScale(6.95,6.95);
     }completion:^(BOOL finished){
         // アニメーションが終わった後実行する処理
         //画面遷移する
@@ -467,11 +504,19 @@ swipeView.alpha = 0.0;
         level = 3;
     }else if (score >= 30 && score <= 45){
         level = 4;
-    }else if (score >= 45 && score <= 100){
+    }else if (score >= 45 && score <= 65){
         level = 5;
+    }else if (score >= 85 && score <= 100){
+        level = 6;
+    }else if(score >= 100){
+        level = 7;
     }
+    
+    if (level == 7) {
+        lebelLabel.text = @"MAX";
+    }else{
     lebelLabel.text = [NSString stringWithFormat:@"%d",level];
-
+    }
 }
 
 
@@ -625,6 +670,9 @@ swipeView.alpha = 0.0;
     //オプションのビューにIDをつけて、移動する。オプションさんって言う人がいますよ。この人がオプションさんですよ。オプションさんにtびますよ。
 }
 
+-(void)sound:(NSNotification *)center{
+    //isSound = NO;
+}
 
 -(void)volumeDown:(int)volume2{
     

@@ -13,6 +13,11 @@
 #define MARBLE_WIDTH 50
 #define MARBLE_HEIGHT 50
 
+
+#import "ChangeRGB.h"
+//http://tryworks-design.com/?p=2260
+//webのカラーコードをiOS用に変換してくれる
+
 @interface ViewController : UIViewController <DMCrookedSwipeViewDelegate,OptionViewControllerDelegate> {
     //代わりにできるマンだよ
     

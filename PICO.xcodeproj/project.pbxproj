@@ -28,10 +28,12 @@
 		4F18930219AB1F9C009B15D0 /* pon_octagon.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4F1892FF19AB1F9C009B15D0 /* pon_octagon.mp3 */; };
 		4F18930419AB25B3009B15D0 /* shu.png in Resources */ = {isa = PBXBuildFile; fileRef = 4F18930319AB25B3009B15D0 /* shu.png */; };
 		4F18930619AB25FE009B15D0 /* shu_white.png in Resources */ = {isa = PBXBuildFile; fileRef = 4F18930519AB25FE009B15D0 /* shu_white.png */; };
-		4F18930819AB2A4E009B15D0 /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 4F18930719AB2A4E009B15D0 /* icon.png */; };
 		4F18930A19AB2BFE009B15D0 /* octagon_option_wood.png in Resources */ = {isa = PBXBuildFile; fileRef = 4F18930919AB2BFE009B15D0 /* octagon_option_wood.png */; };
 		4F18930C19AB2E8A009B15D0 /* octagon_option_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 4F18930B19AB2E8A009B15D0 /* octagon_option_icon.png */; };
 		4F18930E19AB30A4009B15D0 /* octagon_hantoumei.png in Resources */ = {isa = PBXBuildFile; fileRef = 4F18930D19AB30A4009B15D0 /* octagon_hantoumei.png */; };
+		4F18931219ACEB3F009B15D0 /* ChangeRGB.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F18931119ACEB3F009B15D0 /* ChangeRGB.m */; };
+		4F18931619ACF4BD009B15D0 /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 4F18931519ACF4BD009B15D0 /* icon.png */; };
+		4F18931A19ACF7C8009B15D0 /* octagon_gameover_purple.png in Resources */ = {isa = PBXBuildFile; fileRef = 4F18931919ACF7C8009B15D0 /* octagon_gameover_purple.png */; };
 		4F3C8583198622CB00E843AC /* Noctagon()2.png in Resources */ = {isa = PBXBuildFile; fileRef = 4F3C8581198622CB00E843AC /* Noctagon()2.png */; };
 		4F3C85871986242200E843AC /* Noctagon_first.png in Resources */ = {isa = PBXBuildFile; fileRef = 4F3C85861986242200E843AC /* Noctagon_first.png */; };
 		4F3C858C198A726F00E843AC /* NmarumaruBlue.png in Resources */ = {isa = PBXBuildFile; fileRef = 4F3C8588198A726F00E843AC /* NmarumaruBlue.png */; };
@@ -83,6 +85,7 @@
 		4F9F734E195D73290082669D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F9F7330195D73290082669D /* UIKit.framework */; };
 		4F9F7356195D73290082669D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4F9F7354195D73290082669D /* InfoPlist.strings */; };
 		4F9F7358195D73290082669D /* PICOTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F9F7357195D73290082669D /* PICOTests.m */; };
+		4FAC6B0219ADBBCB001A8DE7 /* octagon_icon120.png in Resources */ = {isa = PBXBuildFile; fileRef = 4FAC6B0119ADBBCB001A8DE7 /* octagon_icon120.png */; };
 		4FB97DFF199B3ADD00BF12EF /* Noctagon().png in Resources */ = {isa = PBXBuildFile; fileRef = 4FB97DFE199B3ADD00BF12EF /* Noctagon().png */; };
 		4FC7E85C19669E8C0069A919 /* OptionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FC7E85B19669E8C0069A919 /* OptionViewController.m */; };
 /* End PBXBuildFile section */
@@ -118,10 +121,13 @@
 		4F1892FF19AB1F9C009B15D0 /* pon_octagon.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = pon_octagon.mp3; sourceTree = "<group>"; };
 		4F18930319AB25B3009B15D0 /* shu.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = shu.png; sourceTree = "<group>"; };
 		4F18930519AB25FE009B15D0 /* shu_white.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = shu_white.png; sourceTree = "<group>"; };
-		4F18930719AB2A4E009B15D0 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
 		4F18930919AB2BFE009B15D0 /* octagon_option_wood.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = octagon_option_wood.png; sourceTree = "<group>"; };
 		4F18930B19AB2E8A009B15D0 /* octagon_option_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = octagon_option_icon.png; sourceTree = "<group>"; };
 		4F18930D19AB30A4009B15D0 /* octagon_hantoumei.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = octagon_hantoumei.png; sourceTree = "<group>"; };
+		4F18931019ACEB3F009B15D0 /* ChangeRGB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChangeRGB.h; sourceTree = "<group>"; };
+		4F18931119ACEB3F009B15D0 /* ChangeRGB.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChangeRGB.m; sourceTree = "<group>"; };
+		4F18931519ACF4BD009B15D0 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
+		4F18931919ACF7C8009B15D0 /* octagon_gameover_purple.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = octagon_gameover_purple.png; sourceTree = "<group>"; };
 		4F3C8581198622CB00E843AC /* Noctagon()2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Noctagon()2.png"; sourceTree = "<group>"; };
 		4F3C85861986242200E843AC /* Noctagon_first.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Noctagon_first.png; sourceTree = "<group>"; };
 		4F3C8588198A726F00E843AC /* NmarumaruBlue.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = NmarumaruBlue.png; sourceTree = "<group>"; };
@@ -180,6 +186,7 @@
 		4F9F7353195D73290082669D /* PICOTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "PICOTests-Info.plist"; sourceTree = "<group>"; };
 		4F9F7355195D73290082669D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		4F9F7357195D73290082669D /* PICOTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PICOTests.m; sourceTree = "<group>"; };
+		4FAC6B0119ADBBCB001A8DE7 /* octagon_icon120.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = octagon_icon120.png; sourceTree = "<group>"; };
 		4FB97DFE199B3ADD00BF12EF /* Noctagon().png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Noctagon().png"; sourceTree = "<group>"; };
 		4FC7E85019659E2E0069A919 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		4FC7E85A19669E8C0069A919 /* OptionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OptionViewController.h; sourceTree = "<group>"; };
@@ -216,6 +223,7 @@
 		4F1892D319AA55C2009B15D0 /* icons */ = {
 			isa = PBXGroup;
 			children = (
+				4FAC6B0119ADBBCB001A8DE7 /* octagon_icon120.png */,
 				4F1892DA19AA5BC9009B15D0 /* octagon_sound_off.png */,
 				4F1892D519AA55C2009B15D0 /* octagon_sound_on.png */,
 				4F8C4CAE199D981400C375F4 /* octagonHaikei.png */,
@@ -248,6 +256,16 @@
 				4F1892E419AA6539009B15D0 /* N_kannn.mp3 */,
 			);
 			path = N_octagonSounds;
+			sourceTree = "<group>";
+		};
+		4F18930F19ACEB3F009B15D0 /* ChangeRGB2 */ = {
+			isa = PBXGroup;
+			children = (
+				4F18931019ACEB3F009B15D0 /* ChangeRGB.h */,
+				4F18931119ACEB3F009B15D0 /* ChangeRGB.m */,
+			);
+			name = ChangeRGB2;
+			path = ../ChangeRGB2;
 			sourceTree = "<group>";
 		};
 		4F8C4C79199C9B8700C375F4 /* pic4pico */ = {
@@ -285,10 +303,11 @@
 		4F9F7320195D73290082669D = {
 			isa = PBXGroup;
 			children = (
+				4F18931919ACF7C8009B15D0 /* octagon_gameover_purple.png */,
+				4F18931519ACF4BD009B15D0 /* icon.png */,
 				4F18930D19AB30A4009B15D0 /* octagon_hantoumei.png */,
 				4F18930B19AB2E8A009B15D0 /* octagon_option_icon.png */,
 				4F18930919AB2BFE009B15D0 /* octagon_option_wood.png */,
-				4F18930719AB2A4E009B15D0 /* icon.png */,
 				4F18930519AB25FE009B15D0 /* shu_white.png */,
 				4F18930319AB25B3009B15D0 /* shu.png */,
 				4F1892FD19AB1F9C009B15D0 /* kan_octagon.mp3 */,
@@ -353,6 +372,7 @@
 				4FC7E85B19669E8C0069A919 /* OptionViewController.m */,
 				4F3EE49B199BAFA600008B6A /* GameOverViewController.h */,
 				4F3EE49C199BAFA600008B6A /* GameOverViewController.m */,
+				4F18930F19ACEB3F009B15D0 /* ChangeRGB2 */,
 				4F9F7333195D73290082669D /* Supporting Files */,
 			);
 			path = PICO;
@@ -502,7 +522,6 @@
 				4F1892D719AA55C2009B15D0 /* octagon_sound_on.png in Resources */,
 				4F8C4CB3199D9DE900C375F4 /* 旧icon.png in Resources */,
 				4F8C4CA8199C9B8800C375F4 /* tori のコピー.png in Resources */,
-				4F18930819AB2A4E009B15D0 /* icon.png in Resources */,
 				4F8C4C92199C9B8800C375F4 /* lgp01a201304151300 のコピー.png in Resources */,
 				4F9F7340195D73290082669D /* Main.storyboard in Resources */,
 				4F1892ED19AA6539009B15D0 /* pon01.mp3 in Resources */,
@@ -514,14 +533,17 @@
 				4F1892E719AA6539009B15D0 /* dodon02.mp3 in Resources */,
 				4F1892CC19A78014009B15D0 /* res_177918524.png in Resources */,
 				4F18930E19AB30A4009B15D0 /* octagon_hantoumei.png in Resources */,
+				4F18931A19ACF7C8009B15D0 /* octagon_gameover_purple.png in Resources */,
 				4F3C8583198622CB00E843AC /* Noctagon()2.png in Resources */,
 				4F18930119AB1F9C009B15D0 /* don_octagon.mp3 in Resources */,
 				4F18930C19AB2E8A009B15D0 /* octagon_option_icon.png in Resources */,
 				4F1892E819AA6539009B15D0 /* flee1.mp3 in Resources */,
 				4F1892EB19AA6539009B15D0 /* N_don01.mp3 in Resources */,
 				4FB97DFF199B3ADD00BF12EF /* Noctagon().png in Resources */,
+				4F18931619ACF4BD009B15D0 /* icon.png in Resources */,
 				4F8C4C94199C9B8800C375F4 /* lgp01a201304151400 のコピー.jpg in Resources */,
 				4F3C858E198A726F00E843AC /* NmarumaruPink.png in Resources */,
+				4FAC6B0219ADBBCB001A8DE7 /* octagon_icon120.png in Resources */,
 				4F1892FC19AB13ED009B15D0 /* wood-white_texture.jpg in Resources */,
 				4F8C4CA0199C9B8800C375F4 /* octagon_haguruma.png in Resources */,
 				4F1892EC19AA6539009B15D0 /* N_kannn.mp3 in Resources */,
@@ -545,6 +567,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4F18931219ACEB3F009B15D0 /* ChangeRGB.m in Sources */,
 				4F3EE49D199BAFA600008B6A /* GameOverViewController.m in Sources */,
 				4F9F7343195D73290082669D /* ViewController.m in Sources */,
 				4FC7E85C19669E8C0069A919 /* OptionViewController.m in Sources */,
@@ -617,7 +640,8 @@
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Mariko Yamamoto (29KDR34G88)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Mariko Yamamoto (29KDR34G88)";
 				COPY_PHASE_STRIP = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -656,7 +680,8 @@
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Mariko Yamamoto (29KDR34G88)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Mariko Yamamoto (29KDR34G88)";
 				COPY_PHASE_STRIP = YES;
 				ENABLE_NS_ASSERTIONS = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -675,15 +700,14 @@
 		4F9F735C195D73290082669D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Mariko Yamamoto (29KDR34G88)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Mariko Yamamoto (29KDR34G88)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "PICO/PICO-Prefix.pch";
 				INFOPLIST_FILE = "PICO/PICO-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE = "3c63ee7f-9f76-4bfa-9de1-b86f89f91d43";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -691,15 +715,14 @@
 		4F9F735D195D73290082669D /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Mariko Yamamoto (29KDR34G88)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Mariko Yamamoto (29KDR34G88)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "PICO/PICO-Prefix.pch";
 				INFOPLIST_FILE = "PICO/PICO-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE = "3c63ee7f-9f76-4bfa-9de1-b86f89f91d43";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

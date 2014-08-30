@@ -16,39 +16,6 @@
 @synthesize score;
 @synthesize level;
 
-/*--------ふみこ4日目のやること--------*/
-/*
- ==OK!== スコアが受け渡せないよ！
- ==OK!== スコアのとこで、もう１回遊ぶをしたい。
- ==OK!== →　viewの中を全部初期化したい
- ==OK!==Twitterでシェアしたいよ！
- ==OK!== オプションをして、もどると、gameoverになってるよ。タイマーを一時停止した
- ==OK!== → 戻ったときにまたタイマーを再生したいよ
- ==OK!== gameoverのピンクの上に丸がaddsubviewされちゃう
- ==OK!== オプションからのバックボタン
- ==OK!== →投稿が完了してからアラートをだす
- ==OK!== オプションから戻るとスコアが０になる
- ==OK!== やっぱり初期化できてなかった
- ゲームセンターつけたいよ！
- ==OK!== 効果音を沢山つけたいよ！
- それを調節するよ（optionのビュー
- （広告つけたい）
- 
- 間違ってるときと合ってるときで音を変えたいのに変わらない
- 
- バグ
- ＝＝＝＝＝オプションから戻ると丸が上にある＝＝＝＝＝＝
-
-
- ====デザイン面====
- 部品{　ゲームオーバーででてくる８角形
- 　　　　スコア画面{Twitterでシェアボタン、はじめからボタン、スコアのラベル}
- }
- 
- 合ってるときと間違ってるときで音
- 遊び方、音量、フィードバック
-
-*/
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -66,7 +33,7 @@
     NSLog(@"受け渡されたscoreは%d",score);
     NSLog(@"level is %d幕",level);
 
-    gameScoreLabel.text = [NSString stringWithFormat:@"     %d",score];
+    gameScoreLabel.text = [NSString stringWithFormat:@"%d",score];
     
     NSError *error = nil;
     [[AVAudioSession sharedInstance] setCategory:AVAudioSessionCategoryPlayback error:&error];
@@ -84,9 +51,13 @@
     NSURL *gooonUrl = [NSURL fileURLWithPath:gooonPath] ;
     gooon = [[AVAudioPlayer alloc] initWithContentsOfURL:gooonUrl error:nil] ;
     
+    /*
     //音についての通知
     NSNotificationCenter *sound = [NSNotificationCenter defaultCenter];
     [sound addObserver:self selector:@selector(sound:) name:@"sound" object:nil];
+    [[NSNotificationCenter defaultCenter] postNotification:sound];
+
+     */
     
    [gooon play];
     
@@ -116,7 +87,7 @@
     
     SLComposeViewController *twitterPostVC = [ SLComposeViewController composeViewControllerForServiceType:SLServiceTypeTwitter];
     //投稿する文章
-    [twitterPostVC setInitialText:[NSString stringWithFormat:@"I WAS %dしゅ! #OCTAGON",score]];
+    [twitterPostVC setInitialText:[NSString stringWithFormat:@"I WAS %dしゅ! #OCTAGON_JP",score]];
     
 //    //alertだす
 //    UIAlertView *alert =[[UIAlertView alloc] initWithTitle:@"お知らせ" message:@"TWEETすたよ" delegate:nil cancelButtonTitle:nil otherButtonTitles:@"OK!", nil];
