@@ -10,9 +10,15 @@
 
 @interface GameOverViewController ()
 
+
 @end
 
 @implementation GameOverViewController
+{
+    UIImage *capture;
+
+}
+
 @synthesize score;
 @synthesize level;
 
@@ -64,6 +70,24 @@
 }
 
 
+-(void)viewWillAppear{
+//    //    キャプチャする範囲の指定
+//    CGRect rect = CGRectMake(74, 74, 320, 394);
+//    
+//    UIGraphicsBeginImageContext(rect.size);
+//    
+//    [self.view.layer renderInContext:UIGraphicsGetCurrentContext()];
+//    capture = UIGraphicsGetImageFromCurrentImageContext();
+//    
+//    UIGraphicsEndImageContext();
+//    
+//    //    キャプチャした画像の範囲
+//    UIImageWriteToSavedPhotosAlbum(capture, nil, nil, nil);
+//    UIGraphicsEndImageContext();
+    
+}
+
+
 -(void)sound:(NSNotification *)center{
     isSound = NO;
 }
@@ -85,9 +109,26 @@
     
     [flee play];
     
+    
+    //    キャプチャする範囲の指定
+    CGRect rect = CGRectMake(0, 0, 320, 568);
+    
+    UIGraphicsBeginImageContext(rect.size);
+    
+    [self.view.layer renderInContext:UIGraphicsGetCurrentContext()];
+    capture = UIGraphicsGetImageFromCurrentImageContext();
+    
+    UIGraphicsEndImageContext();
+    
+    //    キャプチャした画像の範囲
+    UIImageWriteToSavedPhotosAlbum(capture, nil, nil, nil);
+    UIGraphicsEndImageContext();
+
+    
     SLComposeViewController *twitterPostVC = [ SLComposeViewController composeViewControllerForServiceType:SLServiceTypeTwitter];
     //投稿する文章
-    [twitterPostVC setInitialText:[NSString stringWithFormat:@"I WAS %dしゅ! #OCTAGON_JP",score]];
+    [twitterPostVC setInitialText:[NSString stringWithFormat:@"I WAS %dしゅ! #OCTAGON_JP \n DL on app store! LETs しゅ \n https://itunes.apple.com/jp/app/octagon-wanwo-shi-fenkerushuttingugemu/id913077665?mt=8",score]];
+    [twitterPostVC addImage:capture];
     
 //    //alertだす
 //    UIAlertView *alert =[[UIAlertView alloc] initWithTitle:@"お知らせ" message:@"TWEETすたよ" delegate:nil cancelButtonTitle:nil otherButtonTitles:@"OK!", nil];

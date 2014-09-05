@@ -44,6 +44,8 @@
 		4F3EE49D199BAFA600008B6A /* GameOverViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F3EE49C199BAFA600008B6A /* GameOverViewController.m */; };
 		4F3EE4AC199C43E700008B6A /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F3EE4AB199C43E700008B6A /* Social.framework */; };
 		4F4E357719719B0D00EE4F99 /* DMCrookedSwipeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F4E357619719B0D00EE4F99 /* DMCrookedSwipeView.m */; };
+		4F82C64319B9CEDE00BB7895 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F9F732E195D73290082669D /* CoreGraphics.framework */; };
+		4F82C64519B9CEEE00BB7895 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F82C64419B9CEEE00BB7895 /* QuartzCore.framework */; };
 		4F8C4C78199C958E00C375F4 /* pico_settei.png in Resources */ = {isa = PBXBuildFile; fileRef = 4F8C4C77199C958E00C375F4 /* pico_settei.png */; };
 		4F8C4C92199C9B8800C375F4 /* lgp01a201304151300 のコピー.png in Resources */ = {isa = PBXBuildFile; fileRef = 4F8C4C7A199C9B8800C375F4 /* lgp01a201304151300 のコピー.png */; };
 		4F8C4C93199C9B8800C375F4 /* lgp01a201304151300.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4F8C4C7B199C9B8800C375F4 /* lgp01a201304151300.jpg */; };
@@ -140,6 +142,7 @@
 		4F3EE4AB199C43E700008B6A /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
 		4F4E357519719B0D00EE4F99 /* DMCrookedSwipeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DMCrookedSwipeView.h; sourceTree = "<group>"; };
 		4F4E357619719B0D00EE4F99 /* DMCrookedSwipeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DMCrookedSwipeView.m; sourceTree = "<group>"; };
+		4F82C64419B9CEEE00BB7895 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		4F8C4C77199C958E00C375F4 /* pico_settei.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pico_settei.png; sourceTree = "<group>"; };
 		4F8C4C7A199C9B8800C375F4 /* lgp01a201304151300 のコピー.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "lgp01a201304151300 のコピー.png"; sourceTree = "<group>"; };
 		4F8C4C7B199C9B8800C375F4 /* lgp01a201304151300.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = lgp01a201304151300.jpg; sourceTree = "<group>"; };
@@ -211,6 +214,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4F82C64519B9CEEE00BB7895 /* QuartzCore.framework in Frameworks */,
+				4F82C64319B9CEDE00BB7895 /* CoreGraphics.framework in Frameworks */,
 				4F9F734C195D73290082669D /* XCTest.framework in Frameworks */,
 				4F9F734E195D73290082669D /* UIKit.framework in Frameworks */,
 				4F9F734D195D73290082669D /* Foundation.framework in Frameworks */,
@@ -334,6 +339,7 @@
 		4F9F732B195D73290082669D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				4F82C64419B9CEEE00BB7895 /* QuartzCore.framework */,
 				4F1892EE19AAD0EF009B15D0 /* GameKit.framework */,
 				4F3EE4AB199C43E700008B6A /* Social.framework */,
 				4FC7E85019659E2E0069A919 /* AVFoundation.framework */,
@@ -640,8 +646,8 @@
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "iPhone Distribution: Mariko Yamamoto (29KDR34G88)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Mariko Yamamoto (29KDR34G88)";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Mariko Yamamoto (2EGT4SM44X)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Mariko Yamamoto (2EGT4SM44X)";
 				COPY_PHASE_STRIP = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -680,8 +686,8 @@
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "iPhone Distribution: Mariko Yamamoto (29KDR34G88)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Mariko Yamamoto (29KDR34G88)";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Mariko Yamamoto (2EGT4SM44X)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Mariko Yamamoto (2EGT4SM44X)";
 				COPY_PHASE_STRIP = YES;
 				ENABLE_NS_ASSERTIONS = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -701,13 +707,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				CODE_SIGN_IDENTITY = "iPhone Distribution: Mariko Yamamoto (29KDR34G88)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Mariko Yamamoto (29KDR34G88)";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Mariko Yamamoto (2EGT4SM44X)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Mariko Yamamoto (2EGT4SM44X)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "PICO/PICO-Prefix.pch";
 				INFOPLIST_FILE = "PICO/PICO-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "3c63ee7f-9f76-4bfa-9de1-b86f89f91d43";
+				PROVISIONING_PROFILE = "6ada31ac-57e3-477b-bc1f-92a287d2661d";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -716,13 +722,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				CODE_SIGN_IDENTITY = "iPhone Distribution: Mariko Yamamoto (29KDR34G88)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Mariko Yamamoto (29KDR34G88)";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Mariko Yamamoto (2EGT4SM44X)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Mariko Yamamoto (2EGT4SM44X)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "PICO/PICO-Prefix.pch";
 				INFOPLIST_FILE = "PICO/PICO-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "3c63ee7f-9f76-4bfa-9de1-b86f89f91d43";
+				PROVISIONING_PROFILE = "6ada31ac-57e3-477b-bc1f-92a287d2661d";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

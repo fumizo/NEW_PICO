@@ -10,6 +10,9 @@
 #import <Social/Social.h>
 #import <AVFoundation/AVFoundation.h>
 #import "ViewController.h"
+#import <CoreGraphics/CoreGraphics.h>
+#import <QuartzCore/QuartzCore.h>
+
 
 /*game center*/
 #import <GameKit/GameKit.h>   
