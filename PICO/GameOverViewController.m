@@ -111,7 +111,7 @@
     
     
     //    キャプチャする範囲の指定
-    CGRect rect = CGRectMake(0, 0, 320, 568);
+    CGRect rect = CGRectMake(0, 58, 320, 226);
     
     UIGraphicsBeginImageContext(rect.size);
     
