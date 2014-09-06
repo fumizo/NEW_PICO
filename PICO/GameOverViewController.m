@@ -70,7 +70,7 @@
 }
 
 
--(void)viewWillAppear{
+-(void)viewWillAppear:(BOOL)animated{
 //    //    キャプチャする範囲の指定
 //    CGRect rect = CGRectMake(74, 74, 320, 394);
 //    
@@ -85,6 +85,21 @@
 //    UIImageWriteToSavedPhotosAlbum(capture, nil, nil, nil);
 //    UIGraphicsEndImageContext();
     
+    /*
+    //gamecenter 画面を読み込む
+    [self authenticateLocalPlayer];
+    
+    //if文でGameCenterにログインしているかどうか確認してログインしていればスコアを送信する
+    if ([GKLocalPlayer localPlayer].isAuthenticated) {
+        GKScore* score = [[GKScore alloc] initWithLeaderboardIdentifier:@"octagonjp"];
+        score.value = score;
+        [GKScore reportScores:@[score] withCompletionHandler:^(NSError *error) {
+            if (error) {
+                // エラーの場合
+            }
+        }];
+    }
+     */
 }
 
 
@@ -148,6 +163,58 @@
     [self presentViewController:twitterPostVC animated:YES completion:nil];
     
 }
+
+/**
+ * GameCenterにログインしているか確認処理
+ * ログインしていなければログイン画面を表示*/
+- (void)authenticateLocalPlayer
+{
+    GKLocalPlayer* player = [GKLocalPlayer localPlayer];
+    player.authenticateHandler = ^(UIViewController* ui, NSError* error )
+    {
+        if( nil != ui )
+        {
+            [self presentViewController:ui animated:YES completion:nil];
+        }
+    };
+}
+
+- (IBAction)signinToGameCenter{
+    //gamecenter 画面を読み込む
+    [self authenticateLocalPlayer];
+    
+    //if文でGameCenterにログインしているかどうか確認してログインしていればスコアを送信する
+    if ([GKLocalPlayer localPlayer].isAuthenticated) {
+        GKScore* score2 = [[GKScore alloc] initWithLeaderboardIdentifier:@"octagonjp"];
+        score2.value = score;
+        [GKScore reportScores:@[score2] withCompletionHandler:^(NSError *error) {
+            if (error) {
+                // エラーの場合
+            }
+        }];
+    }
+}
+
+-(IBAction) showRanking{
+        
+    GKGameCenterViewController *gcView = [GKGameCenterViewController new];
+    if (gcView != nil)
+    {
+        gcView.gameCenterDelegate = self;
+        gcView.viewState = GKGameCenterViewControllerStateLeaderboards;
+        [self presentViewController:gcView animated:YES completion:nil];
+    }
+}
+/**
+ * リーダーボードで完了タップ時の処理
+ * 前の画面に戻る
+ */
+- (void)gameCenterViewControllerDidFinish:(GKGameCenterViewController *)gameCenterViewController
+{
+    [self dismissViewControllerAnimated:YES completion:nil];
+}
+
+
 
 - (void)didReceiveMemoryWarning
 {

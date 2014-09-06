@@ -13,14 +13,11 @@
 #import <CoreGraphics/CoreGraphics.h>
 #import <QuartzCore/QuartzCore.h>
 
-
 /*game center*/
-#import <GameKit/GameKit.h>   
-@interface HogeViewController : UIViewController<GKGameCenterControllerDelegate>
-@end
+#import <GameKit/GameKit.h>
 
 
-@interface GameOverViewController : UIViewController{
+@interface GameOverViewController : UIViewController<GKGameCenterControllerDelegate>{
     IBOutlet UILabel *gameScoreLabel;
     int score;
     int level;
@@ -36,6 +33,8 @@
 -(IBAction)backToStart ;
 
 - (IBAction)twitter ;
+- (IBAction)showRanking;
+- (IBAction)signinToGameCenter;
 
 @property(nonatomic) int score;
 @property(nonatomic) int level;
