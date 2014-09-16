@@ -38,6 +38,16 @@
     // Do any additional setup after loading the view.
     NSLog(@"受け渡されたscoreは%d",score);
     NSLog(@"level is %d幕",level);
+    
+    /*
+    //high scoreの入れ物
+    userDefaultsHighScore = [NSUserDefaults standardUserDefaults];
+    // int型で取得
+    highScore = [userDefaultsHighScore integerForKey:@"HIGHSCORE"];
+    // Int型で保存
+    [userDefaultsHighScore setInteger:1 forKey:@"HIGHSCORE"];
+     */
+    
 
     gameScoreLabel.text = [NSString stringWithFormat:@"%d",score];
     
@@ -126,7 +136,7 @@
     
     
     //    キャプチャする範囲の指定
-    CGRect rect = CGRectMake(0, 58, 320, 226);
+    CGRect rect = CGRectMake(0, 287, 320, 226);
     
     UIGraphicsBeginImageContext(rect.size);
     

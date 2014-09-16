@@ -27,6 +27,9 @@
     AVAudioPlayer *gooon;
 
     BOOL isSound;
+    
+    NSUserDefaults *userDefaultsHighScore;
+    int highScore;
 }
 
 

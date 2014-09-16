@@ -122,6 +122,10 @@
     }
 }
 
+/*======notification======*/
+/*このクラスはUIImageView(丸たち)のクラスなので、合っているか間違っているかを、ここで判定して
+ UIViewControllerのほうのクラスに通知しています。*/
+
 
 - (void)swipeRight:(UISwipeGestureRecognizer *)sender
 {

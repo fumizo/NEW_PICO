@@ -24,10 +24,14 @@
     UIImage *buttonImg;
     
     AVAudioPlayer *don;
+    
+    NSUserDefaults *userDefaultSounds;
+    BOOL sounds;
+    
 }
 
 @property (nonatomic,assign) id<OptionViewControllerDelegate> delegate;  //ここにかわりにやってくれる人をいれてね
 
-- (IBAction)back ;
+- (IBAction)back;
 
 @end

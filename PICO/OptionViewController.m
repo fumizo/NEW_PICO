@@ -32,16 +32,8 @@
     volume = 1.0;
     isSound = YES;
     
-    /*ボタン*/
-//    [soundButtonOFF setTitle:@"OFF" forState:UIControlStateNormal ];
-//    soundButtonOFF.titleLabel.font = [ UIFont fontWithName:@"DIN Alternate Bold" size:30.0 ];
-//    soundButtonOFF.titleLabel.backgroundColor = [ UIColor greenColor];
-    
-//    soundButtonOFF = [UIButton buttonWithType:UIButtonTypeCustom];
     
     buttonImg = [UIImage imageNamed:@"octagon_sound_on.png"];  // ボタンにする画像を生成する
-//    soundButtonOFF = [[[UIButton alloc]
-//                       initWithFrame:CGRectMake(0, 0, 60, 30)] autorelease];  // ボタンのサイズを指定する
     soundButtonOFF = [UIButton buttonWithType:UIButtonTypeCustom];
     [soundButtonOFF setBackgroundImage:buttonImg forState:UIControlStateNormal];  // 画像をセットする
     [soundButtonOFF addTarget:self
@@ -56,12 +48,18 @@
 }
 
 -(void)sound:(UIButton *)button{
+    
+    userDefaultSounds = [NSUserDefaults standardUserDefaults];
+    
+    
     //音がONになってたら押したときボリュームを０に。YESだったら逆。
     if (isSound == YES) {
+//        // Bool型で保存
+//        [userDefaultSounds setBool:YES forKey:nil];
+        
         volume = 0;
         NSLog(@"オプションの画面で音量は...%d",volume);
         
-//        [soundButtonOFF setTitle:@"ON" forState:UIControlStateNormal ];
         buttonImg = [UIImage imageNamed:@"octagon_sound_off.png"];  // ボタンにする画像を生成する
         [soundButtonOFF setBackgroundImage:buttonImg forState:UIControlStateNormal];  // 画像をセットする
         [self.delegate volumeDown:volume];
@@ -71,7 +69,9 @@
         volume = 1;
         NSLog(@"オプションの画面で音量は...%d",volume);
         
-//        [soundButtonOFF setTitle:@"OFF" forState:UIControlStateNormal ];
+//        // Bool型で保存
+//        [userDefaultSounds setBool:NO forKey:nil];
+        
         buttonImg = [UIImage imageNamed:@"octagon_sound_on.png"];  // ボタンにする画像を生成する
         [soundButtonOFF setBackgroundImage:buttonImg forState:UIControlStateNormal];  // 画像をセットする
         [self.delegate volumeDown:volume];

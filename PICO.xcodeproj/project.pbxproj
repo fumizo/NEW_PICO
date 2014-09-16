@@ -88,6 +88,46 @@
 		4F9F7356195D73290082669D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4F9F7354195D73290082669D /* InfoPlist.strings */; };
 		4F9F7358195D73290082669D /* PICOTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F9F7357195D73290082669D /* PICOTests.m */; };
 		4FAC6B0219ADBBCB001A8DE7 /* octagon_icon120.png in Resources */ = {isa = PBXBuildFile; fileRef = 4FAC6B0119ADBBCB001A8DE7 /* octagon_icon120.png */; };
+		4FAD089919C746A600BC2854 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F82C64419B9CEEE00BB7895 /* QuartzCore.framework */; };
+		4FAD097919C8821100BC2854 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 4FAD093D19C8821100BC2854 /* .gitignore */; };
+		4FAD097A19C8821100BC2854 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 4FAD093E19C8821100BC2854 /* LICENSE */; };
+		4FAD097B19C8821100BC2854 /* MYBlurIntroductionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FAD094119C8821100BC2854 /* MYBlurIntroductionView.m */; };
+		4FAD097C19C8821100BC2854 /* MYIntroductionPanel.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FAD094319C8821100BC2854 /* MYIntroductionPanel.m */; };
+		4FAD097D19C8821100BC2854 /* MYBlurIntroductionView.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 4FAD094419C8821100BC2854 /* MYBlurIntroductionView.podspec */; };
+		4FAD097E19C8821100BC2854 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 4FAD094519C8821100BC2854 /* README.md */; };
+		4FAD097F19C8821100BC2854 /* iOS Simulator Screen shot Oct 17, 2013 4.51.36 PM.png in Resources */ = {isa = PBXBuildFile; fileRef = 4FAD094919C8821100BC2854 /* iOS Simulator Screen shot Oct 17, 2013 4.51.36 PM.png */; };
+		4FAD098019C8821100BC2854 /* iOS Simulator Screen shot Oct 17, 2013 4.51.39 PM.png in Resources */ = {isa = PBXBuildFile; fileRef = 4FAD094A19C8821100BC2854 /* iOS Simulator Screen shot Oct 17, 2013 4.51.39 PM.png */; };
+		4FAD098119C8821100BC2854 /* iOS Simulator Screen shot Oct 17, 2013 4.51.41 PM.png in Resources */ = {isa = PBXBuildFile; fileRef = 4FAD094B19C8821100BC2854 /* iOS Simulator Screen shot Oct 17, 2013 4.51.41 PM.png */; };
+		4FAD098219C8821100BC2854 /* iOS Simulator Screen shot Oct 17, 2013 4.51.43 PM.png in Resources */ = {isa = PBXBuildFile; fileRef = 4FAD094C19C8821100BC2854 /* iOS Simulator Screen shot Oct 17, 2013 4.51.43 PM.png */; };
+		4FAD098319C8821100BC2854 /* iOS Simulator Screen shot Oct 17, 2013 3.09.52 PM.png in Resources */ = {isa = PBXBuildFile; fileRef = 4FAD094D19C8821100BC2854 /* iOS Simulator Screen shot Oct 17, 2013 3.09.52 PM.png */; };
+		4FAD098419C8821100BC2854 /* iOS Simulator Screen shot Oct 17, 2013 3.09.56 PM.png in Resources */ = {isa = PBXBuildFile; fileRef = 4FAD094E19C8821100BC2854 /* iOS Simulator Screen shot Oct 17, 2013 3.09.56 PM.png */; };
+		4FAD098519C8821200BC2854 /* iOS Simulator Screen shot Oct 17, 2013 3.10.00 PM.png in Resources */ = {isa = PBXBuildFile; fileRef = 4FAD094F19C8821100BC2854 /* iOS Simulator Screen shot Oct 17, 2013 3.10.00 PM.png */; };
+		4FAD098619C8821200BC2854 /* iOS Simulator Screen shot Oct 17, 2013 4.42.36 PM.png in Resources */ = {isa = PBXBuildFile; fileRef = 4FAD095019C8821100BC2854 /* iOS Simulator Screen shot Oct 17, 2013 4.42.36 PM.png */; };
+		4FAD098719C8821200BC2854 /* iOS Simulator Screen shot Oct 17, 2013 4.42.38 PM.png in Resources */ = {isa = PBXBuildFile; fileRef = 4FAD095119C8821100BC2854 /* iOS Simulator Screen shot Oct 17, 2013 4.42.38 PM.png */; };
+		4FAD098819C8821200BC2854 /* MYBlurIntroductionView.gif in Resources */ = {isa = PBXBuildFile; fileRef = 4FAD095219C8821100BC2854 /* MYBlurIntroductionView.gif */; };
+		4FAD098919C8821200BC2854 /* iOS Simulator Screen shot Oct 17, 2013 4.51.36 PM.png in Resources */ = {isa = PBXBuildFile; fileRef = 4FAD095419C8821100BC2854 /* iOS Simulator Screen shot Oct 17, 2013 4.51.36 PM.png */; };
+		4FAD098A19C8821200BC2854 /* iOS Simulator Screen shot Oct 17, 2013 4.51.39 PM.png in Resources */ = {isa = PBXBuildFile; fileRef = 4FAD095519C8821100BC2854 /* iOS Simulator Screen shot Oct 17, 2013 4.51.39 PM.png */; };
+		4FAD098B19C8821200BC2854 /* iOS Simulator Screen shot Oct 17, 2013 4.51.41 PM.png in Resources */ = {isa = PBXBuildFile; fileRef = 4FAD095619C8821100BC2854 /* iOS Simulator Screen shot Oct 17, 2013 4.51.41 PM.png */; };
+		4FAD098C19C8821200BC2854 /* iOS Simulator Screen shot Oct 17, 2013 4.51.43 PM.png in Resources */ = {isa = PBXBuildFile; fileRef = 4FAD095719C8821100BC2854 /* iOS Simulator Screen shot Oct 17, 2013 4.51.43 PM.png */; };
+		4FAD098D19C8821200BC2854 /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4FAD095A19C8821100BC2854 /* Main_iPad.storyboard */; };
+		4FAD098E19C8821200BC2854 /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4FAD095C19C8821100BC2854 /* Main_iPhone.storyboard */; };
+		4FAD098F19C8821200BC2854 /* CheckMarkWhite.png in Resources */ = {isa = PBXBuildFile; fileRef = 4FAD095E19C8821100BC2854 /* CheckMarkWhite.png */; };
+		4FAD099019C8821200BC2854 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4FAD095F19C8821100BC2854 /* InfoPlist.strings */; };
+		4FAD099119C8821200BC2854 /* ForkImage.png in Resources */ = {isa = PBXBuildFile; fileRef = 4FAD096119C8821100BC2854 /* ForkImage.png */; };
+		4FAD099219C8821200BC2854 /* HeaderImage.png in Resources */ = {isa = PBXBuildFile; fileRef = 4FAD096219C8821100BC2854 /* HeaderImage.png */; };
+		4FAD099319C8821200BC2854 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4FAD096319C8821100BC2854 /* Images.xcassets */; };
+		4FAD099419C8821200BC2854 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FAD096419C8821100BC2854 /* main.m */; };
+		4FAD099519C8821200BC2854 /* MYAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FAD096619C8821100BC2854 /* MYAppDelegate.m */; };
+		4FAD099619C8821200BC2854 /* MYBlurIntroductionView-Example-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4FAD096719C8821100BC2854 /* MYBlurIntroductionView-Example-Info.plist */; };
+		4FAD099719C8821200BC2854 /* MYCustomPanel.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FAD096A19C8821100BC2854 /* MYCustomPanel.m */; };
+		4FAD099819C8821200BC2854 /* MYCustomPanel.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4FAD096B19C8821100BC2854 /* MYCustomPanel.xib */; };
+		4FAD099919C8821200BC2854 /* MYViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FAD096D19C8821100BC2854 /* MYViewController.m */; };
+		4FAD099A19C8821200BC2854 /* TestHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4FAD096E19C8821100BC2854 /* TestHeader.xib */; };
+		4FAD099B19C8821200BC2854 /* TestPanel3.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4FAD096F19C8821100BC2854 /* TestPanel3.xib */; };
+		4FAD099C19C8821200BC2854 /* Toronto, ON.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4FAD097019C8821100BC2854 /* Toronto, ON.jpg */; };
+		4FAD099D19C8821200BC2854 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4FAD097519C8821100BC2854 /* InfoPlist.strings */; };
+		4FAD099E19C8821200BC2854 /* MYBlurIntroductionView-ExampleTests-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4FAD097719C8821100BC2854 /* MYBlurIntroductionView-ExampleTests-Info.plist */; };
+		4FAD099F19C8821200BC2854 /* MYBlurIntroductionView_ExampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FAD097819C8821100BC2854 /* MYBlurIntroductionView_ExampleTests.m */; };
 		4FB97DFF199B3ADD00BF12EF /* Noctagon().png in Resources */ = {isa = PBXBuildFile; fileRef = 4FB97DFE199B3ADD00BF12EF /* Noctagon().png */; };
 		4FC7E85C19669E8C0069A919 /* OptionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FC7E85B19669E8C0069A919 /* OptionViewController.m */; };
 /* End PBXBuildFile section */
@@ -99,6 +139,20 @@
 			proxyType = 1;
 			remoteGlobalIDString = 4F9F7328195D73290082669D;
 			remoteInfo = PICO;
+		};
+		4FAD09A219C8821200BC2854 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4FAD097119C8821100BC2854 /* MYBlurIntroductionView-Example.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F0E9CB40180F685900D89DE2;
+			remoteInfo = "MYBlurIntroductionView-Example";
+		};
+		4FAD09A419C8821200BC2854 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4FAD097119C8821100BC2854 /* MYBlurIntroductionView-Example.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F0E9CB64180F685900D89DE2;
+			remoteInfo = "MYBlurIntroductionView-ExampleTests";
 		};
 /* End PBXContainerItemProxy section */
 
@@ -170,7 +224,7 @@
 		4F8C4C91199C9B8800C375F4 /* tori.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = tori.jpg; sourceTree = "<group>"; };
 		4F8C4CAE199D981400C375F4 /* octagonHaikei.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = octagonHaikei.png; path = ../PICO/octagonHaikei.png; sourceTree = "<group>"; };
 		4F8C4CB2199D9DE900C375F4 /* 旧icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "旧icon.png"; path = "../旧icon.png"; sourceTree = "<group>"; };
-		4F9F7329195D73290082669D /* PICO.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PICO.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4F9F7329195D73290082669D /* PICO.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PICO.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4F9F732C195D73290082669D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		4F9F732E195D73290082669D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		4F9F7330195D73290082669D /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
@@ -190,6 +244,52 @@
 		4F9F7355195D73290082669D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		4F9F7357195D73290082669D /* PICOTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PICOTests.m; sourceTree = "<group>"; };
 		4FAC6B0119ADBBCB001A8DE7 /* octagon_icon120.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = octagon_icon120.png; sourceTree = "<group>"; };
+		4FAD093D19C8821100BC2854 /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		4FAD093E19C8821100BC2854 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		4FAD094019C8821100BC2854 /* MYBlurIntroductionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYBlurIntroductionView.h; sourceTree = "<group>"; };
+		4FAD094119C8821100BC2854 /* MYBlurIntroductionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYBlurIntroductionView.m; sourceTree = "<group>"; };
+		4FAD094219C8821100BC2854 /* MYIntroductionPanel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYIntroductionPanel.h; sourceTree = "<group>"; };
+		4FAD094319C8821100BC2854 /* MYIntroductionPanel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYIntroductionPanel.m; sourceTree = "<group>"; };
+		4FAD094419C8821100BC2854 /* MYBlurIntroductionView.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = MYBlurIntroductionView.podspec; sourceTree = "<group>"; };
+		4FAD094519C8821100BC2854 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
+		4FAD094919C8821100BC2854 /* iOS Simulator Screen shot Oct 17, 2013 4.51.36 PM.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iOS Simulator Screen shot Oct 17, 2013 4.51.36 PM.png"; sourceTree = "<group>"; };
+		4FAD094A19C8821100BC2854 /* iOS Simulator Screen shot Oct 17, 2013 4.51.39 PM.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iOS Simulator Screen shot Oct 17, 2013 4.51.39 PM.png"; sourceTree = "<group>"; };
+		4FAD094B19C8821100BC2854 /* iOS Simulator Screen shot Oct 17, 2013 4.51.41 PM.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iOS Simulator Screen shot Oct 17, 2013 4.51.41 PM.png"; sourceTree = "<group>"; };
+		4FAD094C19C8821100BC2854 /* iOS Simulator Screen shot Oct 17, 2013 4.51.43 PM.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iOS Simulator Screen shot Oct 17, 2013 4.51.43 PM.png"; sourceTree = "<group>"; };
+		4FAD094D19C8821100BC2854 /* iOS Simulator Screen shot Oct 17, 2013 3.09.52 PM.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iOS Simulator Screen shot Oct 17, 2013 3.09.52 PM.png"; sourceTree = "<group>"; };
+		4FAD094E19C8821100BC2854 /* iOS Simulator Screen shot Oct 17, 2013 3.09.56 PM.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iOS Simulator Screen shot Oct 17, 2013 3.09.56 PM.png"; sourceTree = "<group>"; };
+		4FAD094F19C8821100BC2854 /* iOS Simulator Screen shot Oct 17, 2013 3.10.00 PM.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iOS Simulator Screen shot Oct 17, 2013 3.10.00 PM.png"; sourceTree = "<group>"; };
+		4FAD095019C8821100BC2854 /* iOS Simulator Screen shot Oct 17, 2013 4.42.36 PM.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iOS Simulator Screen shot Oct 17, 2013 4.42.36 PM.png"; sourceTree = "<group>"; };
+		4FAD095119C8821100BC2854 /* iOS Simulator Screen shot Oct 17, 2013 4.42.38 PM.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iOS Simulator Screen shot Oct 17, 2013 4.42.38 PM.png"; sourceTree = "<group>"; };
+		4FAD095219C8821100BC2854 /* MYBlurIntroductionView.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = MYBlurIntroductionView.gif; sourceTree = "<group>"; };
+		4FAD095419C8821100BC2854 /* iOS Simulator Screen shot Oct 17, 2013 4.51.36 PM.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iOS Simulator Screen shot Oct 17, 2013 4.51.36 PM.png"; sourceTree = "<group>"; };
+		4FAD095519C8821100BC2854 /* iOS Simulator Screen shot Oct 17, 2013 4.51.39 PM.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iOS Simulator Screen shot Oct 17, 2013 4.51.39 PM.png"; sourceTree = "<group>"; };
+		4FAD095619C8821100BC2854 /* iOS Simulator Screen shot Oct 17, 2013 4.51.41 PM.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iOS Simulator Screen shot Oct 17, 2013 4.51.41 PM.png"; sourceTree = "<group>"; };
+		4FAD095719C8821100BC2854 /* iOS Simulator Screen shot Oct 17, 2013 4.51.43 PM.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iOS Simulator Screen shot Oct 17, 2013 4.51.43 PM.png"; sourceTree = "<group>"; };
+		4FAD095B19C8821100BC2854 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPad.storyboard; sourceTree = "<group>"; };
+		4FAD095D19C8821100BC2854 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
+		4FAD095E19C8821100BC2854 /* CheckMarkWhite.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = CheckMarkWhite.png; sourceTree = "<group>"; };
+		4FAD096019C8821100BC2854 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		4FAD096119C8821100BC2854 /* ForkImage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ForkImage.png; sourceTree = "<group>"; };
+		4FAD096219C8821100BC2854 /* HeaderImage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = HeaderImage.png; sourceTree = "<group>"; };
+		4FAD096319C8821100BC2854 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		4FAD096419C8821100BC2854 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		4FAD096519C8821100BC2854 /* MYAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYAppDelegate.h; sourceTree = "<group>"; };
+		4FAD096619C8821100BC2854 /* MYAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYAppDelegate.m; sourceTree = "<group>"; };
+		4FAD096719C8821100BC2854 /* MYBlurIntroductionView-Example-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "MYBlurIntroductionView-Example-Info.plist"; sourceTree = "<group>"; };
+		4FAD096819C8821100BC2854 /* MYBlurIntroductionView-Example-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MYBlurIntroductionView-Example-Prefix.pch"; sourceTree = "<group>"; };
+		4FAD096919C8821100BC2854 /* MYCustomPanel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYCustomPanel.h; sourceTree = "<group>"; };
+		4FAD096A19C8821100BC2854 /* MYCustomPanel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYCustomPanel.m; sourceTree = "<group>"; };
+		4FAD096B19C8821100BC2854 /* MYCustomPanel.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MYCustomPanel.xib; sourceTree = "<group>"; };
+		4FAD096C19C8821100BC2854 /* MYViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYViewController.h; sourceTree = "<group>"; };
+		4FAD096D19C8821100BC2854 /* MYViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYViewController.m; sourceTree = "<group>"; };
+		4FAD096E19C8821100BC2854 /* TestHeader.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TestHeader.xib; sourceTree = "<group>"; };
+		4FAD096F19C8821100BC2854 /* TestPanel3.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TestPanel3.xib; sourceTree = "<group>"; };
+		4FAD097019C8821100BC2854 /* Toronto, ON.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Toronto, ON.jpg"; sourceTree = "<group>"; };
+		4FAD097119C8821100BC2854 /* MYBlurIntroductionView-Example.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = "MYBlurIntroductionView-Example.xcodeproj"; sourceTree = "<group>"; };
+		4FAD097619C8821100BC2854 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		4FAD097719C8821100BC2854 /* MYBlurIntroductionView-ExampleTests-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "MYBlurIntroductionView-ExampleTests-Info.plist"; sourceTree = "<group>"; };
+		4FAD097819C8821100BC2854 /* MYBlurIntroductionView_ExampleTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYBlurIntroductionView_ExampleTests.m; sourceTree = "<group>"; };
 		4FB97DFE199B3ADD00BF12EF /* Noctagon().png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Noctagon().png"; sourceTree = "<group>"; };
 		4FC7E85019659E2E0069A919 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		4FC7E85A19669E8C0069A919 /* OptionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OptionViewController.h; sourceTree = "<group>"; };
@@ -201,6 +301,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4FAD089919C746A600BC2854 /* QuartzCore.framework in Frameworks */,
 				4F1892F619AB1032009B15D0 /* AVFoundation.framework in Frameworks */,
 				4F1892EF19AAD0EF009B15D0 /* GameKit.framework in Frameworks */,
 				4F3EE4AC199C43E700008B6A /* Social.framework in Frameworks */,
@@ -308,6 +409,7 @@
 		4F9F7320195D73290082669D = {
 			isa = PBXGroup;
 			children = (
+				4FAD093C19C8821100BC2854 /* MYBlurIntroductionView */,
 				4F18931919ACF7C8009B15D0 /* octagon_gameover_purple.png */,
 				4F18931519ACF4BD009B15D0 /* icon.png */,
 				4F18930D19AB30A4009B15D0 /* octagon_hantoumei.png */,
@@ -330,7 +432,7 @@
 		4F9F732A195D73290082669D /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				4F9F7329195D73290082669D /* PICO.app */,
+				4F9F7329195D73290082669D /* PICO.xctest */,
 				4F9F734A195D73290082669D /* PICOTests.xctest */,
 			);
 			name = Products;
@@ -413,6 +515,132 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		4FAD093C19C8821100BC2854 /* MYBlurIntroductionView */ = {
+			isa = PBXGroup;
+			children = (
+				4FAD093D19C8821100BC2854 /* .gitignore */,
+				4FAD093E19C8821100BC2854 /* LICENSE */,
+				4FAD093F19C8821100BC2854 /* MYBlurIntroductionView */,
+				4FAD094419C8821100BC2854 /* MYBlurIntroductionView.podspec */,
+				4FAD094519C8821100BC2854 /* README.md */,
+				4FAD094619C8821100BC2854 /* Resources */,
+				4FAD095819C8821100BC2854 /* Sample Project */,
+			);
+			path = MYBlurIntroductionView;
+			sourceTree = "<group>";
+		};
+		4FAD093F19C8821100BC2854 /* MYBlurIntroductionView */ = {
+			isa = PBXGroup;
+			children = (
+				4FAD094019C8821100BC2854 /* MYBlurIntroductionView.h */,
+				4FAD094119C8821100BC2854 /* MYBlurIntroductionView.m */,
+				4FAD094219C8821100BC2854 /* MYIntroductionPanel.h */,
+				4FAD094319C8821100BC2854 /* MYIntroductionPanel.m */,
+			);
+			path = MYBlurIntroductionView;
+			sourceTree = "<group>";
+		};
+		4FAD094619C8821100BC2854 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				4FAD094719C8821100BC2854 /* Images */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		4FAD094719C8821100BC2854 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				4FAD094819C8821100BC2854 /* FullSize */,
+				4FAD094D19C8821100BC2854 /* iOS Simulator Screen shot Oct 17, 2013 3.09.52 PM.png */,
+				4FAD094E19C8821100BC2854 /* iOS Simulator Screen shot Oct 17, 2013 3.09.56 PM.png */,
+				4FAD094F19C8821100BC2854 /* iOS Simulator Screen shot Oct 17, 2013 3.10.00 PM.png */,
+				4FAD095019C8821100BC2854 /* iOS Simulator Screen shot Oct 17, 2013 4.42.36 PM.png */,
+				4FAD095119C8821100BC2854 /* iOS Simulator Screen shot Oct 17, 2013 4.42.38 PM.png */,
+				4FAD095219C8821100BC2854 /* MYBlurIntroductionView.gif */,
+				4FAD095319C8821100BC2854 /* Top */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
+		4FAD094819C8821100BC2854 /* FullSize */ = {
+			isa = PBXGroup;
+			children = (
+				4FAD094919C8821100BC2854 /* iOS Simulator Screen shot Oct 17, 2013 4.51.36 PM.png */,
+				4FAD094A19C8821100BC2854 /* iOS Simulator Screen shot Oct 17, 2013 4.51.39 PM.png */,
+				4FAD094B19C8821100BC2854 /* iOS Simulator Screen shot Oct 17, 2013 4.51.41 PM.png */,
+				4FAD094C19C8821100BC2854 /* iOS Simulator Screen shot Oct 17, 2013 4.51.43 PM.png */,
+			);
+			path = FullSize;
+			sourceTree = "<group>";
+		};
+		4FAD095319C8821100BC2854 /* Top */ = {
+			isa = PBXGroup;
+			children = (
+				4FAD095419C8821100BC2854 /* iOS Simulator Screen shot Oct 17, 2013 4.51.36 PM.png */,
+				4FAD095519C8821100BC2854 /* iOS Simulator Screen shot Oct 17, 2013 4.51.39 PM.png */,
+				4FAD095619C8821100BC2854 /* iOS Simulator Screen shot Oct 17, 2013 4.51.41 PM.png */,
+				4FAD095719C8821100BC2854 /* iOS Simulator Screen shot Oct 17, 2013 4.51.43 PM.png */,
+			);
+			path = Top;
+			sourceTree = "<group>";
+		};
+		4FAD095819C8821100BC2854 /* Sample Project */ = {
+			isa = PBXGroup;
+			children = (
+				4FAD095919C8821100BC2854 /* MYBlurIntroductionView-Example */,
+				4FAD097119C8821100BC2854 /* MYBlurIntroductionView-Example.xcodeproj */,
+				4FAD097419C8821100BC2854 /* MYBlurIntroductionView-ExampleTests */,
+			);
+			path = "Sample Project";
+			sourceTree = "<group>";
+		};
+		4FAD095919C8821100BC2854 /* MYBlurIntroductionView-Example */ = {
+			isa = PBXGroup;
+			children = (
+				4FAD095A19C8821100BC2854 /* Main_iPad.storyboard */,
+				4FAD095C19C8821100BC2854 /* Main_iPhone.storyboard */,
+				4FAD095E19C8821100BC2854 /* CheckMarkWhite.png */,
+				4FAD095F19C8821100BC2854 /* InfoPlist.strings */,
+				4FAD096119C8821100BC2854 /* ForkImage.png */,
+				4FAD096219C8821100BC2854 /* HeaderImage.png */,
+				4FAD096319C8821100BC2854 /* Images.xcassets */,
+				4FAD096419C8821100BC2854 /* main.m */,
+				4FAD096519C8821100BC2854 /* MYAppDelegate.h */,
+				4FAD096619C8821100BC2854 /* MYAppDelegate.m */,
+				4FAD096719C8821100BC2854 /* MYBlurIntroductionView-Example-Info.plist */,
+				4FAD096819C8821100BC2854 /* MYBlurIntroductionView-Example-Prefix.pch */,
+				4FAD096919C8821100BC2854 /* MYCustomPanel.h */,
+				4FAD096A19C8821100BC2854 /* MYCustomPanel.m */,
+				4FAD096B19C8821100BC2854 /* MYCustomPanel.xib */,
+				4FAD096C19C8821100BC2854 /* MYViewController.h */,
+				4FAD096D19C8821100BC2854 /* MYViewController.m */,
+				4FAD096E19C8821100BC2854 /* TestHeader.xib */,
+				4FAD096F19C8821100BC2854 /* TestPanel3.xib */,
+				4FAD097019C8821100BC2854 /* Toronto, ON.jpg */,
+			);
+			path = "MYBlurIntroductionView-Example";
+			sourceTree = "<group>";
+		};
+		4FAD097219C8821100BC2854 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4FAD09A319C8821200BC2854 /* MYBlurIntroductionView-Example.app */,
+				4FAD09A519C8821200BC2854 /* MYBlurIntroductionView-ExampleTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4FAD097419C8821100BC2854 /* MYBlurIntroductionView-ExampleTests */ = {
+			isa = PBXGroup;
+			children = (
+				4FAD097519C8821100BC2854 /* InfoPlist.strings */,
+				4FAD097719C8821100BC2854 /* MYBlurIntroductionView-ExampleTests-Info.plist */,
+				4FAD097819C8821100BC2854 /* MYBlurIntroductionView_ExampleTests.m */,
+			);
+			path = "MYBlurIntroductionView-ExampleTests";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -430,7 +658,7 @@
 			);
 			name = PICO;
 			productName = PICO;
-			productReference = 4F9F7329195D73290082669D /* PICO.app */;
+			productReference = 4F9F7329195D73290082669D /* PICO.xctest */;
 			productType = "com.apple.product-type.application";
 		};
 		4F9F7349195D73290082669D /* PICOTests */ = {
@@ -479,6 +707,12 @@
 			mainGroup = 4F9F7320195D73290082669D;
 			productRefGroup = 4F9F732A195D73290082669D /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 4FAD097219C8821100BC2854 /* Products */;
+					ProjectRef = 4FAD097119C8821100BC2854 /* MYBlurIntroductionView-Example.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				4F9F7328195D73290082669D /* PICO */,
@@ -487,13 +721,33 @@
 		};
 /* End PBXProject section */
 
+/* Begin PBXReferenceProxy section */
+		4FAD09A319C8821200BC2854 /* MYBlurIntroductionView-Example.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = "MYBlurIntroductionView-Example.app";
+			remoteRef = 4FAD09A219C8821200BC2854 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		4FAD09A519C8821200BC2854 /* MYBlurIntroductionView-ExampleTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "MYBlurIntroductionView-ExampleTests.xctest";
+			remoteRef = 4FAD09A419C8821200BC2854 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
 /* Begin PBXResourcesBuildPhase section */
 		4F9F7327195D73290082669D /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4FAD097919C8821100BC2854 /* .gitignore in Resources */,
+				4FAD099119C8821200BC2854 /* ForkImage.png in Resources */,
 				4F3C858F198A726F00E843AC /* NmarumaruYellow.png in Resources */,
 				4F8C4C95199C9B8800C375F4 /* lgp01a201304151400.jpg in Resources */,
+				4FAD098F19C8821200BC2854 /* CheckMarkWhite.png in Resources */,
 				4F8C4C98199C9B8800C375F4 /* lgp01a201304160100 のコピー.png in Resources */,
 				4F9F7345195D73290082669D /* Images.xcassets in Resources */,
 				4F8C4C97199C9B8800C375F4 /* lgp01a201304151900.jpg in Resources */,
@@ -507,44 +761,67 @@
 				4F8C4C9C199C9B8800C375F4 /* lgp01a201403010300 のコピー.png in Resources */,
 				4F1892EA19AA6539009B15D0 /* kannn.mp3 in Resources */,
 				4F18930A19AB2BFE009B15D0 /* octagon_option_wood.png in Resources */,
+				4FAD099B19C8821200BC2854 /* TestPanel3.xib in Resources */,
 				4F8C4CA5199C9B8800C375F4 /* YellowAndPink.png in Resources */,
+				4FAD098619C8821200BC2854 /* iOS Simulator Screen shot Oct 17, 2013 4.42.36 PM.png in Resources */,
 				4F8C4CA4199C9B8800C375F4 /* res_1732741526.png in Resources */,
+				4FAD097D19C8821100BC2854 /* MYBlurIntroductionView.podspec in Resources */,
+				4FAD098019C8821100BC2854 /* iOS Simulator Screen shot Oct 17, 2013 4.51.39 PM.png in Resources */,
 				4F8C4CA3199C9B8800C375F4 /* res_1732741526 のコピー.png in Resources */,
 				4F9F7337195D73290082669D /* InfoPlist.strings in Resources */,
 				4F8C4CA7199C9B8800C375F4 /* tori のコピー 2.png in Resources */,
 				4F1892FA19AB13C2009B15D0 /* octagon_wood_label.png in Resources */,
+				4FAD098B19C8821200BC2854 /* iOS Simulator Screen shot Oct 17, 2013 4.51.41 PM.png in Resources */,
 				4F3C858D198A726F00E843AC /* NmarumaruGreen.png in Resources */,
 				4F1892E919AA6539009B15D0 /* gooon.mp3 in Resources */,
 				4F8C4C9E199C9B8800C375F4 /* lgp01a201403020000 のコピー.png in Resources */,
 				4F1892CE19AA4277009B15D0 /* octagon_button_Shadow.png in Resources */,
 				4F8C4C9D199C9B8800C375F4 /* lgp01a201403010300.jpg in Resources */,
+				4FAD099819C8821200BC2854 /* MYCustomPanel.xib in Resources */,
+				4FAD099619C8821200BC2854 /* MYBlurIntroductionView-Example-Info.plist in Resources */,
 				4F8C4C9A199C9B8800C375F4 /* lgp01a201401150000 のコピー.png in Resources */,
 				4F8C4CA1199C9B8800C375F4 /* res_1337468576 のコピー.png in Resources */,
 				4F8C4C99199C9B8800C375F4 /* lgp01a201304160100.jpg in Resources */,
+				4FAD098C19C8821200BC2854 /* iOS Simulator Screen shot Oct 17, 2013 4.51.43 PM.png in Resources */,
 				4F3C858C198A726F00E843AC /* NmarumaruBlue.png in Resources */,
 				4F8C4CA9199C9B8800C375F4 /* tori.jpg in Resources */,
+				4FAD099E19C8821200BC2854 /* MYBlurIntroductionView-ExampleTests-Info.plist in Resources */,
 				4F18930619AB25FE009B15D0 /* shu_white.png in Resources */,
+				4FAD099019C8821200BC2854 /* InfoPlist.strings in Resources */,
 				4F8C4C93199C9B8800C375F4 /* lgp01a201304151300.jpg in Resources */,
+				4FAD098D19C8821200BC2854 /* Main_iPad.storyboard in Resources */,
+				4FAD098A19C8821200BC2854 /* iOS Simulator Screen shot Oct 17, 2013 4.51.39 PM.png in Resources */,
 				4F1892D719AA55C2009B15D0 /* octagon_sound_on.png in Resources */,
+				4FAD099C19C8821200BC2854 /* Toronto, ON.jpg in Resources */,
 				4F8C4CB3199D9DE900C375F4 /* 旧icon.png in Resources */,
 				4F8C4CA8199C9B8800C375F4 /* tori のコピー.png in Resources */,
 				4F8C4C92199C9B8800C375F4 /* lgp01a201304151300 のコピー.png in Resources */,
+				4FAD098219C8821100BC2854 /* iOS Simulator Screen shot Oct 17, 2013 4.51.43 PM.png in Resources */,
 				4F9F7340195D73290082669D /* Main.storyboard in Resources */,
+				4FAD098519C8821200BC2854 /* iOS Simulator Screen shot Oct 17, 2013 3.10.00 PM.png in Resources */,
 				4F1892ED19AA6539009B15D0 /* pon01.mp3 in Resources */,
 				4F8C4C9F199C9B8800C375F4 /* lgp01a201403020000.jpg in Resources */,
 				4F8C4CA2199C9B8800C375F4 /* kumo.png in Resources */,
 				4F8C4C9B199C9B8800C375F4 /* lgp01a201401150000.jpg in Resources */,
+				4FAD099D19C8821200BC2854 /* InfoPlist.strings in Resources */,
+				4FAD098119C8821100BC2854 /* iOS Simulator Screen shot Oct 17, 2013 4.51.41 PM.png in Resources */,
 				4F18930019AB1F9C009B15D0 /* kan_octagon.mp3 in Resources */,
 				4F8C4C96199C9B8800C375F4 /* lgp01a201304151900 のコピー.png in Resources */,
 				4F1892E719AA6539009B15D0 /* dodon02.mp3 in Resources */,
 				4F1892CC19A78014009B15D0 /* res_177918524.png in Resources */,
 				4F18930E19AB30A4009B15D0 /* octagon_hantoumei.png in Resources */,
+				4FAD098E19C8821200BC2854 /* Main_iPhone.storyboard in Resources */,
+				4FAD097F19C8821100BC2854 /* iOS Simulator Screen shot Oct 17, 2013 4.51.36 PM.png in Resources */,
+				4FAD098719C8821200BC2854 /* iOS Simulator Screen shot Oct 17, 2013 4.42.38 PM.png in Resources */,
 				4F18931A19ACF7C8009B15D0 /* octagon_gameover_purple.png in Resources */,
 				4F3C8583198622CB00E843AC /* Noctagon()2.png in Resources */,
 				4F18930119AB1F9C009B15D0 /* don_octagon.mp3 in Resources */,
 				4F18930C19AB2E8A009B15D0 /* octagon_option_icon.png in Resources */,
 				4F1892E819AA6539009B15D0 /* flee1.mp3 in Resources */,
+				4FAD098419C8821100BC2854 /* iOS Simulator Screen shot Oct 17, 2013 3.09.56 PM.png in Resources */,
 				4F1892EB19AA6539009B15D0 /* N_don01.mp3 in Resources */,
+				4FAD097A19C8821100BC2854 /* LICENSE in Resources */,
+				4FAD099219C8821200BC2854 /* HeaderImage.png in Resources */,
 				4FB97DFF199B3ADD00BF12EF /* Noctagon().png in Resources */,
 				4F18931619ACF4BD009B15D0 /* icon.png in Resources */,
 				4F8C4C94199C9B8800C375F4 /* lgp01a201304151400 のコピー.jpg in Resources */,
@@ -553,8 +830,14 @@
 				4F1892FC19AB13ED009B15D0 /* wood-white_texture.jpg in Resources */,
 				4F8C4CA0199C9B8800C375F4 /* octagon_haguruma.png in Resources */,
 				4F1892EC19AA6539009B15D0 /* N_kannn.mp3 in Resources */,
+				4FAD099319C8821200BC2854 /* Images.xcassets in Resources */,
+				4FAD097E19C8821100BC2854 /* README.md in Resources */,
+				4FAD098319C8821100BC2854 /* iOS Simulator Screen shot Oct 17, 2013 3.09.52 PM.png in Resources */,
 				4F1892DB19AA5BC9009B15D0 /* octagon_sound_off.png in Resources */,
 				4F18930219AB1F9C009B15D0 /* pon_octagon.mp3 in Resources */,
+				4FAD098819C8821200BC2854 /* MYBlurIntroductionView.gif in Resources */,
+				4FAD099A19C8821200BC2854 /* TestHeader.xib in Resources */,
+				4FAD098919C8821200BC2854 /* iOS Simulator Screen shot Oct 17, 2013 4.51.36 PM.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -573,13 +856,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4FAD099419C8821200BC2854 /* main.m in Sources */,
+				4FAD097C19C8821100BC2854 /* MYIntroductionPanel.m in Sources */,
+				4FAD099919C8821200BC2854 /* MYViewController.m in Sources */,
 				4F18931219ACEB3F009B15D0 /* ChangeRGB.m in Sources */,
 				4F3EE49D199BAFA600008B6A /* GameOverViewController.m in Sources */,
 				4F9F7343195D73290082669D /* ViewController.m in Sources */,
+				4FAD097B19C8821100BC2854 /* MYBlurIntroductionView.m in Sources */,
 				4FC7E85C19669E8C0069A919 /* OptionViewController.m in Sources */,
+				4FAD099F19C8821200BC2854 /* MYBlurIntroductionView_ExampleTests.m in Sources */,
 				4F9F733D195D73290082669D /* AppDelegate.m in Sources */,
 				4F4E357719719B0D00EE4F99 /* DMCrookedSwipeView.m in Sources */,
+				4FAD099519C8821200BC2854 /* MYAppDelegate.m in Sources */,
 				4F9F7339195D73290082669D /* main.m in Sources */,
+				4FAD099719C8821200BC2854 /* MYCustomPanel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -622,6 +912,38 @@
 			isa = PBXVariantGroup;
 			children = (
 				4F9F7355195D73290082669D /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		4FAD095A19C8821100BC2854 /* Main_iPad.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4FAD095B19C8821100BC2854 /* Base */,
+			);
+			name = Main_iPad.storyboard;
+			sourceTree = "<group>";
+		};
+		4FAD095C19C8821100BC2854 /* Main_iPhone.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4FAD095D19C8821100BC2854 /* Base */,
+			);
+			name = Main_iPhone.storyboard;
+			sourceTree = "<group>";
+		};
+		4FAD095F19C8821100BC2854 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4FAD096019C8821100BC2854 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		4FAD097519C8821100BC2854 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4FAD097619C8821100BC2854 /* en */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
@@ -709,12 +1031,16 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer: Mariko Yamamoto (2EGT4SM44X)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Mariko Yamamoto (2EGT4SM44X)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "PICO/PICO-Prefix.pch";
 				INFOPLIST_FILE = "PICO/PICO-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "6ada31ac-57e3-477b-bc1f-92a287d2661d";
-				WRAPPER_EXTENSION = app;
+				WRAPPER_EXTENSION = xctest;
 			};
 			name = Debug;
 		};
@@ -724,12 +1050,16 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer: Mariko Yamamoto (2EGT4SM44X)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Mariko Yamamoto (2EGT4SM44X)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "PICO/PICO-Prefix.pch";
 				INFOPLIST_FILE = "PICO/PICO-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "6ada31ac-57e3-477b-bc1f-92a287d2661d";
-				WRAPPER_EXTENSION = app;
+				WRAPPER_EXTENSION = xctest;
 			};
 			name = Release;
 		};

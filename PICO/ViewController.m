@@ -12,10 +12,14 @@
 
 @interface ViewController ()<UIGestureRecognizerDelegate>
 
-@end
+//@end
+//@implementation userDefaultSounds;
+//@synthesize sounds;
 
+@end
 @implementation ViewController
 @synthesize volume;
+
 
 
 - (void)viewDidLoad
@@ -511,19 +515,13 @@ swipeView.alpha = 0.0;
     }else if(score >= 100){
         level = 7;
     }
-    
-    if (level == 7) {
-        lebelLabel.text = @"MAX";
-    }else{
-    lebelLabel.text = [NSString stringWithFormat:@"%d",level];
-    }
 }
 
 
 /*----マーブル作る----*/
 - (void)makeLeftUpwordMaru{
     
-    [UIView animateWithDuration:0.54f delay:0.4f options:UIViewAnimationOptionCurveEaseIn animations:^ {
+    [UIView animateWithDuration:0.4f delay:0.4f options:UIViewAnimationOptionCurveEaseIn animations:^ {
         //１秒かけてアニメーション。0.5秒後からアニメーション
         //^と^の間はブロック構文！ブロック構文は、１回流れとは別に動かす構文！コールバックとセットのことが多いよ。流れからブロック！
         //アニメーションで変化させたい値を設定する（最終的に変更したい値）
@@ -559,7 +557,7 @@ swipeView.alpha = 0.0;
 
 - (void)makeRightUpwordMaru
 {
-    [UIView animateWithDuration:0.54f delay:0.4f options:UIViewAnimationOptionCurveEaseIn animations:^ {
+    [UIView animateWithDuration:0.4f delay:0.4f options:UIViewAnimationOptionCurveEaseIn animations:^ {
         //１秒かけてアニメーション。0.5秒後からアニメーション
         //^と^の間はブロック構文！ブロック構文は、１回流れとは別に動かす構文！コールバックとセットのことが多いよ。流れからブロック！
         //アニメーションで変化させたい値を設定する（最終的に変更したい値）
@@ -592,7 +590,7 @@ swipeView.alpha = 0.0;
 }
 
 - (void)makeLeftDownwordMaru{
-    [UIView animateWithDuration:0.54f delay:0.4f options:UIViewAnimationOptionCurveEaseIn animations:^ {
+    [UIView animateWithDuration:0.4f delay:0.4f options:UIViewAnimationOptionCurveEaseIn animations:^ {
         //１秒かけてアニメーション。0.5秒後からアニメーション
         //^と^の間はブロック構文！ブロック構文は、１回流れとは別に動かす構文！コールバックとセットのことが多いよ。流れからブロック！
         //アニメーションで変化させたい値を設定する（最終的に変更したい値）
@@ -627,7 +625,7 @@ swipeView.alpha = 0.0;
 
 - (void)makeRightDownwordMaru
 {
-    [UIView animateWithDuration:0.54f delay:0.4f options:UIViewAnimationOptionCurveEaseIn animations:^ {
+    [UIView animateWithDuration:0.4f delay:0.4f options:UIViewAnimationOptionCurveEaseIn animations:^ {
         //１秒かけてアニメーション。0.5秒後からアニメーション
         //^と^の間はブロック構文！ブロック構文は、１回流れとは別に動かす構文！コールバックとセットのことが多いよ。流れからブロック！
         //アニメーションで変化させたい値を設定する（最終的に変更したい値）
@@ -682,6 +680,9 @@ swipeView.alpha = 0.0;
     dodon.volume *= volume2;
     pon.volume *= volume2;
     kan.volume *= volume2;
+    
+//    // BOOL型で取得
+//    sounds = [userDefaultSounds boolForKey:nil];
     
     NSLog(@"ゲーム画面でのvolume is...%d",volume2);
     if(volume2 == 0){

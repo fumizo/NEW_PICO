@@ -64,6 +64,7 @@
     IBOutlet UILabel *lebelLabel;
     
     int volume;
+    BOOL sounds; //optionで保存したBOOL
     
     /*
     ゲームオーバーになったよっていうのをback to startで通知してゲームオーバーになったらisgameoverフラグをyesにして、１回丸をつくったらまたnoにして、
@@ -77,6 +78,7 @@
     
 }
 
+
 -(void)add:(CGRect)rect;
 
 - (void) hanteiWithMarble:(DMCrookedSwipeView *)marbleForhantei; //わしこれできるよ
@@ -85,5 +87,9 @@
 
 @property(nonatomic) int volume;
 
+
+//@end
+//@interface userDefaultSounds: NSUserDefaults;
+//@property BOOL sounds;
 
 @end
